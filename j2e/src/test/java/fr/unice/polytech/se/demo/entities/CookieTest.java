@@ -42,7 +42,7 @@ public class CookieTest {
         }
         @Test
         public void testCreerMagasin(){
-            creerUnMagasin.CreerUnMagasin(new Magasin("Coo", new Cookie(), null, 21));
+            creerUnMagasin.creerUnMagasin(new Magasin("Coo", new Cookie(), null, 21));
             assertEquals(creerUnMagasin.getContents().size(), 1);
         }
 }

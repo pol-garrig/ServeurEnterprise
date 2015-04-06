@@ -9,7 +9,7 @@ import java.util.List;
  */
 public interface CreerUnMagasin {
 
-    public void  CreerUnMagasin(Magasin mg);
+    public void creerUnMagasin(Magasin mg);
 
     public List<Magasin> getContents();
 }

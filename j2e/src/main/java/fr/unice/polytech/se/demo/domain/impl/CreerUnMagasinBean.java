@@ -17,7 +17,7 @@ public class CreerUnMagasinBean implements CreerUnMagasin {
     private ArrayList<Magasin> _contents = new ArrayList<Magasin>();
 
     @Override
-    public void CreerUnMagasin(Magasin mg) {
+    public void creerUnMagasin(Magasin mg) {
         _contents.add(mg);
     }
 

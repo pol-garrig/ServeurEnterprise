@@ -1,9 +1,7 @@
 package fr.unice.polytech.se.demo;
 
 import fr.unice.polytech.se.demo.domain.CreerUnMagasin;
-import fr.unice.polytech.se.demo.domain.PetManager;
 import fr.unice.polytech.se.demo.domain.impl.CreerUnMagasinBean;
-import fr.unice.polytech.se.demo.domain.impl.PetManagerBean;
 import fr.unice.polytech.se.demo.entities.*;
 import org.jboss.arquillian.container.test.api.Deployment;
 import org.jboss.arquillian.junit.Arquillian;
@@ -16,8 +14,6 @@ import org.junit.runner.RunWith;
 
 import javax.ejb.EJB;
 
-import java.util.List;
-
 import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertTrue;
 
@@ -26,7 +22,7 @@ import static org.junit.Assert.assertTrue;
  */
 
 @RunWith(Arquillian.class)
-public class MagasinTest {
+public class CreerUnMagasinTest {
 
         @Deployment
         public static Archive<?> createDeployment() {
@@ -47,7 +43,7 @@ public class MagasinTest {
        }
         @Test
         public void testCreerMagasin(){
-            creerUnMagasin.CreerUnMagasin(new Magasin("Coo", new Cookie(), null, 21));
+            creerUnMagasin.creerUnMagasin(new Magasin("Coo", new Cookie(), null, 21));
             assertEquals(creerUnMagasin.getContents().size(), 1);
         }
 }
