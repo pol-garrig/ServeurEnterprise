@@ -7,26 +7,27 @@ import java.io.Serializable;
 /**
  * Created by Garrigos Fernando on 31/03/15.
  */
+
 @Entity
 @Table(name = "COOKIE")
 public class Cookie  implements Serializable  {
 
         private static final long serialVersionUID = 1L;
 
-        public Long id;
+        private Long id;
 
-        public Long prixHT;
+        private Long prixHT;
 
-        public Cookie todaySpecial;
+        private int quantite;
 
-        public List<Commande> listCommande;
+        private Magasin lieuRetrait;
 
-        public String name;
+        private String name;
 
-        public Magasin() {
+        public Cookie() {
         }
 
-        public Magasin(String n) {
+        public Cookie(String n) {
             this.name = n;
         }
 
@@ -40,26 +41,15 @@ public class Cookie  implements Serializable  {
             return id;
         }
 
-        @Column(name = "MAGASIN_NAME")
+        @Column(name = "COOKIE_NAME")
         @NotNull
         public String getName() {
             return name;
         }
 
-        public long getTax(){
-            return tax;
-        }
-        public Cookie getTodaySpecial(){
-            return todaySpecial;
-        }
-
-        public List<Commande> getListCommande(){
-            return listCommande;
-        }
-
         public boolean equals(Object o) {
-            if (o instanceof Magasin) {
-                Magasin that = (Magasin) o;
+            if (o instanceof Cookie) {
+                Cookie that = (Cookie) o;
                 return that.name.equals(this.name);
             }
             return false;
@@ -69,23 +59,35 @@ public class Cookie  implements Serializable  {
             this.id = id;
         }
 
-        public void setTax(Long t) {
-            this.tax = t;
-        }
-
         public void setName(String name) {
             this.name = name;
         }
 
-        public void setListCommande(List<Commande> l){
-            this.listCommande = l;
+        public static long getSerialVersionUID() {
+            return serialVersionUID;
         }
 
-        public void setTodaySpecial(Cookie c){
-            this.todaySpecial = c;
+        public Long getPrixHT() {
+            return prixHT;
         }
 
-    }
+        public void setPrixHT(Long prixHT) {
+            this.prixHT = prixHT;
+        }
 
+        public int getQuantite() {
+            return quantite;
+        }
 
+        public void setQuantite(int quantite) {
+            this.quantite = quantite;
+        }
+
+        public Magasin getLieuRetrait() {
+            return lieuRetrait;
+        }
+
+        public void setLieuRetrait(Magasin lieuRetrait) {
+            this.lieuRetrait = lieuRetrait;
+        }
 }

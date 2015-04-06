@@ -4,6 +4,7 @@ import javax.persistence.*;
 import javax.validation.constraints.NotNull;
 import java.io.Serializable;
 import java.net.CookieHandler;
+import java.util.List;
 
 /**
  * Created by Fernando Garrigos on 30/03/15.
@@ -15,25 +16,29 @@ public class Magasin implements Serializable {
 
         private static final long serialVersionUID = 1L;
 
-        public Long id;
+        private Long id;
 
-        public Long tax;
+        private Long tax;
 
-        public Cookie todaySpecial;
+        private Cookie todaySpecial;
 
-        public List<Commande> listCommande;
+        private List<Commande> listCommande;
 
-        public String name;
+        private String name;
 
         public Magasin() {
         }
 
-        public Magasin(String n) {
+        public Magasin(String n, Long id, Cookie c, List<Commande> l, long tax) {
             this.name = n;
+            this.tax = tax;
+            this.id = id;
+            this.todaySpecial = c;
+            this.listCommande = l;            ;
         }
 
         public String toString() {
-            return "Pet[" + this.id + "]#" + this.name;
+            return "[" + this.id + "]#" + this.name + this.tax + this.todaySpecial + this.listCommande;
         }
 
         @Id
@@ -66,6 +71,7 @@ public class Magasin implements Serializable {
             }
             return false;
         }
+
 
         public void setId(Long id) {
             this.id = id;
