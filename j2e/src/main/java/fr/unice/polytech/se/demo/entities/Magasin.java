@@ -29,10 +29,10 @@ public class Magasin implements Serializable {
         public Magasin() {
         }
 
-        public Magasin(String n, Long id, Cookie c, List<Commande> l, long tax) {
+        public Magasin(String n, Cookie c, List<Commande> l, long tax) {
             this.name = n;
             this.tax = tax;
-            this.id = id;
+           // this.id = id;
             this.todaySpecial = c;
             this.listCommande = l;            ;
         }

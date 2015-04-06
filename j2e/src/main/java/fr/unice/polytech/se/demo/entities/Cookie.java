@@ -20,8 +20,6 @@ public class Cookie  implements Serializable  {
 
         private int quantite;
 
-        private Magasin lieuRetrait;
-
         private String name;
 
         public Cookie() {
@@ -83,11 +81,5 @@ public class Cookie  implements Serializable  {
             this.quantite = quantite;
         }
 
-        public Magasin getLieuRetrait() {
-            return lieuRetrait;
-        }
 
-        public void setLieuRetrait(Magasin lieuRetrait) {
-            this.lieuRetrait = lieuRetrait;
-        }
 }
