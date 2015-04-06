@@ -3,7 +3,6 @@ package fr.unice.polytech.se.demo.entities;
 import javax.persistence.*;
 import javax.validation.constraints.NotNull;
 import java.io.Serializable;
-import java.net.CookieHandler;
 import java.util.List;
 
 /**

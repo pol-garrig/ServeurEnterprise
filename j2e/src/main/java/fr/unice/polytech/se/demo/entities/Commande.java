@@ -4,6 +4,8 @@ import javax.persistence.*;
 import java.io.Serializable;
 import java.util.ArrayList;
 import java.util.Date;
+import java.util.HashSet;
+import java.util.Set;
 
 /**
  * Created by Garrigos Fernando on 31/03/15.
@@ -15,13 +17,13 @@ public class Commande implements Serializable {
 
     private static final long serialVersionUID = 1L;
 
-    private int id;
+    private Long id;
 
     private Long prixHT;
 
     private Magasin lieuRetrait;
 
-    private ArrayList<Cookie> cookies;
+    private Set<Cookie> cookies;
 
     private Date date;
 
@@ -29,9 +31,9 @@ public class Commande implements Serializable {
 
     }
 
-    public Commande(Long prixHT,Magasin lieuRetrait,ArrayList<Cookie> cookies,Date date){
+    public Commande(Long prixHT,Magasin lieuRetrait,Set<Cookie> cookies){
         this.cookies = cookies;
-        this.date = date;
+        date = new Date();
         this.lieuRetrait = lieuRetrait;
         this.prixHT = prixHT;
     }
@@ -52,11 +54,11 @@ public class Commande implements Serializable {
         this.lieuRetrait = lieuRetrait;
     }
 
-    public ArrayList<Cookie> getCookies() {
+    public  Set<Cookie> getCookies() {
         return cookies;
     }
 
-    public void setCookies(ArrayList<Cookie> cookies) {
+    public void setCookies( Set<Cookie> cookies) {
         this.cookies = cookies;
     }
 
@@ -70,11 +72,11 @@ public class Commande implements Serializable {
 
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
-    public int getId() {
+    public Long getId() {
         return id;
     }
 
-    public void setId(int id) {
+    public void setId(Long id) {
         this.id = id;
     }
 }
