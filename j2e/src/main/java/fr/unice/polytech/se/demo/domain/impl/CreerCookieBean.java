@@ -1,15 +1,12 @@
 package fr.unice.polytech.se.demo.domain.impl;
 
-import fr.unice.polytech.se.demo.domain.CookieFinder;
+import fr.unice.polytech.se.demo.entities.CookieFinder;
 import fr.unice.polytech.se.demo.domain.CreerCookie;
-import fr.unice.polytech.se.demo.domain.PetFinder;
 import fr.unice.polytech.se.demo.entities.Cookie;
-import fr.unice.polytech.se.demo.entities.Pet;
 
 import javax.annotation.PostConstruct;
 import javax.annotation.PreDestroy;
 import javax.ejb.EJB;
-import javax.ejb.Stateful;
 import javax.ejb.Stateless;
 import javax.persistence.EntityManager;
 import javax.persistence.PersistenceContext;

@@ -1,6 +1,9 @@
-package fr.unice.polytech.se.demo.domain.impl;
+package fr.unice.polytech.se.demo.entities;
 
-import fr.unice.polytech.se.demo.domain.MagasinManager;
+import fr.unice.polytech.se.demo.domain.PetFinder;
+import fr.unice.polytech.se.demo.entities.MagasinManager;
+
+import javax.ejb.EJB;
 import javax.persistence.EntityManager;
 import fr.unice.polytech.se.demo.entities.Commande;
 import fr.unice.polytech.se.demo.entities.Cookie;
@@ -23,11 +26,18 @@ public class MagasinManagerBean implements MagasinManager {
     @PersistenceContext
     EntityManager entityManager;
 
+    @EJB
+    MagasinFinder finder;
+
     @Override
-    public Magasin creerUnMagasin(String n, Cookie c, List<Commande> l, long tax) {
-        Magasin mg = new Magasin(n,c,l,tax);
-        _contents.add(mg);
-        entityManager.persist(mg);
+    public Magasin creerUnMagasin(String name, Cookie c, List<Commande> l, long tax) {
+
+        Magasin mg= finder.findByName(name);
+        if (mg == null) {
+            mg = new Magasin(name,c,l,tax);
+            _contents.add(mg);
+            entityManager.persist(mg);
+        }
         return mg;
     }
 

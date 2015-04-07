@@ -1,4 +1,4 @@
-package fr.unice.polytech.se.demo.domain;
+package fr.unice.polytech.se.demo.entities;
 
 import fr.unice.polytech.se.demo.entities.Commande;
 import fr.unice.polytech.se.demo.entities.Cookie;

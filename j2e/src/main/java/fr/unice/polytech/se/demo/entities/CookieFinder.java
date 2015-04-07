@@ -1,4 +1,4 @@
-package fr.unice.polytech.se.demo.domain;
+package fr.unice.polytech.se.demo.entities;
 
 import fr.unice.polytech.se.demo.entities.Cookie;
 import fr.unice.polytech.se.demo.entities.Pet;
@@ -8,5 +8,6 @@ import fr.unice.polytech.se.demo.entities.Pet;
  */
 public interface CookieFinder {
 
-    public Cookie findByName(String n);
+    public Cookie findByName(String name);
+
 }

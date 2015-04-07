@@ -7,7 +7,6 @@ import java.io.Serializable;
 /**
  * Created by Garrigos Fernando on 31/03/15.
  */
-
 @Entity
 public class Cookie  implements Serializable  {
 
@@ -15,29 +14,26 @@ public class Cookie  implements Serializable  {
 
         private Long id;
 
-        private double prixHT;
+        private Double prixHT;
 
-        private int quantite;
+        private Integer quantite;
 
         private String name;
 
         public Cookie() {
-        this("", 0, 0);
+        this("", 0.0, 0);
         }
 
-
-
-        public Cookie(String n, double prixHT, int quantite) {
+        public Cookie(String n, Double prixHT, Integer quantite) {
             this.name = n;
             this.prixHT = prixHT;
             this.quantite = quantite;
         }
 
 
-
-
+        @Override
         public String toString() {
-            return "Pet[" + this.id + "]#" + this.name;
+            return "[" + this.id + "]#" + this.name;
         }
 
         @Id
@@ -46,6 +42,7 @@ public class Cookie  implements Serializable  {
             return id;
         }
 
+        @Column(name = "COOKIE_NAME")
         @NotNull
         public String getName() {
             return name;
@@ -67,23 +64,19 @@ public class Cookie  implements Serializable  {
             this.name = name;
         }
 
-        public static long getSerialVersionUID() {
-            return serialVersionUID;
-        }
-
-        public double getPrixHT() {
+        public Double getPrixHT() {
             return prixHT;
         }
 
-        public void setPrixHT(double prixHT) {
+        public void setPrixHT(Double prixHT) {
             this.prixHT = prixHT;
         }
 
-        public int getQuantite() {
+        public Integer getQuantite() {
             return quantite;
         }
 
-        public void setQuantite(int quantite) {
+        public void setQuantite(Integer quantite) {
             this.quantite = quantite;
         }
 

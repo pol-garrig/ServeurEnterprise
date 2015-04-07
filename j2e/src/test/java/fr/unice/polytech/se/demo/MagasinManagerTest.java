@@ -1,7 +1,7 @@
 package fr.unice.polytech.se.demo;
 
-import fr.unice.polytech.se.demo.domain.MagasinManager;
-import fr.unice.polytech.se.demo.domain.impl.MagasinManagerBean;
+import fr.unice.polytech.se.demo.entities.MagasinManager;
+import fr.unice.polytech.se.demo.entities.MagasinManagerBean;
 import fr.unice.polytech.se.demo.entities.*;
 import org.jboss.arquillian.container.test.api.Deployment;
 import org.jboss.arquillian.junit.Arquillian;
@@ -63,5 +63,12 @@ public class MagasinManagerTest {
             assertEquals(m,m1);
         }
 
-
+        @Test
+        public void testCreerMagasin4(){
+        Magasin m = new Magasin("Chocolat",null,null,21);
+            System.out.println(m);
+            Magasin m1 = magasinManager.creerUnMagasin("Chocolat",null,null,21);
+            System.out.println(m1);
+            assertEquals(m,m1);
+    }
 }
