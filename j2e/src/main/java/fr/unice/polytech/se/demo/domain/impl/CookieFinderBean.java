@@ -20,6 +20,8 @@ public class CookieFinderBean implements CookieFinder{
 
     @PersistenceContext
     EntityManager entityManager;
+
+
     @Override
     public Cookie findByName(String n){
         CriteriaBuilder builder = entityManager.getCriteriaBuilder();

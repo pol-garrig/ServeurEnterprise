@@ -9,7 +9,6 @@ import java.util.List;
  * Created by Fernando Garrigos on 30/03/15.
  */
 @Entity
-@Table(name = "MAGASIN")
 public class Magasin implements Serializable {
 
 
@@ -25,17 +24,18 @@ public class Magasin implements Serializable {
 
         private String name;
 
-        public Magasin() {
+        public Magasin(){
+            this("",null,null,0);
         }
 
         public Magasin(String n, Cookie c, List<Commande> l, long tax) {
             this.name = n;
             this.tax = tax;
-           // this.id = id;
             this.todaySpecial = c;
             this.listCommande = l;            ;
         }
 
+        @Override
         public String toString() {
             return "[" + this.id + "]#" + this.name + this.tax + this.todaySpecial + this.listCommande;
         }

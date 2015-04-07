@@ -9,25 +9,32 @@ import java.io.Serializable;
  */
 
 @Entity
-@Table(name = "COOKIE")
 public class Cookie  implements Serializable  {
 
         private static final long serialVersionUID = 1L;
 
         private Long id;
 
-        private Long prixHT;
+        private double prixHT;
 
         private int quantite;
 
         private String name;
 
         public Cookie() {
+        this("", 0, 0);
         }
 
-        public Cookie(String n) {
+
+
+        public Cookie(String n, double prixHT, int quantite) {
             this.name = n;
+            this.prixHT = prixHT;
+            this.quantite = quantite;
         }
+
+
+
 
         public String toString() {
             return "Pet[" + this.id + "]#" + this.name;
@@ -39,7 +46,6 @@ public class Cookie  implements Serializable  {
             return id;
         }
 
-        @Column(name = "COOKIE_NAME")
         @NotNull
         public String getName() {
             return name;
@@ -65,11 +71,11 @@ public class Cookie  implements Serializable  {
             return serialVersionUID;
         }
 
-        public Long getPrixHT() {
+        public double getPrixHT() {
             return prixHT;
         }
 
-        public void setPrixHT(Long prixHT) {
+        public void setPrixHT(double prixHT) {
             this.prixHT = prixHT;
         }
 

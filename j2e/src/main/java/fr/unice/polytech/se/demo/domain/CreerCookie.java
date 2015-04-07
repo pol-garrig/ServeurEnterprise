@@ -7,6 +7,6 @@ import fr.unice.polytech.se.demo.entities.Cookie;
  */
 public interface CreerCookie {
 
-    public Cookie creerCookie(String c);
+    public Cookie creerCookie(Cookie c);
 
 }

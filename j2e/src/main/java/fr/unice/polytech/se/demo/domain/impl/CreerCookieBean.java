@@ -29,13 +29,13 @@ public class CreerCookieBean implements CreerCookie{
 
 
     @Override
-    public Cookie creerCookie(String name) {
+    public Cookie creerCookie(Cookie cookie){
        // Cookie r = finder.findByName(name);
        // if (r == null) {
-         Cookie r = new Cookie(name);
-            entityManager.persist(r);
+       //  Cookie r = new Cookie(name);
+            entityManager.persist(cookie);
        // }
-        return r;
+        return cookie;
     }
 
     @PostConstruct

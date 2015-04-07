@@ -37,13 +37,15 @@ public class CreerCookieTest {
     @EJB
     private CookieFinder finder;
 
-    @Test
+    /*@Test
     public void testCreation()  {
-        String c = "Cho";
-       Cookie cookie1 = cookie.creerCookie(c);
-      //  Cookie cookie1 = new Cookie("Chocolat");
-        assertEquals(cookie1.getName(), "Cho");
-    }
+       String c = "Cho";
+        Cookie cookie1 = new Cookie();
+
+     //   Cookie cookie1 = cookie.creerCookie(c);
+       // Cookie cookie1 = new Cookie("Cho");
+      //  assertEquals(cookie1.getName(), "Cho");
+    }*/
 
    /* @Test
     public void testFinder(){
