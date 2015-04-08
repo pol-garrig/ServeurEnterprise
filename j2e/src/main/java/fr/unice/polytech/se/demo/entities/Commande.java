@@ -18,7 +18,7 @@ public class Commande implements Serializable {
 
     private Long id;
 
-    private Long prixHT;
+    private Double prixHT;
 
     private Magasin lieuRetrait;
 
@@ -27,21 +27,21 @@ public class Commande implements Serializable {
     private Date date;
 
     public  Commande(){
-
+        this(0.0,null,null);
     }
 
-    public Commande(Long prixHT,Magasin lieuRetrait,Set<Cookie> cookies){
+    public Commande(Double prixHT,Magasin lieuRetrait,Set<Cookie> cookies){
         this.cookies = cookies;
         date = new Date();
         this.lieuRetrait = lieuRetrait;
         this.prixHT = prixHT;
     }
 
-    public Long getPrixHT() {
+    public Double getPrixHT() {
         return prixHT;
     }
 
-    public void setPrixHT(Long prixHT) {
+    public void setPrixHT(Double prixHT) {
         this.prixHT = prixHT;
     }
 
