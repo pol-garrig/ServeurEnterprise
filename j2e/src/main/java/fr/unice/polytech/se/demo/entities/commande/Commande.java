@@ -41,7 +41,7 @@ public class Commande implements Serializable {
 
     @Override
     public String toString() {
-        return "[" + this.id + "]#" + this.lieuRetrait + this.cookies ;
+        return "[" + this.getId() + "]#" + this.getLieuRetrait() + this.getCookies() ;
     }
 
     public Double getPrixHT() {
@@ -89,7 +89,7 @@ public class Commande implements Serializable {
     public boolean equals(Object o) {
         if (o instanceof Commande) {
             Commande that = (Commande) o;
-            return that.id.equals(this.id);
+            return that.getId().equals(this.getId());
         }
         return false;
     }

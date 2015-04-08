@@ -31,7 +31,14 @@
   <component name="EntryPointsManager">
     <entry_points version="2.0" />
   </component>
-  <component name="IdProvider" IDEtalkID="A51FBD575485DB368804833BC46C643E" />
+  <component name="IdProvider" IDEtalkID="7C29D4FE47249E98BDD4D0DFFEAFCD8E" />
+  <component name="MavenProjectsManager">
+    <option name="originalFiles">
+      <list>
+        <option value="$PROJECT_DIR$/pom.xml" />
+      </list>
+    </option>
+  </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="false">
     <OptionsSetting value="true" id="Add" />
     <OptionsSetting value="true" id="Remove" />
@@ -46,7 +53,7 @@
     <modules />
   </component>
   <component name="ProjectRootManager" version="2" languageLevel="JDK_1_6" assert-keyword="true" jdk-15="true" project-jdk-name="1.7" project-jdk-type="JavaSDK">
-    <output url="file://$PROJECT_DIR$/out" />
+    <output url="file://$PROJECT_DIR$/classes" />
   </component>
   <component name="PropertiesComponent">
     <property name="GoToClass.includeLibraries" value="false" />

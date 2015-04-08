@@ -41,7 +41,7 @@ public class Magasin implements Serializable {
 
         @Override
         public String toString() {
-            return "[" + this.id + "]#" + this.name + this.tax + this.todaySpecial + this.listCommande;
+            return "[" + this.getId() + "]#" + this.getName() + this.getTax() + this.getTodaySpecial() + this.getListCommande();
         }
 
         @Id
@@ -60,7 +60,6 @@ public class Magasin implements Serializable {
             return tax;
         }
 
-
         @OneToOne
         public Cookie getTodaySpecial(){
             return todaySpecial;
@@ -71,15 +70,6 @@ public class Magasin implements Serializable {
             return listCommande;
         }
 
-        public boolean equals(Object o) {
-            if (o instanceof Magasin) {
-                Magasin that = (Magasin) o;
-                return that.name.equals(this.name);
-            }
-            return false;
-        }
-
-
         public void setId(Long id) {
             this.id = id;
         }
@@ -87,11 +77,9 @@ public class Magasin implements Serializable {
         public void setTax(Double t) {
         this.tax = t;
     }
-
         public void setName(String name) {
             this.name = name;
         }
-
 
         public void setListCommande(List<Commande> l){
             this.listCommande = l;
@@ -99,6 +87,15 @@ public class Magasin implements Serializable {
 
         public void setTodaySpecial(Cookie c){
             this.todaySpecial = c;
+        }
+
+        @Override
+        public boolean equals(Object o) {
+            if (o instanceof Magasin) {
+                Magasin that = (Magasin) o;
+                return that.getName().equals(this.getName());
+            }
+            return false;
         }
 
 }

@@ -34,7 +34,7 @@ public class Cookie  implements Serializable  {
 
         @Override
         public String toString() {
-            return "[" + this.id + "]#" + this.name;
+            return "[" + this.getId() + "]#" + this.getName();
         }
 
         @Id
@@ -49,10 +49,11 @@ public class Cookie  implements Serializable  {
             return name;
         }
 
+        @Override
         public boolean equals(Object o) {
             if (o instanceof Cookie) {
                 Cookie that = (Cookie) o;
-                return that.name.equals(this.name);
+                return that.getName().equals(this.getName());
             }
             return false;
         }

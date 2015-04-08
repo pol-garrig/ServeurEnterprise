@@ -26,96 +26,87 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="MagasinManagerBean.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/fr/unice/polytech/se/demo/entities/magasin/MagasinManagerBean.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="217" max-vertical-offset="840">
-              <caret line="35" column="38" selection-start-line="35" selection-start-column="38" selection-end-line="35" selection-end-column="38" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="ManageFranchise.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/fr/unice/polytech/se/demo/domain/impl/ManageFranchise.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="330">
-              <caret line="16" column="0" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
+            <state vertical-scroll-proportion="0.0" vertical-offset="105" max-vertical-offset="270">
+              <caret line="11" column="17" selection-start-line="11" selection-start-column="17" selection-end-line="11" selection-end-column="17" />
               <folding>
-                <element signature="imports" expanded="true" />
+                <element signature="imports" expanded="false" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="MagasinFinderBean.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/fr/unice/polytech/se/demo/entities/magasin/MagasinFinderBean.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="112" max-vertical-offset="735">
-              <caret line="14" column="0" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="10" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ManageFranchiseBean.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="ManageFranchiseBean.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/fr/unice/polytech/se/demo/domain/impl/ManageFranchiseBean.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.48154092" vertical-offset="0" max-vertical-offset="623">
-              <caret line="27" column="25" selection-start-line="27" selection-start-column="25" selection-end-line="27" selection-end-column="25" />
+            <state vertical-scroll-proportion="0.0" vertical-offset="90" max-vertical-offset="555">
+              <caret line="36" column="21" selection-start-line="36" selection-start-column="21" selection-end-line="36" selection-end-column="21" />
+              <folding>
+                <element signature="imports" expanded="false" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Service.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/webservice/Service.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0" vertical-offset="73" max-vertical-offset="495">
+              <caret line="25" column="0" selection-start-line="25" selection-start-column="0" selection-end-line="25" selection-end-column="0" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ServiceImplements.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/webservice/ServiceImplements.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0" vertical-offset="210" max-vertical-offset="450">
+              <caret line="22" column="14" selection-start-line="22" selection-start-column="0" selection-end-line="23" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="CommandeManager.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/fr/unice/polytech/se/demo/entities/commande/CommandeManager.java">
+      <file leaf-file-name="persistence.xml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/resources/META-INF/persistence.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="390">
-              <caret line="17" column="40" selection-start-line="17" selection-start-column="40" selection-end-line="17" selection-end-column="40" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
+            <state vertical-scroll-proportion="0.0" vertical-offset="90" max-vertical-offset="555">
+              <caret line="31" column="14" selection-start-line="31" selection-start-column="14" selection-end-line="31" selection-end-column="14" />
+              <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="CreationBoutiqueJsfBean.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/fr/unice/polytech/se/demo/presentation/CreationBoutiqueJsfBean.java">
+      <file leaf-file-name="Cookie.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/fr/unice/polytech/se/demo/entities/cookie/Cookie.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="367" max-vertical-offset="1440">
-              <caret line="42" column="84" selection-start-line="42" selection-start-column="84" selection-end-line="42" selection-end-column="84" />
+            <state vertical-scroll-proportion="0.0" vertical-offset="580" max-vertical-offset="1080">
+              <caret line="51" column="5" selection-start-line="51" selection-start-column="5" selection-end-line="58" selection-end-column="9" />
               <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="CommandeFinderBean.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/fr/unice/polytech/se/demo/entities/commande/CommandeFinderBean.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="600">
-              <caret line="30" column="24" selection-start-line="30" selection-start-column="24" selection-end-line="30" selection-end-column="24" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="CommandeManagerBean.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/fr/unice/polytech/se/demo/entities/commande/CommandeManagerBean.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="180" max-vertical-offset="870">
-              <caret line="22" column="32" selection-start-line="22" selection-start-column="32" selection-end-line="22" selection-end-column="32" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#561#571#0" expanded="true" />
+                <element signature="imports" expanded="false" />
+                <element signature="e#470#471#0" expanded="false" />
+                <element signature="e#506#507#0" expanded="false" />
+                <element signature="e#931#932#0" expanded="false" />
+                <element signature="e#964#965#0" expanded="false" />
+                <element signature="e#1054#1055#0" expanded="false" />
+                <element signature="e#1089#1090#0" expanded="false" />
+                <element signature="e#1381#1382#0" expanded="false" />
+                <element signature="e#1417#1418#0" expanded="false" />
+                <element signature="e#1461#1462#0" expanded="false" />
+                <element signature="e#1501#1502#0" expanded="false" />
+                <element signature="e#1538#1539#0" expanded="false" />
+                <element signature="e#1575#1576#0" expanded="false" />
+                <element signature="e#1623#1624#0" expanded="false" />
+                <element signature="e#1667#1668#0" expanded="false" />
+                <element signature="e#1707#1708#0" expanded="false" />
+                <element signature="e#1746#1747#0" expanded="false" />
+                <element signature="e#1799#1800#0" expanded="false" />
+                <element signature="e#1847#1848#0" expanded="false" />
               </folding>
             </state>
           </provider>
@@ -124,21 +115,85 @@
       <file leaf-file-name="Magasin.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/fr/unice/polytech/se/demo/entities/magasin/Magasin.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1230">
-              <caret line="86" column="33" selection-start-line="86" selection-start-column="33" selection-end-line="86" selection-end-column="33" />
+            <state vertical-scroll-proportion="0.0" vertical-offset="509" max-vertical-offset="1305">
+              <caret line="93" column="39" selection-start-line="93" selection-start-column="39" selection-end-line="93" selection-end-column="39" />
               <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="method#equals#0;class#Magasin#0" expanded="false" />
+                <element signature="e#659#660#0" expanded="false" />
+                <element signature="e#705#706#0" expanded="false" />
+                <element signature="e#1242#1243#0" expanded="false" />
+                <element signature="e#1275#1276#0" expanded="false" />
+                <element signature="e#1366#1367#0" expanded="false" />
+                <element signature="e#1401#1402#0" expanded="false" />
+                <element signature="e#1434#1435#0" expanded="false" />
+                <element signature="e#1468#1469#0" expanded="false" />
+                <element signature="e#1528#1529#0" expanded="false" />
+                <element signature="e#1571#1572#0" expanded="false" />
+                <element signature="e#1640#1641#0" expanded="false" />
+                <element signature="e#1683#1684#0" expanded="false" />
+                <element signature="e#1721#1722#0" expanded="false" />
+                <element signature="e#1757#1758#0" expanded="false" />
+                <element signature="e#1868#1869#0" expanded="false" />
+                <element signature="e#1908#1909#0" expanded="false" />
+                <element signature="e#1964#1965#0" expanded="false" />
+                <element signature="e#2009#2010#0" expanded="false" />
+                <element signature="e#2057#2058#0" expanded="false" />
+                <element signature="e#2102#2103#0" expanded="false" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="MagasinManager.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/fr/unice/polytech/se/demo/entities/magasin/MagasinManager.java">
+      <file leaf-file-name="CreationBoutiqueJsfBean.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/fr/unice/polytech/se/demo/presentation/CreationBoutiqueJsfBean.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="330">
-              <caret line="19" column="1" selection-start-line="19" selection-start-column="1" selection-end-line="19" selection-end-column="1" />
+            <state vertical-scroll-proportion="0.43338683" vertical-offset="405" max-vertical-offset="1440">
+              <caret line="45" column="9" selection-start-line="45" selection-start-column="9" selection-end-line="45" selection-end-column="9" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Commande.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/fr/unice/polytech/se/demo/entities/commande/Commande.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0" vertical-offset="420" max-vertical-offset="1095">
+              <caret line="49" column="0" selection-start-line="49" selection-start-column="0" selection-end-line="49" selection-end-column="0" />
+              <folding>
+                <element signature="imports" expanded="false" />
+                <element signature="e#603#604#0" expanded="false" />
+                <element signature="e#638#639#0" expanded="false" />
+                <element signature="e#1039#1040#0" expanded="false" />
+                <element signature="e#1068#1069#0" expanded="false" />
+                <element signature="e#1112#1113#0" expanded="false" />
+                <element signature="e#1148#1149#0" expanded="false" />
+                <element signature="e#1187#1188#0" expanded="false" />
+                <element signature="e#1221#1222#0" expanded="false" />
+                <element signature="e#1276#1277#0" expanded="false" />
+                <element signature="e#1322#1323#0" expanded="false" />
+                <element signature="e#1362#1363#0" expanded="false" />
+                <element signature="e#1392#1393#0" expanded="false" />
+                <element signature="e#1444#1445#0" expanded="false" />
+                <element signature="e#1482#1483#0" expanded="false" />
+                <element signature="e#1511#1512#0" expanded="false" />
+                <element signature="e#1538#1539#0" expanded="false" />
+                <element signature="e#1576#1577#0" expanded="false" />
+                <element signature="e#1608#1609#0" expanded="false" />
+                <element signature="e#1695#1696#0" expanded="false" />
+                <element signature="e#1720#1721#0" expanded="false" />
+                <element signature="e#1754#1755#0" expanded="false" />
+                <element signature="e#1782#1783#0" expanded="false" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="MagasinManagerTest.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/java/fr/unice/polytech/se/demo/MagasinManagerTest.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0" vertical-offset="322" max-vertical-offset="945">
+              <caret line="67" column="58" selection-start-line="67" selection-start-column="58" selection-end-line="67" selection-end-column="58" />
               <folding />
             </state>
           </provider>
@@ -149,9 +204,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/data/hsqldb/hsqldb.script" />
-        <option value="$PROJECT_DIR$/src/test/java/fr/unice/polytech/se/demo/PetSellerTest.java" />
-        <option value="$PROJECT_DIR$/src/main/java/fr/unice/polytech/se/demo/domain/CreerUnMagasin.java" />
         <option value="$PROJECT_DIR$/src/main/java/fr/unice/polytech/se/demo/domain/impl/CookieFinderBean.java" />
         <option value="$PROJECT_DIR$/src/main/java/fr/unice/polytech/se/demo/domain/impl/CreerCookieBean.java" />
         <option value="$PROJECT_DIR$/src/test/resources/arquillian.xml" />
@@ -165,7 +217,6 @@
         <option value="$PROJECT_DIR$/src/main/java/fr/unice/polytech/se/demo/entities/MagasinManager.java" />
         <option value="$PROJECT_DIR$/src/main/java/fr/unice/polytech/se/demo/entities/MagasinManagerBean.java" />
         <option value="$PROJECT_DIR$/src/main/java/fr/unice/polytech/se/demo/entities/CookieFinder.java" />
-        <option value="$PROJECT_DIR$/src/test/java/fr/unice/polytech/se/demo/MagasinManagerTest.java" />
         <option value="$PROJECT_DIR$/src/main/java/fr/unice/polytech/se/demo/entities/Cookie.java" />
         <option value="$PROJECT_DIR$/src/main/java/fr/unice/polytech/se/demo/entities/CookieManager.java" />
         <option value="$PROJECT_DIR$/src/main/java/fr/unice/polytech/se/demo/entities/CookieManagerBean.java" />
@@ -178,8 +229,6 @@
         <option value="$PROJECT_DIR$/src/main/java/fr/unice/polytech/se/demo/entities/CommandeManagerBean.java" />
         <option value="$PROJECT_DIR$/src/main/java/fr/unice/polytech/se/demo/entities/Commande/CommandeManagerBean.java" />
         <option value="$PROJECT_DIR$/src/main/java/fr/unice/polytech/se/demo/domain/CreerCookie.java" />
-        <option value="$PROJECT_DIR$/src/main/java/fr/unice/polytech/se/demo/entities/commande/Commande.java" />
-        <option value="$PROJECT_DIR$/src/main/java/fr/unice/polytech/se/demo/entities/cookie/Cookie.java" />
         <option value="$PROJECT_DIR$/src/test/java/fr/unice/polytech/se/demo/CommandeManagerTest.java" />
         <option value="$PROJECT_DIR$/src/main/java/fr/unice/polytech/se/demo/entities/commande/CommandeManagerBean.java" />
         <option value="$PROJECT_DIR$/src/main/java/fr/unice/polytech/se/demo/entities/cookie/CookieManagerBean.java" />
@@ -193,13 +242,19 @@
         <option value="$PROJECT_DIR$/src/main/resources/META-INF/persistence.xml" />
         <option value="$PROJECT_DIR$/src/main/java/fr/unice/polytech/se/demo/presentation/CreationBoutiqueJsfBean.java" />
         <option value="$PROJECT_DIR$/src/main/java/fr/unice/polytech/se/demo/entities/cookie/CookieFinder.java" />
-        <option value="$PROJECT_DIR$/src/main/java/fr/unice/polytech/se/demo/entities/magasin/Magasin.java" />
         <option value="$PROJECT_DIR$/src/main/java/fr/unice/polytech/se/demo/domain/impl/CreationBoutique.java" />
         <option value="$PROJECT_DIR$/src/main/java/fr/unice/polytech/se/demo/entities/magasin/MagasinManagerBean.java" />
         <option value="$PROJECT_DIR$/src/main/java/fr/unice/polytech/se/demo/domain/impl/CreerBoutique.java" />
         <option value="$PROJECT_DIR$/src/main/java/fr/unice/polytech/se/demo/domain/impl/CreationBoutiqueBean.java" />
-        <option value="$PROJECT_DIR$/src/main/java/fr/unice/polytech/se/demo/domain/impl/ManageFranchiseBean.java" />
         <option value="$PROJECT_DIR$/src/main/java/fr/unice/polytech/se/demo/entities/magasin/MagasinManager.java" />
+        <option value="$PROJECT_DIR$/src/test/java/fr/unice/polytech/se/demo/MagasinManagerTest.java" />
+        <option value="$PROJECT_DIR$/src/main/java/fr/unice/polytech/se/demo/entities/commande/Commande.java" />
+        <option value="$PROJECT_DIR$/src/main/java/fr/unice/polytech/se/demo/entities/cookie/Cookie.java" />
+        <option value="$PROJECT_DIR$/src/main/java/fr/unice/polytech/se/demo/entities/magasin/Magasin.java" />
+        <option value="$PROJECT_DIR$/src/main/java/webservice/Service.java" />
+        <option value="$PROJECT_DIR$/src/main/java/fr/unice/polytech/se/demo/domain/impl/ManageFranchise.java" />
+        <option value="$PROJECT_DIR$/src/main/java/fr/unice/polytech/se/demo/domain/impl/ManageFranchiseBean.java" />
+        <option value="$PROJECT_DIR$/src/main/java/webservice/ServiceImplements.java" />
       </list>
     </option>
   </component>
@@ -207,7 +262,7 @@
     <detection-done>true</detection-done>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="-1311" />
+    <option name="x" value="55" />
     <option name="y" value="24" />
     <option name="width" value="1311" />
     <option name="height" value="744" />
@@ -241,7 +296,7 @@
     <ConfirmationsSetting value="0" id="Remove" />
   </component>
   <component name="ProjectView">
-    <navigator currentView="ProjectPane" proportions="" version="1">
+    <navigator currentView="PackagesPane" proportions="" version="1">
       <flattenPackages />
       <showMembers />
       <showModules />
@@ -253,6 +308,83 @@
       <sortByType />
     </navigator>
     <panes>
+      <pane id="PackagesPane">
+        <subPane>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="j2e" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="test" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageViewModuleNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="j2e" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageViewModuleNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="j2e" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageViewModuleNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="webservice" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageElementNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="j2e" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageViewModuleNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="fr.unice.polytech.se.demo" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageElementNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="j2e" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="demo" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageViewModuleNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="j2e" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="demo" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageViewModuleNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="webservice" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageElementNode" />
+            </PATH_ELEMENT>
+          </PATH>
+        </subPane>
+      </pane>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -271,278 +403,8 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="demo" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="j2e" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="test" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="demo" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="j2e" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="test" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="java" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="demo" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="demo" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="j2e" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="webapp" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="demo" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="j2e" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="webapp" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="WEB-INF" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="demo" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="j2e" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="webapp" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="templates" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="demo" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="j2e" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="resources" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="META-INF" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="demo" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="j2e" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="java" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="demo" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="presentation" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="demo" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="j2e" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="java" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="demo" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="entities" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="magasin" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="demo" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="j2e" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="java" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="demo" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="entities" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="demo" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="j2e" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="java" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="demo" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="impl" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -564,13 +426,14 @@
     <property name="FullScreen" value="false" />
     <property name="OverrideImplement.combined" value="true" />
     <property name="OverrideImplement.overriding.sorted" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/.." />
   </component>
   <component name="RecentsManager">
-    <key name="CreateTestDialog.RecentsKey">
-      <recent name="fr.unice.polytech.se.demo.entities" />
-    </key>
     <key name="CreateTestDialog.Recents.Supers">
       <recent name="junit.framework.TestCase" />
+    </key>
+    <key name="CreateTestDialog.RecentsKey">
+      <recent name="fr.unice.polytech.se.demo.entities" />
     </key>
     <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
       <recent name="fr.unice.polytech.se.demo.entities" />
@@ -1004,48 +867,52 @@
       <workItem from="1427811189200" duration="5283000" />
       <workItem from="1428308019001" duration="994000" />
       <workItem from="1428311189992" duration="29778000" />
-      <workItem from="1428477184442" duration="18159000" />
+      <workItem from="1428477184442" duration="20336000" />
+      <workItem from="1428505621834" duration="62000" />
+      <workItem from="1428505759288" duration="21000" />
+      <workItem from="1428506664101" duration="196000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="54634000" />
+    <option name="totallyTimeSpent" value="57119000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-1311" y="24" width="1311" height="744" extended-state="6" />
-    <editor active="true" />
+    <frame x="55" y="24" width="1311" height="744" extended-state="6" />
+    <editor active="false" />
     <layout>
-      <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Java Enterprise" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="IDEtalk Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="IDEtalk" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="JSF" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="CDI" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.2501907" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.30923077" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Persistence" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
       <window_info id="Bean Validation" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3276923" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Java Enterprise" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3276923" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="IDEtalk Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.30923077" sideWeight="0.115179256" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="IDEtalk" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="JSF" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="CDI" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.2501907" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.30923077" sideWeight="0.88482076" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3276923" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3276923" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
@@ -1079,6 +946,149 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/src/main/java/fr/unice/polytech/se/demo/domain/impl/ManageFranchiseBean.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="90" max-vertical-offset="555">
+          <caret line="36" column="21" selection-start-line="36" selection-start-column="21" selection-end-line="36" selection-end-column="21" />
+          <folding>
+            <element signature="imports" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/webservice/Service.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="73" max-vertical-offset="495">
+          <caret line="25" column="0" selection-start-line="25" selection-start-column="0" selection-end-line="25" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/webservice/ServiceImplements.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="148" max-vertical-offset="570">
+          <caret line="22" column="14" selection-start-line="22" selection-start-column="0" selection-end-line="23" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/META-INF/persistence.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="90" max-vertical-offset="555">
+          <caret line="31" column="14" selection-start-line="31" selection-start-column="14" selection-end-line="31" selection-end-column="14" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/fr/unice/polytech/se/demo/entities/cookie/Cookie.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="580" max-vertical-offset="1080">
+          <caret line="51" column="5" selection-start-line="51" selection-start-column="5" selection-end-line="58" selection-end-column="9" />
+          <folding>
+            <element signature="imports" expanded="false" />
+            <element signature="e#470#471#0" expanded="false" />
+            <element signature="e#506#507#0" expanded="false" />
+            <element signature="e#931#932#0" expanded="false" />
+            <element signature="e#964#965#0" expanded="false" />
+            <element signature="e#1054#1055#0" expanded="false" />
+            <element signature="e#1089#1090#0" expanded="false" />
+            <element signature="e#1381#1382#0" expanded="false" />
+            <element signature="e#1417#1418#0" expanded="false" />
+            <element signature="e#1461#1462#0" expanded="false" />
+            <element signature="e#1501#1502#0" expanded="false" />
+            <element signature="e#1538#1539#0" expanded="false" />
+            <element signature="e#1575#1576#0" expanded="false" />
+            <element signature="e#1623#1624#0" expanded="false" />
+            <element signature="e#1667#1668#0" expanded="false" />
+            <element signature="e#1707#1708#0" expanded="false" />
+            <element signature="e#1746#1747#0" expanded="false" />
+            <element signature="e#1799#1800#0" expanded="false" />
+            <element signature="e#1847#1848#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/fr/unice/polytech/se/demo/entities/magasin/Magasin.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="509" max-vertical-offset="1305">
+          <caret line="93" column="39" selection-start-line="93" selection-start-column="39" selection-end-line="93" selection-end-column="39" />
+          <folding>
+            <element signature="e#659#660#0" expanded="false" />
+            <element signature="e#705#706#0" expanded="false" />
+            <element signature="e#1242#1243#0" expanded="false" />
+            <element signature="e#1275#1276#0" expanded="false" />
+            <element signature="e#1366#1367#0" expanded="false" />
+            <element signature="e#1401#1402#0" expanded="false" />
+            <element signature="e#1434#1435#0" expanded="false" />
+            <element signature="e#1468#1469#0" expanded="false" />
+            <element signature="e#1528#1529#0" expanded="false" />
+            <element signature="e#1571#1572#0" expanded="false" />
+            <element signature="e#1640#1641#0" expanded="false" />
+            <element signature="e#1683#1684#0" expanded="false" />
+            <element signature="e#1721#1722#0" expanded="false" />
+            <element signature="e#1757#1758#0" expanded="false" />
+            <element signature="e#1868#1869#0" expanded="false" />
+            <element signature="e#1908#1909#0" expanded="false" />
+            <element signature="e#1964#1965#0" expanded="false" />
+            <element signature="e#2009#2010#0" expanded="false" />
+            <element signature="e#2057#2058#0" expanded="false" />
+            <element signature="e#2102#2103#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/fr/unice/polytech/se/demo/presentation/CreationBoutiqueJsfBean.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="405" max-vertical-offset="1440">
+          <caret line="42" column="84" selection-start-line="42" selection-start-column="84" selection-end-line="42" selection-end-column="84" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/fr/unice/polytech/se/demo/entities/commande/Commande.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="420" max-vertical-offset="1095">
+          <caret line="49" column="0" selection-start-line="49" selection-start-column="0" selection-end-line="49" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="false" />
+            <element signature="e#603#604#0" expanded="false" />
+            <element signature="e#638#639#0" expanded="false" />
+            <element signature="e#1039#1040#0" expanded="false" />
+            <element signature="e#1068#1069#0" expanded="false" />
+            <element signature="e#1112#1113#0" expanded="false" />
+            <element signature="e#1148#1149#0" expanded="false" />
+            <element signature="e#1187#1188#0" expanded="false" />
+            <element signature="e#1221#1222#0" expanded="false" />
+            <element signature="e#1276#1277#0" expanded="false" />
+            <element signature="e#1322#1323#0" expanded="false" />
+            <element signature="e#1362#1363#0" expanded="false" />
+            <element signature="e#1392#1393#0" expanded="false" />
+            <element signature="e#1444#1445#0" expanded="false" />
+            <element signature="e#1482#1483#0" expanded="false" />
+            <element signature="e#1511#1512#0" expanded="false" />
+            <element signature="e#1538#1539#0" expanded="false" />
+            <element signature="e#1576#1577#0" expanded="false" />
+            <element signature="e#1608#1609#0" expanded="false" />
+            <element signature="e#1695#1696#0" expanded="false" />
+            <element signature="e#1720#1721#0" expanded="false" />
+            <element signature="e#1754#1755#0" expanded="false" />
+            <element signature="e#1782#1783#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/fr/unice/polytech/se/demo/MagasinManagerTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="322" max-vertical-offset="945">
+          <caret line="67" column="58" selection-start-line="67" selection-start-column="58" selection-end-line="67" selection-end-column="58" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/.idea/.name">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="390">
@@ -1154,29 +1164,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="315">
           <caret line="9" column="0" selection-start-line="9" selection-start-column="0" selection-end-line="13" selection-end-column="38" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/fr/unice/polytech/se/demo/entities/commande/Commande.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="225" max-vertical-offset="1095">
-          <caret line="34" column="16" selection-start-line="34" selection-start-column="0" selection-end-line="35" selection-end-column="0" />
-          <folding>
-            <element signature="e#913#914#0" expanded="true" />
-            <element signature="e#991#992#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/fr/unice/polytech/se/demo/entities/cookie/Cookie.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="270" max-vertical-offset="1065">
-          <caret line="28" column="0" selection-start-line="28" selection-start-column="0" selection-end-line="28" selection-end-column="0" />
-          <folding>
-            <element signature="e#1761#1762#0" expanded="true" />
-            <element signature="e#1809#1810#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1184,9 +1171,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="91" max-vertical-offset="615">
           <caret line="13" column="0" selection-start-line="13" selection-start-column="0" selection-end-line="13" selection-end-column="10" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1194,17 +1178,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="646" max-vertical-offset="1110">
           <caret line="53" column="0" selection-start-line="53" selection-start-column="0" selection-end-line="53" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/fr/unice/polytech/se/demo/MagasinManagerTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="451" max-vertical-offset="945">
-          <caret line="55" column="0" selection-start-line="55" selection-start-column="0" selection-end-line="55" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1223,7 +1196,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-0.4991453" vertical-offset="14497" max-vertical-offset="15990">
           <caret line="1003" column="0" selection-start-line="1003" selection-start-column="0" selection-end-line="1003" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1231,9 +1203,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="570" max-vertical-offset="1395">
           <caret line="65" column="0" selection-start-line="65" selection-start-column="0" selection-end-line="65" selection-end-column="0" />
-          <folding>
-            <element signature="e#2881#2882#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1241,7 +1210,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-8.708333" vertical-offset="241" max-vertical-offset="840">
           <caret line="30" column="0" selection-start-line="30" selection-start-column="0" selection-end-line="30" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1249,7 +1217,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="810" max-vertical-offset="2790">
           <caret line="75" column="20" selection-start-line="75" selection-start-column="20" selection-end-line="75" selection-end-column="20" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1257,7 +1224,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-16.208334" vertical-offset="76" max-vertical-offset="675">
           <caret line="31" column="49" selection-start-line="31" selection-start-column="49" selection-end-line="31" selection-end-column="49" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1270,21 +1236,20 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/faces-config.xml">
-      <provider editor-type-id="com.intellij.jsf.yfilesGraph.editor.FacesNavigationFileEditorProvider">
-        <state />
-      </provider>
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-16.862068" vertical-offset="111" max-vertical-offset="705">
           <caret line="40" column="20" selection-start-line="40" selection-start-column="20" selection-end-line="40" selection-end-column="20" />
           <folding />
         </state>
       </provider>
+      <provider editor-type-id="com.intellij.jsf.yfilesGraph.editor.FacesNavigationFileEditorProvider">
+        <state />
+      </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/index.jsp">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-12.5" vertical-offset="0" max-vertical-offset="420">
           <caret line="20" column="31" selection-start-line="20" selection-start-column="31" selection-end-line="20" selection-end-column="31" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1296,19 +1261,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/META-INF/persistence.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-18.6" vertical-offset="0" max-vertical-offset="555">
-          <caret line="31" column="14" selection-start-line="31" selection-start-column="14" selection-end-line="31" selection-end-column="14" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/fr/unice/polytech/se/demo/entities/magasin/MagasinFinder.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="285">
           <caret line="7" column="30" selection-start-line="7" selection-start-column="17" selection-end-line="7" selection-end-column="30" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1316,7 +1272,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="255">
           <caret line="5" column="2" selection-start-line="5" selection-start-column="2" selection-end-line="5" selection-end-column="2" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1324,7 +1279,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="255">
           <caret line="8" column="28" selection-start-line="8" selection-start-column="28" selection-end-line="8" selection-end-column="28" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1332,30 +1286,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="600">
           <caret line="30" column="24" selection-start-line="30" selection-start-column="24" selection-end-line="30" selection-end-column="24" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/fr/unice/polytech/se/demo/presentation/CreationBoutiqueJsfBean.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="367" max-vertical-offset="1440">
-          <caret line="42" column="84" selection-start-line="42" selection-start-column="84" selection-end-line="42" selection-end-column="84" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/fr/unice/polytech/se/demo/entities/magasin/Magasin.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1230">
-          <caret line="86" column="33" selection-start-line="86" selection-start-column="33" selection-end-line="86" selection-end-column="33" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="method#equals#0;class#Magasin#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1363,9 +1293,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="390">
           <caret line="17" column="40" selection-start-line="17" selection-start-column="40" selection-end-line="17" selection-end-column="40" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1384,9 +1311,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="112" max-vertical-offset="735">
           <caret line="14" column="0" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="10" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1400,29 +1324,163 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/fr/unice/polytech/se/demo/entities/magasin/MagasinManager.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="330">
+          <caret line="20" column="0" selection-start-line="20" selection-start-column="0" selection-end-line="20" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/fr/unice/polytech/se/demo/MagasinManagerTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="322" max-vertical-offset="945">
+          <caret line="67" column="58" selection-start-line="67" selection-start-column="58" selection-end-line="67" selection-end-column="58" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/fr/unice/polytech/se/demo/entities/commande/Commande.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="420" max-vertical-offset="1095">
+          <caret line="49" column="0" selection-start-line="49" selection-start-column="0" selection-end-line="49" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="false" />
+            <element signature="e#603#604#0" expanded="false" />
+            <element signature="e#638#639#0" expanded="false" />
+            <element signature="e#1039#1040#0" expanded="false" />
+            <element signature="e#1068#1069#0" expanded="false" />
+            <element signature="e#1112#1113#0" expanded="false" />
+            <element signature="e#1148#1149#0" expanded="false" />
+            <element signature="e#1187#1188#0" expanded="false" />
+            <element signature="e#1221#1222#0" expanded="false" />
+            <element signature="e#1276#1277#0" expanded="false" />
+            <element signature="e#1322#1323#0" expanded="false" />
+            <element signature="e#1362#1363#0" expanded="false" />
+            <element signature="e#1392#1393#0" expanded="false" />
+            <element signature="e#1444#1445#0" expanded="false" />
+            <element signature="e#1482#1483#0" expanded="false" />
+            <element signature="e#1511#1512#0" expanded="false" />
+            <element signature="e#1538#1539#0" expanded="false" />
+            <element signature="e#1576#1577#0" expanded="false" />
+            <element signature="e#1608#1609#0" expanded="false" />
+            <element signature="e#1695#1696#0" expanded="false" />
+            <element signature="e#1720#1721#0" expanded="false" />
+            <element signature="e#1754#1755#0" expanded="false" />
+            <element signature="e#1782#1783#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/META-INF/persistence.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="90" max-vertical-offset="555">
+          <caret line="31" column="14" selection-start-line="31" selection-start-column="14" selection-end-line="31" selection-end-column="14" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/fr/unice/polytech/se/demo/entities/cookie/Cookie.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="580" max-vertical-offset="1080">
+          <caret line="51" column="5" selection-start-line="51" selection-start-column="5" selection-end-line="58" selection-end-column="9" />
+          <folding>
+            <element signature="imports" expanded="false" />
+            <element signature="e#470#471#0" expanded="false" />
+            <element signature="e#506#507#0" expanded="false" />
+            <element signature="e#931#932#0" expanded="false" />
+            <element signature="e#964#965#0" expanded="false" />
+            <element signature="e#1054#1055#0" expanded="false" />
+            <element signature="e#1089#1090#0" expanded="false" />
+            <element signature="e#1381#1382#0" expanded="false" />
+            <element signature="e#1417#1418#0" expanded="false" />
+            <element signature="e#1461#1462#0" expanded="false" />
+            <element signature="e#1501#1502#0" expanded="false" />
+            <element signature="e#1538#1539#0" expanded="false" />
+            <element signature="e#1575#1576#0" expanded="false" />
+            <element signature="e#1623#1624#0" expanded="false" />
+            <element signature="e#1667#1668#0" expanded="false" />
+            <element signature="e#1707#1708#0" expanded="false" />
+            <element signature="e#1746#1747#0" expanded="false" />
+            <element signature="e#1799#1800#0" expanded="false" />
+            <element signature="e#1847#1848#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/fr/unice/polytech/se/demo/domain/impl/ManageFranchise.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="330">
-          <caret line="16" column="0" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
+          <caret line="11" column="17" selection-start-line="11" selection-start-column="17" selection-end-line="11" selection-end-column="17" />
+          <folding>
+            <element signature="imports" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/fr/unice/polytech/se/demo/domain/impl/ManageFranchiseBean.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="90" max-vertical-offset="555">
+          <caret line="36" column="21" selection-start-line="36" selection-start-column="21" selection-end-line="36" selection-end-column="21" />
+          <folding>
+            <element signature="imports" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/fr/unice/polytech/se/demo/entities/magasin/Magasin.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="509" max-vertical-offset="1305">
+          <caret line="93" column="39" selection-start-line="93" selection-start-column="39" selection-end-line="93" selection-end-column="39" />
+          <folding>
+            <element signature="e#659#660#0" expanded="false" />
+            <element signature="e#705#706#0" expanded="false" />
+            <element signature="e#1242#1243#0" expanded="false" />
+            <element signature="e#1275#1276#0" expanded="false" />
+            <element signature="e#1366#1367#0" expanded="false" />
+            <element signature="e#1401#1402#0" expanded="false" />
+            <element signature="e#1434#1435#0" expanded="false" />
+            <element signature="e#1468#1469#0" expanded="false" />
+            <element signature="e#1528#1529#0" expanded="false" />
+            <element signature="e#1571#1572#0" expanded="false" />
+            <element signature="e#1640#1641#0" expanded="false" />
+            <element signature="e#1683#1684#0" expanded="false" />
+            <element signature="e#1721#1722#0" expanded="false" />
+            <element signature="e#1757#1758#0" expanded="false" />
+            <element signature="e#1868#1869#0" expanded="false" />
+            <element signature="e#1908#1909#0" expanded="false" />
+            <element signature="e#1964#1965#0" expanded="false" />
+            <element signature="e#2009#2010#0" expanded="false" />
+            <element signature="e#2057#2058#0" expanded="false" />
+            <element signature="e#2102#2103#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/webservice/Service.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="73" max-vertical-offset="495">
+          <caret line="25" column="0" selection-start-line="25" selection-start-column="0" selection-end-line="25" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/fr/unice/polytech/se/demo/entities/magasin/MagasinManager.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/webservice/ServiceImplements.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="330">
-          <caret line="19" column="1" selection-start-line="19" selection-start-column="1" selection-end-line="19" selection-end-column="1" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="148" max-vertical-offset="570">
+          <caret line="22" column="14" selection-start-line="22" selection-start-column="0" selection-end-line="23" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/fr/unice/polytech/se/demo/domain/impl/ManageFranchiseBean.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/fr/unice/polytech/se/demo/presentation/CreationBoutiqueJsfBean.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.48154092" vertical-offset="0" max-vertical-offset="623">
-          <caret line="27" column="25" selection-start-line="27" selection-start-column="25" selection-end-line="27" selection-end-column="25" />
-          <folding />
+        <state vertical-scroll-proportion="0.43338683" vertical-offset="405" max-vertical-offset="1440">
+          <caret line="45" column="9" selection-start-line="45" selection-start-column="9" selection-end-line="45" selection-end-column="9" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

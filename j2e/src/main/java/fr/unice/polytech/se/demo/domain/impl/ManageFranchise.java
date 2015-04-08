@@ -11,6 +11,6 @@ import java.util.List;
  */
 public interface ManageFranchise {
 
-    public void ajouterUnMagasin(String n, Cookie c, List<Commande> l, Double tax);
+    public boolean ajouterUnMagasin(String n, Cookie c, List<Commande> l, Double tax);
 
 }

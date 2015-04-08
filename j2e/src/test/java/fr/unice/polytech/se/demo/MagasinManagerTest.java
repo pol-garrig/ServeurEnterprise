@@ -44,7 +44,7 @@ public class MagasinManagerTest {
 
         @Test
         public void testCreerMagasin(){
-            magasinManager.creerUnMagasin("Coo", null, null, 21);
+            magasinManager.creerUnMagasin("Coo", null, null, 21.00);
            assertEquals(magasinManager.getContents().size(), 1);
         }
 
@@ -59,15 +59,15 @@ public class MagasinManagerTest {
         @Test
         public void testCreerMagasin3(){
             Magasin m = new Magasin();
-            Magasin m1 = magasinManager.creerUnMagasin("",null,null,0);
+            Magasin m1 = magasinManager.creerUnMagasin("",null,null,0.0);
             assertEquals(m,m1);
         }
 
         @Test
         public void testCreerMagasin4(){
-        Magasin m = new Magasin("Chocolat",null,null,21);
+        Magasin m = new Magasin("Chocolat",null,null,21.00);
             System.out.println(m);
-            Magasin m1 = magasinManager.creerUnMagasin("Chocolat",null,null,21);
+            Magasin m1 = magasinManager.creerUnMagasin("Chocolat",null,null,21.00);
             System.out.println(m1);
             assertEquals(m,m1);
     }
