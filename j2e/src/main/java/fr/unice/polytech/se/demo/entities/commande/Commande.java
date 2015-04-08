@@ -32,10 +32,16 @@ public class Commande implements Serializable {
     }
 
     public Commande(Double prixHT,Magasin lieuRetrait,Set<Cookie> cookies){
+        super();
         this.cookies = cookies;
         date = new Date();
         this.lieuRetrait = lieuRetrait;
         this.prixHT = prixHT;
+    }
+
+    @Override
+    public String toString() {
+        return "[" + this.id + "]#" + this.lieuRetrait + this.cookies ;
     }
 
     public Double getPrixHT() {
@@ -78,5 +84,13 @@ public class Commande implements Serializable {
 
     public void setId(Long id) {
         this.id = id;
+    }
+
+    public boolean equals(Object o) {
+        if (o instanceof Commande) {
+            Commande that = (Commande) o;
+            return that.id.equals(this.id);
+        }
+        return false;
     }
 }

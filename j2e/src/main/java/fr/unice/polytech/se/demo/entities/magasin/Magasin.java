@@ -32,6 +32,7 @@ public class Magasin implements Serializable {
         }
 
         public Magasin(String n, Cookie c, List<Commande> l, long tax) {
+            super();
             this.name = n;
             this.tax = tax;
             this.todaySpecial = c;

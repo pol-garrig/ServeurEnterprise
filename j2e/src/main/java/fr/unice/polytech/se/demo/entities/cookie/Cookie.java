@@ -25,6 +25,7 @@ public class Cookie  implements Serializable  {
         }
 
         public Cookie(String n, Double prixHT, Integer quantite) {
+            super();
             this.name = n;
             this.prixHT = prixHT;
             this.quantite = quantite;
