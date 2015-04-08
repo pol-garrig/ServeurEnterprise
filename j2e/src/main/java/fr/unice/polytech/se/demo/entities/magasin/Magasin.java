@@ -56,9 +56,12 @@ public class Magasin implements Serializable {
             return name;
         }
 
-        public long getTax(){
+        public Long getTax(){
             return tax;
         }
+
+
+        @OneToOne
         public Cookie getTodaySpecial(){
             return todaySpecial;
         }

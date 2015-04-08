@@ -4,7 +4,11 @@ import fr.unice.polytech.se.demo.entities.commande.CommandeManager;
 import fr.unice.polytech.se.demo.entities.commande.Commande;
 import fr.unice.polytech.se.demo.entities.commande.CommandeManagerBean;
 import fr.unice.polytech.se.demo.entities.cookie.Cookie;
+import fr.unice.polytech.se.demo.entities.cookie.CookieManager;
+import fr.unice.polytech.se.demo.entities.cookie.CookieManagerBean;
 import fr.unice.polytech.se.demo.entities.magasin.Magasin;
+import fr.unice.polytech.se.demo.entities.magasin.MagasinManager;
+import fr.unice.polytech.se.demo.entities.magasin.MagasinManagerBean;
 import org.apache.activemq.command.Command;
 import org.jboss.arquillian.container.test.api.Deployment;
 import org.jboss.arquillian.junit.Arquillian;
@@ -37,11 +41,25 @@ public class CommandeManagerTest {
                     .addAsWebInfResource(EmptyAsset.INSTANCE, "beans.xml")
                     .addAsWebInfResource("META-INF/persistence.xml", "persistence.xml")
                     .addPackage(CommandeManager.class.getPackage())
-                    .addPackage(CommandeManagerBean.class.getPackage());
+                    .addPackage(CommandeManagerBean.class.getPackage())
+                    .addPackage(Cookie.class.getPackage())
+                    .addAsWebInfResource(EmptyAsset.INSTANCE, "beans.xml")
+                    .addAsWebInfResource("META-INF/persistence.xml", "persistence.xml")
+                    .addPackage(CookieManager.class.getPackage())
+                    .addPackage(CookieManagerBean.class.getPackage())
+                    .addPackage(Magasin.class.getPackage())
+                    .addAsWebInfResource(EmptyAsset.INSTANCE, "beans.xml")
+                    .addAsWebInfResource("META-INF/persistence.xml", "persistence.xml")
+                    .addPackage(MagasinManager.class.getPackage())
+                    .addPackage(MagasinManagerBean.class.getPackage());
         }
 
         @EJB
         private CommandeManager commandeManager;
+        @EJB
+        private MagasinManager magasinManager;
+        @EJB
+        private CookieManager cookieManager;
 
         @Test
         public void testCreerCommande() {
@@ -70,10 +88,11 @@ public class CommandeManagerTest {
             assertNotEquals(commande, commande1);
         }
 
-        @Test
+       /* @Test
         public void testCreerCommande4(){
 
             Cookie c = new Cookie("Chocolat",1.2,21);
+           // Cookie c = cookieManager.creerUnCookie("C",1.2,21);
 
             Set<Cookie> cookies = new HashSet<Cookie>();
 
@@ -81,12 +100,13 @@ public class CommandeManagerTest {
 
             Magasin m = new Magasin("MagCho",c,null,21);
 
+            //Magasin m = magasinManager.creerUnMagasin("Mag",c,null,21);
+
             Commande commande = new Commande(12.21, m, cookies);
 
             Commande c1 = commandeManager.creerUneCommande(12.21, m, cookies);
-            System.out.print(c1);
             assertEquals(commande, c1);
-        }
+        }*/
 
 
 
