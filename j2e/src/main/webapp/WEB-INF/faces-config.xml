@@ -25,7 +25,7 @@
               version="2.0">
 
   <navigation-rule>
-    <from-view-id>/pets.xhtml</from-view-id>
+    <from-view-id>/cookie.xhtml</from-view-id>
     <navigation-case>
       <from-outcome>success</from-outcome>
       <to-view-id>/</to-view-id>
@@ -36,7 +36,7 @@
     <from-view-id>/result.xhtml</from-view-id>
     <navigation-case>
       <from-outcome>back</from-outcome>
-      <to-view-id>/pets.xhtml</to-view-id>
+      <to-view-id>/cookie.xhtml</to-view-id>
     </navigation-case>
   </navigation-rule>
 </faces-config>

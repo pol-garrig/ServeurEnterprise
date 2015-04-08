@@ -27,7 +27,7 @@ public class MagasinManagerBean implements MagasinManager {
     MagasinFinder finder;
 
     @Override
-    public Magasin creerUnMagasin(String name, Cookie c, List<Commande> l, long tax) {
+    public Magasin creerUnMagasin(String name, Cookie c, List<Commande> l, Double tax) {
 
         Magasin mg= finder.findByName(name);
         if (mg == null) {

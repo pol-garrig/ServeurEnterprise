@@ -19,7 +19,7 @@ public class Magasin implements Serializable {
 
         private Long id;
 
-        private Long tax;
+        private Double tax;
 
         private Cookie todaySpecial;
 
@@ -28,10 +28,10 @@ public class Magasin implements Serializable {
         private String name;
 
         public Magasin(){
-            this("",null,null,0);
+            this("",null,null,0.0);
         }
 
-        public Magasin(String n, Cookie c, List<Commande> l, long tax) {
+        public Magasin(String n, Cookie c, List<Commande> l, Double tax) {
             super();
             this.name = n;
             this.tax = tax;
@@ -56,7 +56,7 @@ public class Magasin implements Serializable {
             return name;
         }
 
-        public Long getTax(){
+        public Double getTax(){
             return tax;
         }
 
@@ -66,6 +66,7 @@ public class Magasin implements Serializable {
             return todaySpecial;
         }
 
+        @OneToMany
         public List<Commande> getListCommande(){
             return listCommande;
         }
@@ -83,13 +84,14 @@ public class Magasin implements Serializable {
             this.id = id;
         }
 
-        public void setTax(Long t) {
+        public void setTax(Double t) {
         this.tax = t;
     }
 
         public void setName(String name) {
             this.name = name;
         }
+
 
         public void setListCommande(List<Commande> l){
             this.listCommande = l;

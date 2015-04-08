@@ -1,0 +1,16 @@
+package fr.unice.polytech.se.demo.domain.impl;
+
+import fr.unice.polytech.se.demo.entities.commande.Commande;
+import fr.unice.polytech.se.demo.entities.cookie.Cookie;
+import fr.unice.polytech.se.demo.entities.magasin.Magasin;
+
+import java.util.List;
+
+/**
+ * Created by Garrigos Fernando on 08/04/15.
+ */
+public interface ManageFranchise {
+
+    public void ajouterUnMagasin(String n, Cookie c, List<Commande> l, Double tax);
+
+}

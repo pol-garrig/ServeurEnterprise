@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui:composition xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:ui="http://java.sun.com/jsf/facelets"
+	xmlns:f="http://java.sun.com/jsf/core"
+	xmlns:h="http://java.sun.com/jsf/html"
+	template="/templates/default.xhtml">
+
+	<ui:define name="content">
+		<h:form role="form">
+			<div class="form-group">
+				<label for="name">Creation Boutique</label>
+				<h:inputText styleClass="form-control" id="name"
+					value='#{CreationBoutiqueJsfBean.name}' />
+				<h:outputText value="#{CreationBoutiqueJsfBean.errorMessage}"
+					render="#{CreationBoutiqueJsfBean.errorMessage != null}" style="color:red" />
+			</div>
+			<h:commandButton action="#{CreationBoutiqueJsfBean.add}"
+				styleClass="btn btn-primary" value="Creer Un Magasin" />
+		</h:form>
+		<br />
+		<div>
+			<a href="?start=#{CreationBoutiqueJsfBean.previousPaginationIndex}">Previous</a> - <a href="?start=#{CreationBoutiqueJsfBean.nextPaginationIndex}">Next</a>
+		</div>
+	</ui:define>
+</ui:composition>
