@@ -1,4 +1,4 @@
-package fr.unice.polytech.se.demo.entities;
+package fr.unice.polytech.se.demo.entities.cookie;
 
 import javax.ejb.Stateless;
 import javax.persistence.EntityManager;
@@ -9,22 +9,23 @@ import javax.persistence.criteria.CriteriaQuery;
 import javax.persistence.criteria.Root;
 
 /**
- * Created by Garrigos Fernando on 08/04/15.
+ * Created by Garrigos Fernando on 07/04/15.
  */
 @Stateless
-public class CommandeFinderBean implements CommandeFinder {
+public class CookieFinderBean implements CookieFinder{
+
 
     @PersistenceContext
     EntityManager entityManager;
 
     @Override
-    public Commande findByid(Long id) {
+    public Cookie findByName(String name) {
         CriteriaBuilder builder = entityManager.getCriteriaBuilder();
-        CriteriaQuery<Commande> criteria = builder.createQuery(Commande.class);
-        Root<Commande> from = criteria.from(Commande.class);
+        CriteriaQuery<Cookie> criteria = builder.createQuery(Cookie.class);
+        Root<Cookie> from = criteria.from(Cookie.class);
         criteria.select(from);
-        criteria.where(builder.equal(from.get("id"), id));
-        TypedQuery<Commande> query = entityManager.createQuery(criteria);
+        criteria.where(builder.equal(from.get("name"), name));
+        TypedQuery<Cookie> query = entityManager.createQuery(criteria);
         try {
             return query.getSingleResult();
         } catch (Exception e) {

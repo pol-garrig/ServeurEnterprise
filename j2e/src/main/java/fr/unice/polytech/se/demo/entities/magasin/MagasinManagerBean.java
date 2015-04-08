@@ -1,13 +1,10 @@
-package fr.unice.polytech.se.demo.entities;
-
-import fr.unice.polytech.se.demo.domain.PetFinder;
-import fr.unice.polytech.se.demo.entities.MagasinManager;
+package fr.unice.polytech.se.demo.entities.magasin;
 
 import javax.ejb.EJB;
 import javax.persistence.EntityManager;
-import fr.unice.polytech.se.demo.entities.Commande;
-import fr.unice.polytech.se.demo.entities.Cookie;
-import fr.unice.polytech.se.demo.entities.Magasin;
+
+import fr.unice.polytech.se.demo.entities.commande.Commande;
+import fr.unice.polytech.se.demo.entities.cookie.Cookie;
 
 import javax.ejb.Stateful;
 import javax.persistence.PersistenceContext;

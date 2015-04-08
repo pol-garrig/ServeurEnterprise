@@ -1,4 +1,7 @@
-package fr.unice.polytech.se.demo.entities;
+package fr.unice.polytech.se.demo.entities.commande;
+
+import fr.unice.polytech.se.demo.entities.cookie.Cookie;
+import fr.unice.polytech.se.demo.entities.magasin.Magasin;
 
 import javax.ejb.EJB;
 import javax.ejb.Stateful;

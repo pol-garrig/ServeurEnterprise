@@ -1,8 +1,7 @@
-package fr.unice.polytech.se.demo.entities;
+package fr.unice.polytech.se.demo.entities.magasin;
 
-import fr.unice.polytech.se.demo.entities.Commande;
-import fr.unice.polytech.se.demo.entities.Cookie;
-import fr.unice.polytech.se.demo.entities.Magasin;
+import fr.unice.polytech.se.demo.entities.commande.Commande;
+import fr.unice.polytech.se.demo.entities.cookie.Cookie;
 
 import java.util.List;
 

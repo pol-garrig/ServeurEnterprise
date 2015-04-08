@@ -1,4 +1,4 @@
-package fr.unice.polytech.se.demo.entities;
+package fr.unice.polytech.se.demo.entities.magasin;
 
 import javax.ejb.Stateless;
 import javax.persistence.EntityManager;

@@ -1,10 +1,11 @@
-package fr.unice.polytech.se.demo.entities;
+package fr.unice.polytech.se.demo.entities.commande;
+
+import fr.unice.polytech.se.demo.entities.cookie.Cookie;
+import fr.unice.polytech.se.demo.entities.magasin.Magasin;
 
 import javax.persistence.*;
 import java.io.Serializable;
-import java.util.ArrayList;
 import java.util.Date;
-import java.util.HashSet;
 import java.util.Set;
 
 /**

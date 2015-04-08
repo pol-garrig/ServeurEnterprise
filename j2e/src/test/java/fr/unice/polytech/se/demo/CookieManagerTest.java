@@ -1,6 +1,8 @@
 package fr.unice.polytech.se.demo;
 
-import fr.unice.polytech.se.demo.entities.*;
+import fr.unice.polytech.se.demo.entities.cookie.Cookie;
+import fr.unice.polytech.se.demo.entities.cookie.CookieManager;
+import fr.unice.polytech.se.demo.entities.cookie.CookieManagerBean;
 import org.jboss.arquillian.container.test.api.Deployment;
 import org.jboss.arquillian.junit.Arquillian;
 import org.jboss.shrinkwrap.api.Archive;

@@ -1,4 +1,4 @@
-package fr.unice.polytech.se.demo.entities;
+package fr.unice.polytech.se.demo.entities.cookie;
 
 import java.util.List;
 

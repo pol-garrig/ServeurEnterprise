@@ -1,8 +1,8 @@
 package fr.unice.polytech.se.demo;
 
-import fr.unice.polytech.se.demo.entities.MagasinManager;
-import fr.unice.polytech.se.demo.entities.MagasinManagerBean;
-import fr.unice.polytech.se.demo.entities.*;
+import fr.unice.polytech.se.demo.entities.magasin.Magasin;
+import fr.unice.polytech.se.demo.entities.magasin.MagasinManager;
+import fr.unice.polytech.se.demo.entities.magasin.MagasinManagerBean;
 import org.jboss.arquillian.container.test.api.Deployment;
 import org.jboss.arquillian.junit.Arquillian;
 import org.jboss.shrinkwrap.api.Archive;

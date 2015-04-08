@@ -1,4 +1,7 @@
-package fr.unice.polytech.se.demo.entities;
+package fr.unice.polytech.se.demo.entities.magasin;
+
+import fr.unice.polytech.se.demo.entities.commande.Commande;
+import fr.unice.polytech.se.demo.entities.cookie.Cookie;
 
 import javax.persistence.*;
 import javax.validation.constraints.NotNull;
