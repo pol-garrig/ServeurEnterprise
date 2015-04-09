@@ -1,5 +1,5 @@
 
-package stub;
+package stub1;
 
 import java.net.MalformedURLException;
 import java.net.URL;
