@@ -20,7 +20,11 @@ public class Demo {
 
 	public static void main(String[] args) {
 
-		// Dynamically building the targeted web service location (default to localhost if not provided)
+
+
+        //encontrar el url agragar ?wsdl
+        //y despues crear el stub desde inteligi
+		/*// Dynamically building the targeted web service location (default to localhost if not provided)
 		String host = ( args.length == 0 ? "localhost" : args[0]);
 		String address = "http://"+host+":8080/minijira-back/webservices/MiniJiraService";
 		URL wsdlLocation = null;
@@ -51,7 +55,7 @@ public class Demo {
 		System.out.println("## 3. Retrieving the added tasks");
 		List<stub.Task> tasks = port.listTasks("proj#1");
 		for(stub.Task t: tasks)
-			System.out.println("  - " + t.getProjectId() + " / " + t.getDeveloperId());
+			System.out.println("  - " + t.getProjectId() + " / " + t.getDeveloperId());*/
 
 		System.out.println("\n#####################################\n");
 	}
