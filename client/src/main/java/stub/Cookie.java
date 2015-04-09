@@ -1,5 +1,5 @@
 
-package stub1;
+package stub;
 
 import javax.xml.bind.annotation.XmlAccessType;
 import javax.xml.bind.annotation.XmlAccessorType;
@@ -7,9 +7,9 @@ import javax.xml.bind.annotation.XmlType;
 
 
 /**
- * <p>Classe Java pour cookie complex type.
+ * <p>Java class for cookie complex type.
  * 
- * <p>Le fragment de schéma suivant indique le contenu attendu figurant dans cette classe.
+ * <p>The following schema fragment specifies the expected content contained within this class.
  * 
  * <pre>
  * &lt;complexType name="cookie">
@@ -43,7 +43,7 @@ public class Cookie {
     protected Integer quantite;
 
     /**
-     * Obtient la valeur de la propriété id.
+     * Gets the value of the id property.
      * 
      * @return
      *     possible object is
@@ -55,7 +55,7 @@ public class Cookie {
     }
 
     /**
-     * Définit la valeur de la propriété id.
+     * Sets the value of the id property.
      * 
      * @param value
      *     allowed object is
@@ -67,7 +67,7 @@ public class Cookie {
     }
 
     /**
-     * Obtient la valeur de la propriété name.
+     * Gets the value of the name property.
      * 
      * @return
      *     possible object is
@@ -79,7 +79,7 @@ public class Cookie {
     }
 
     /**
-     * Définit la valeur de la propriété name.
+     * Sets the value of the name property.
      * 
      * @param value
      *     allowed object is
@@ -91,7 +91,7 @@ public class Cookie {
     }
 
     /**
-     * Obtient la valeur de la propriété prixHT.
+     * Gets the value of the prixHT property.
      * 
      * @return
      *     possible object is
@@ -103,7 +103,7 @@ public class Cookie {
     }
 
     /**
-     * Définit la valeur de la propriété prixHT.
+     * Sets the value of the prixHT property.
      * 
      * @param value
      *     allowed object is
@@ -115,7 +115,7 @@ public class Cookie {
     }
 
     /**
-     * Obtient la valeur de la propriété quantite.
+     * Gets the value of the quantite property.
      * 
      * @return
      *     possible object is
@@ -127,7 +127,7 @@ public class Cookie {
     }
 
     /**
-     * Définit la valeur de la propriété quantite.
+     * Sets the value of the quantite property.
      * 
      * @param value
      *     allowed object is

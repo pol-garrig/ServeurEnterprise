@@ -1,5 +1,5 @@
 
-package stub1;
+package stub;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -10,9 +10,9 @@ import javax.xml.bind.annotation.XmlType;
 
 
 /**
- * <p>Classe Java pour magasin complex type.
+ * <p>Java class for magasin complex type.
  * 
- * <p>Le fragment de schéma suivant indique le contenu attendu figurant dans cette classe.
+ * <p>The following schema fragment specifies the expected content contained within this class.
  * 
  * <pre>
  * &lt;complexType name="magasin">
@@ -20,10 +20,10 @@ import javax.xml.bind.annotation.XmlType;
  *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
  *       &lt;sequence>
  *         &lt;element name="id" type="{http://www.w3.org/2001/XMLSchema}long" minOccurs="0"/>
- *         &lt;element name="listCommande" type="{http://webservice.demo.se.polytech.unice.fr/}commande" maxOccurs="unbounded" minOccurs="0"/>
+ *         &lt;element name="listCommande" type="{http://www.polytech.unice.fr/serviceManageFranchise}commande" maxOccurs="unbounded" minOccurs="0"/>
  *         &lt;element name="name" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
  *         &lt;element name="tax" type="{http://www.w3.org/2001/XMLSchema}double" minOccurs="0"/>
- *         &lt;element name="todaySpecial" type="{http://webservice.demo.se.polytech.unice.fr/}cookie" minOccurs="0"/>
+ *         &lt;element name="todaySpecial" type="{http://www.polytech.unice.fr/serviceManageFranchise}cookie" minOccurs="0"/>
  *       &lt;/sequence>
  *     &lt;/restriction>
  *   &lt;/complexContent>
@@ -50,7 +50,7 @@ public class Magasin {
     protected Cookie todaySpecial;
 
     /**
-     * Obtient la valeur de la propriété id.
+     * Gets the value of the id property.
      * 
      * @return
      *     possible object is
@@ -62,7 +62,7 @@ public class Magasin {
     }
 
     /**
-     * Définit la valeur de la propriété id.
+     * Sets the value of the id property.
      * 
      * @param value
      *     allowed object is
@@ -103,7 +103,7 @@ public class Magasin {
     }
 
     /**
-     * Obtient la valeur de la propriété name.
+     * Gets the value of the name property.
      * 
      * @return
      *     possible object is
@@ -115,7 +115,7 @@ public class Magasin {
     }
 
     /**
-     * Définit la valeur de la propriété name.
+     * Sets the value of the name property.
      * 
      * @param value
      *     allowed object is
@@ -127,7 +127,7 @@ public class Magasin {
     }
 
     /**
-     * Obtient la valeur de la propriété tax.
+     * Gets the value of the tax property.
      * 
      * @return
      *     possible object is
@@ -139,7 +139,7 @@ public class Magasin {
     }
 
     /**
-     * Définit la valeur de la propriété tax.
+     * Sets the value of the tax property.
      * 
      * @param value
      *     allowed object is
@@ -151,7 +151,7 @@ public class Magasin {
     }
 
     /**
-     * Obtient la valeur de la propriété todaySpecial.
+     * Gets the value of the todaySpecial property.
      * 
      * @return
      *     possible object is
@@ -163,7 +163,7 @@ public class Magasin {
     }
 
     /**
-     * Définit la valeur de la propriété todaySpecial.
+     * Sets the value of the todaySpecial property.
      * 
      * @param value
      *     allowed object is

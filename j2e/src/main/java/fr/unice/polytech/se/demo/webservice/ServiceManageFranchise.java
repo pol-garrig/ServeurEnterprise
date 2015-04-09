@@ -16,12 +16,10 @@ import java.util.List;
 public interface ServiceManageFranchise {
 
         @WebMethod
-        @WebResult(name = "created")
-        public boolean creerBoutique(@WebParam(name = "name") String n,
-                                        @WebParam(name = "cookie") Cookie c,
-                                        @WebParam (name = "listeCommande")  List<Commande> l,
-                                        @WebParam(name = "tax") Double t
-
-                                        );
-
+        @WebResult(name = "creerBoutique")
+        public boolean creerBoutique2(String n, Cookie c, List<Commande> l, Double tax);
+		
+		@WebMethod
+		// @WebResult(name = "coucou")
+		public void coucou() ;
 }

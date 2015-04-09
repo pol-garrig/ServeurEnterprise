@@ -1,5 +1,5 @@
 
-package stub1;
+package stub;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -12,19 +12,19 @@ import javax.xml.datatype.XMLGregorianCalendar;
 
 
 /**
- * <p>Classe Java pour commande complex type.
+ * <p>Java class for commande complex type.
  * 
- * <p>Le fragment de schéma suivant indique le contenu attendu figurant dans cette classe.
+ * <p>The following schema fragment specifies the expected content contained within this class.
  * 
  * <pre>
  * &lt;complexType name="commande">
  *   &lt;complexContent>
  *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
  *       &lt;sequence>
- *         &lt;element name="cookies" type="{http://webservice.demo.se.polytech.unice.fr/}cookie" maxOccurs="unbounded" minOccurs="0"/>
+ *         &lt;element name="cookies" type="{http://www.polytech.unice.fr/serviceManageFranchise}cookie" maxOccurs="unbounded" minOccurs="0"/>
  *         &lt;element name="date" type="{http://www.w3.org/2001/XMLSchema}dateTime" minOccurs="0"/>
  *         &lt;element name="id" type="{http://www.w3.org/2001/XMLSchema}long" minOccurs="0"/>
- *         &lt;element name="lieuRetrait" type="{http://webservice.demo.se.polytech.unice.fr/}magasin" minOccurs="0"/>
+ *         &lt;element name="lieuRetrait" type="{http://www.polytech.unice.fr/serviceManageFranchise}magasin" minOccurs="0"/>
  *         &lt;element name="prixHT" type="{http://www.w3.org/2001/XMLSchema}double" minOccurs="0"/>
  *       &lt;/sequence>
  *     &lt;/restriction>
@@ -82,7 +82,7 @@ public class Commande {
     }
 
     /**
-     * Obtient la valeur de la propriété date.
+     * Gets the value of the date property.
      * 
      * @return
      *     possible object is
@@ -94,7 +94,7 @@ public class Commande {
     }
 
     /**
-     * Définit la valeur de la propriété date.
+     * Sets the value of the date property.
      * 
      * @param value
      *     allowed object is
@@ -106,7 +106,7 @@ public class Commande {
     }
 
     /**
-     * Obtient la valeur de la propriété id.
+     * Gets the value of the id property.
      * 
      * @return
      *     possible object is
@@ -118,7 +118,7 @@ public class Commande {
     }
 
     /**
-     * Définit la valeur de la propriété id.
+     * Sets the value of the id property.
      * 
      * @param value
      *     allowed object is
@@ -130,7 +130,7 @@ public class Commande {
     }
 
     /**
-     * Obtient la valeur de la propriété lieuRetrait.
+     * Gets the value of the lieuRetrait property.
      * 
      * @return
      *     possible object is
@@ -142,7 +142,7 @@ public class Commande {
     }
 
     /**
-     * Définit la valeur de la propriété lieuRetrait.
+     * Sets the value of the lieuRetrait property.
      * 
      * @param value
      *     allowed object is
@@ -154,7 +154,7 @@ public class Commande {
     }
 
     /**
-     * Obtient la valeur de la propriété prixHT.
+     * Gets the value of the prixHT property.
      * 
      * @return
      *     possible object is
@@ -166,7 +166,7 @@ public class Commande {
     }
 
     /**
-     * Définit la valeur de la propriété prixHT.
+     * Sets the value of the prixHT property.
      * 
      * @param value
      *     allowed object is
