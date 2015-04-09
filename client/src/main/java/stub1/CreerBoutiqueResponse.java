@@ -1,5 +1,5 @@
 
-package stub;
+package stub1;
 
 import javax.xml.bind.annotation.XmlAccessType;
 import javax.xml.bind.annotation.XmlAccessorType;
@@ -7,12 +7,12 @@ import javax.xml.bind.annotation.XmlType;
 
 
 /**
- * <p>Java class for createNewProjectResponse complex type.
+ * <p>Classe Java pour creerBoutiqueResponse complex type.
  * 
- * <p>The following schema fragment specifies the expected content contained within this class.
+ * <p>Le fragment de schéma suivant indique le contenu attendu figurant dans cette classe.
  * 
  * <pre>
- * &lt;complexType name="createNewProjectResponse">
+ * &lt;complexType name="creerBoutiqueResponse">
  *   &lt;complexContent>
  *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
  *       &lt;sequence>
@@ -26,15 +26,15 @@ import javax.xml.bind.annotation.XmlType;
  * 
  */
 @XmlAccessorType(XmlAccessType.FIELD)
-@XmlType(name = "createNewProjectResponse", propOrder = {
+@XmlType(name = "creerBoutiqueResponse", propOrder = {
     "created"
 })
-public class CreateNewProjectResponse {
+public class CreerBoutiqueResponse {
 
     protected boolean created;
 
     /**
-     * Gets the value of the created property.
+     * Obtient la valeur de la propriété created.
      * 
      */
     public boolean isCreated() {
@@ -42,7 +42,7 @@ public class CreateNewProjectResponse {
     }
 
     /**
-     * Sets the value of the created property.
+     * Définit la valeur de la propriété created.
      * 
      */
     public void setCreated(boolean value) {

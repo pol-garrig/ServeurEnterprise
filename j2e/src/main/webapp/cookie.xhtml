@@ -10,9 +10,9 @@
 			<div class="form-group">
 				<label for="name">Creation Boutique</label>
 				<h:inputText styleClass="form-control" id="name"
-					value='#{CreationBoutiqueJsfBean.name}' />
-				<h:outputText value="#{CreationBoutiqueJsfBean.errorMessage}"
-					render="#{CreationBoutiqueJsfBean.errorMessage != null}" style="color:red" />
+					value='#{creationBoutiqueJsfBean.name}' />
+				<h:outputText value="#{creationBoutiqueJsfBean.errorMessage}"
+					render="#{creationBoutiqueJsfBean.errorMessage != null}" style="color:red" />
 			</div>
 			<h:commandButton action="#{CreationBoutiqueJsfBean.add}"
 				styleClass="btn btn-primary" value="Creer Un Magasin" />

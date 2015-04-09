@@ -1,4 +1,4 @@
-package webservice;
+package fr.unice.polytech.se.demo.webservice;
 
 import fr.unice.polytech.se.demo.entities.commande.Commande;
 import fr.unice.polytech.se.demo.entities.cookie.Cookie;

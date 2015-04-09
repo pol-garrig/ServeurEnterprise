@@ -1,7 +1,5 @@
 package fr.unice.polytech.appserv.mini_jira.client;
 
-import stub.MiniJiraServiceImplService;
-import stub.MiniJiraService;
 
 import javax.xml.ws.BindingProvider;
 import java.net.URL;
@@ -20,13 +18,11 @@ public class Demo {
 
 	public static void main(String[] args) {
 
-
-
-        //encontrar el url agragar ?wsdl
+      /*  //encontrar el url agragar ?wsdl
         //y despues crear el stub desde inteligi
-		/*// Dynamically building the targeted web service location (default to localhost if not provided)
+		// Dynamically building the targeted web service location (default to localhost if not provided)
 		String host = ( args.length == 0 ? "localhost" : args[0]);
-		String address = "http://"+host+":8080/minijira-back/webservices/MiniJiraService";
+		String address = "http://"+host+":8080/minijira-back/webservices/Fefe";
 		URL wsdlLocation = null;
 		try { wsdlLocation = new URL(address + "?wsdl"); } catch (Exception e) { System.exit(0); } // UGLY ><
 

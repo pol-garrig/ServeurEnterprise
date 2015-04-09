@@ -7,13 +7,14 @@ import fr.unice.polytech.se.demo.entities.magasin.MagasinFinder;
 import fr.unice.polytech.se.demo.entities.magasin.MagasinManager;
 
 import javax.ejb.EJB;
+import javax.ejb.Stateless;
 import java.util.ArrayList;
 import java.util.List;
 
 /**
  * Created by Garrigos Fernando on 08/04/15.
  */
-
+@Stateless
 public class ManageFranchiseBean implements ManageFranchise {
 
     private ArrayList<Magasin> _contents = new ArrayList<Magasin>();
