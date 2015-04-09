@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='UTF-8'?><wsdl:definitions xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/" xmlns:tns="http://www.polytech.unice.fr/si/4a/appserv/demos" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:ns2="http://schemas.xmlsoap.org/soap/http" xmlns:ns1="http://webservice.demo.se.polytech.unice.fr/" name="ServiceImplementsService" targetNamespace="http://www.polytech.unice.fr/si/4a/appserv/demos">
-  <wsdl:import location="http://localhost:8080/demo/webservices/Fefe?wsdl=Service.wsdl" namespace="http://webservice.demo.se.polytech.unice.fr/">
+  <wsdl:import location="http://localhost:8080//webservices/Fefe?wsdl=Service.wsdl" namespace="http://webservice.demo.se.polytech.unice.fr/">
     </wsdl:import>
   <wsdl:binding name="ServiceImplementsServiceSoapBinding" type="ns1:Service">
     <soap:binding style="document" transport="http://schemas.xmlsoap.org/soap/http"/>
@@ -15,7 +15,7 @@
   </wsdl:binding>
   <wsdl:service name="ServiceImplementsService">
     <wsdl:port binding="tns:ServiceImplementsServiceSoapBinding" name="ServiceImplementsPort">
-      <soap:address location="http://localhost:8080/demo/webservices/Fefe"/>
+      <soap:address location="http://localhost:8080//webservices/Fefe"/>
     </wsdl:port>
   </wsdl:service>
 </wsdl:definitions>

@@ -12,8 +12,8 @@ import java.util.List;
 /**
  * Created by Garrigos Fernando on 08/04/15.
  */
-@WebService
-public interface Service {
+@WebService(targetNamespace = "http://www.polytech.unice.fr/serviceManageFranchise")
+public interface ServiceManageFranchise {
 
         @WebMethod
         @WebResult(name = "created")

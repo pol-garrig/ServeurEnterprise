@@ -16,7 +16,7 @@ import javax.xml.ws.WebServiceFeature;
  * Generated source version: 2.2
  * 
  */
-@WebServiceClient(name = "ServiceImplementsService", targetNamespace = "http://www.polytech.unice.fr/si/4a/appserv/demos", wsdlLocation = "http://localhost:8080/demo/webservices/Fefe?wsdl")
+@WebServiceClient(name = "ServiceImplementsService", targetNamespace = "http://www.polytech.unice.fr/si/4a/appserv/demos", wsdlLocation = "http://localhost:8080//webservices/Fefe?wsdl")
 public class ServiceImplementsService
     extends javax.xml.ws.Service
 {
@@ -29,7 +29,7 @@ public class ServiceImplementsService
         URL url = null;
         WebServiceException e = null;
         try {
-            url = new URL("http://localhost:8080/demo/webservices/Fefe?wsdl");
+            url = new URL("http://localhost:8080//webservices/Fefe?wsdl");
         } catch (MalformedURLException ex) {
             e = new WebServiceException(ex);
         }

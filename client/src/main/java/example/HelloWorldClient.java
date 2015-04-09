@@ -24,13 +24,14 @@ public class HelloWorldClient {
       } catch (Exception e) {
           System.exit(0);
       } // UGLY ><
-
       // Instantiating the client stub code
       ServiceImplementsService srv = new ServiceImplementsService(wsdlLocation); // dynamic WSDL location
       Service port = srv.getServiceImplementsPort();
 
       // Dynamically setting the address where the web service is really deployed
       ((BindingProvider) port).getRequestContext().put(BindingProvider.ENDPOINT_ADDRESS_PROPERTY, address);
+
+
 
       System.out.println("\n#####################################\n");
 
