@@ -1,6 +1,10 @@
 package fr.unice.polytech.appserv.mini_jira.client;
 
 
+import stub1.Cookie;
+import stub1.ServiceManageFranchise;
+import stub1.ServiceManageFranchiseImplementsService;
+
 import javax.xml.ws.BindingProvider;
 import java.net.URL;
 import java.util.ArrayList;
@@ -18,42 +22,63 @@ public class Demo {
 
 	public static void main(String[] args) {
 
-      /*  //encontrar el url agragar ?wsdl
+        //encontrar el url agragar ?wsdl
         //y despues crear el stub desde inteligi
-		// Dynamically building the targeted web service location (default to localhost if not provided)
-		String host = ( args.length == 0 ? "localhost" : args[0]);
-		String address = "http://"+host+":8080/minijira-back/webservices/Fefe";
-		URL wsdlLocation = null;
-		try { wsdlLocation = new URL(address + "?wsdl"); } catch (Exception e) { System.exit(0); } // UGLY ><
+        // Dynamically building the targeted web service location (default to localhost if not provided)
+        String host = "localhost";
+        String address = "http://" + host + ":8080//webservices/ServiceManageFranchise";
+        URL wsdlLocation = null;
+        try {
+            wsdlLocation = new URL(address + "?wsdl");
+        } catch (Exception e) {
+            System.exit(0);
+        } // UGLY ><
+        // Instantiating the client stub code
+        ServiceManageFranchiseImplementsService srv = new ServiceManageFranchiseImplementsService(wsdlLocation); // dynamic WSDL location
+        ServiceManageFranchise port = srv.getServiceManageFranchiseImplementsPort();
 
-		// Instantiating the client stub code
-		MiniJiraServiceImplService srv = new MiniJiraServiceImplService(wsdlLocation); // dynamic WSDL location
-		MiniJiraService port = srv.getMiniJiraServiceImplPort();
+        //   Dynamically setting the address where the web service is really deployed
+        //  ((BindingProvider) port).getRequestContext().put(BindingProvider.ENDPOINT_ADDRESS_PROPERTY, address);
 
-		// Dynamically setting the address where the web service is really deployed
-		((BindingProvider) port).getRequestContext().put(BindingProvider.ENDPOINT_ADDRESS_PROPERTY, address);
+        // Running the demonstration scenario from the client point of view
 
-		System.out.println("\n#####################################\n");
 
-		// Running the demonstration scenario from the client point of view
-		List<String> developers = new ArrayList<>();
-		developers.add("mosser"); developers.add("brel");
-		System.out.println("## 1. Creating a project");
-		port.createNewProject("proj#1", developers);
+        //Cookie cookie = new Cookie();
 
-		// adding some tasks
-		System.out.println("## 2. Adding some tasks");
-		port.pushTasks("proj#1", "a task #1.1", "mosser");
-		port.pushTasks("proj#1","a task #1.2", "brel");
-		port.pushTasks("proj#1","a task #1.3", "mosser");
+        // List<Commande> listcookies = null;
+        Double tax = 0.0;
 
-		// retrieving the tasks
-		System.out.println("## 3. Retrieving the added tasks");
-		List<stub.Task> tasks = port.listTasks("proj#1");
-		for(stub.Task t: tasks)
-			System.out.println("  - " + t.getProjectId() + " / " + t.getDeveloperId());*/
+        port.creerBoutique2(name, null, null, tax);
 
-		System.out.println("\n#####################################\n");
+        System.out.println("\n#####################################\n");
+        System.out.println("Creation d'un Magasin\n");
+        String name = "Magasin1";
+        Cookie c = new Cookie();
+        port.creerBoutique2(name, c, null, tax);
+        System.out.println("\n#####################################\n");
+        System.out.println("\n#####################################\n");
+        System.out.println("Creation d'un Magasin\n");
+        String name2 = "Magasin2";
+        Cookie c2 = new Cookie();
+        port.creerBoutique2(name2, c2, null, tax);
+        System.out.println("\n#####################################\n");
+        System.out.println("Liste de Magasins\n");
+        System.out.println(port.getListeMagasin().get(0).getName());
+        System.out.println("\n#####################################\n");
+
+
+        // retrieving the tasks
+     /* System.out.println("## 3. Retrieving the added tasks");
+
+      System.out.println("  - " + t.getProjectId() + " / " + t.getDeveloperId());
+
+      List<stub.Task> tasks = port.listTasks("proj#1");
+      for(stub.Task t: tasks)
+          System.out.println("  - " + t.getProjectId() + " / " + t.getDeveloperId());
+
+    */
+        System.out.println("Fin de Conection");
+        System.out.println("\n#####################################\n");
 	}
 
 }
