@@ -24,9 +24,11 @@ import javax.xml.namespace.QName;
 @XmlRegistry
 public class ObjectFactory {
 
+    private final static QName _GetListeMagasinResponse_QNAME = new QName("http://www.polytech.unice.fr/servicePrendreRendezvous", "getListeMagasinResponse");
     private final static QName _GetListeRendezvous_QNAME = new QName("http://www.polytech.unice.fr/servicePrendreRendezvous", "getListeRendezvous");
     private final static QName _PrendreRendezvousResponse_QNAME = new QName("http://www.polytech.unice.fr/servicePrendreRendezvous", "prendreRendezvousResponse");
     private final static QName _GetListeRendezvousResponse_QNAME = new QName("http://www.polytech.unice.fr/servicePrendreRendezvous", "getListeRendezvousResponse");
+    private final static QName _GetListeMagasin_QNAME = new QName("http://www.polytech.unice.fr/servicePrendreRendezvous", "getListeMagasin");
     private final static QName _PrendreRendezvous_QNAME = new QName("http://www.polytech.unice.fr/servicePrendreRendezvous", "prendreRendezvous");
 
     /**
@@ -42,6 +44,14 @@ public class ObjectFactory {
      */
     public PrendreRendezvous createPrendreRendezvous() {
         return new PrendreRendezvous();
+    }
+
+    /**
+     * Create an instance of {@link GetListeMagasin }
+     * 
+     */
+    public GetListeMagasin createGetListeMagasin() {
+        return new GetListeMagasin();
     }
 
     /**
@@ -66,6 +76,14 @@ public class ObjectFactory {
      */
     public GetListeRendezvous createGetListeRendezvous() {
         return new GetListeRendezvous();
+    }
+
+    /**
+     * Create an instance of {@link GetListeMagasinResponse }
+     * 
+     */
+    public GetListeMagasinResponse createGetListeMagasinResponse() {
+        return new GetListeMagasinResponse();
     }
 
     /**
@@ -101,6 +119,15 @@ public class ObjectFactory {
     }
 
     /**
+     * Create an instance of {@link JAXBElement }{@code <}{@link GetListeMagasinResponse }{@code >}}
+     * 
+     */
+    @XmlElementDecl(namespace = "http://www.polytech.unice.fr/servicePrendreRendezvous", name = "getListeMagasinResponse")
+    public JAXBElement<GetListeMagasinResponse> createGetListeMagasinResponse(GetListeMagasinResponse value) {
+        return new JAXBElement<GetListeMagasinResponse>(_GetListeMagasinResponse_QNAME, GetListeMagasinResponse.class, null, value);
+    }
+
+    /**
      * Create an instance of {@link JAXBElement }{@code <}{@link GetListeRendezvous }{@code >}}
      * 
      */
@@ -125,6 +152,15 @@ public class ObjectFactory {
     @XmlElementDecl(namespace = "http://www.polytech.unice.fr/servicePrendreRendezvous", name = "getListeRendezvousResponse")
     public JAXBElement<GetListeRendezvousResponse> createGetListeRendezvousResponse(GetListeRendezvousResponse value) {
         return new JAXBElement<GetListeRendezvousResponse>(_GetListeRendezvousResponse_QNAME, GetListeRendezvousResponse.class, null, value);
+    }
+
+    /**
+     * Create an instance of {@link JAXBElement }{@code <}{@link GetListeMagasin }{@code >}}
+     * 
+     */
+    @XmlElementDecl(namespace = "http://www.polytech.unice.fr/servicePrendreRendezvous", name = "getListeMagasin")
+    public JAXBElement<GetListeMagasin> createGetListeMagasin(GetListeMagasin value) {
+        return new JAXBElement<GetListeMagasin>(_GetListeMagasin_QNAME, GetListeMagasin.class, null, value);
     }
 
     /**

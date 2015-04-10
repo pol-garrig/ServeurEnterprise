@@ -3,9 +3,7 @@ package stub2;
 
 import javax.xml.bind.annotation.XmlAccessType;
 import javax.xml.bind.annotation.XmlAccessorType;
-import javax.xml.bind.annotation.XmlSchemaType;
 import javax.xml.bind.annotation.XmlType;
-import javax.xml.datatype.XMLGregorianCalendar;
 
 
 /**
@@ -19,7 +17,7 @@ import javax.xml.datatype.XMLGregorianCalendar;
  *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
  *       &lt;sequence>
  *         &lt;element name="name" type="{http://www.polytech.unice.fr/servicePrendreRendezvous}magasin" minOccurs="0"/>
- *         &lt;element name="date" type="{http://www.w3.org/2001/XMLSchema}dateTime" minOccurs="0"/>
+ *         &lt;element name="date" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
  *       &lt;/sequence>
  *     &lt;/restriction>
  *   &lt;/complexContent>
@@ -36,8 +34,7 @@ import javax.xml.datatype.XMLGregorianCalendar;
 public class PrendreRendezvous {
 
     protected Magasin name;
-    @XmlSchemaType(name = "dateTime")
-    protected XMLGregorianCalendar date;
+    protected String date;
 
     /**
      * Gets the value of the name property.
@@ -68,10 +65,10 @@ public class PrendreRendezvous {
      * 
      * @return
      *     possible object is
-     *     {@link XMLGregorianCalendar }
+     *     {@link String }
      *     
      */
-    public XMLGregorianCalendar getDate() {
+    public String getDate() {
         return date;
     }
 
@@ -80,10 +77,10 @@ public class PrendreRendezvous {
      * 
      * @param value
      *     allowed object is
-     *     {@link XMLGregorianCalendar }
+     *     {@link String }
      *     
      */
-    public void setDate(XMLGregorianCalendar value) {
+    public void setDate(String value) {
         this.date = value;
     }
 

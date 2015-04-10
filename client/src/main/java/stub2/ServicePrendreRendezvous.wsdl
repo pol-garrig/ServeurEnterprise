@@ -2,6 +2,10 @@
   <wsdl:types>
 <xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:tns="http://www.polytech.unice.fr/servicePrendreRendezvous" elementFormDefault="unqualified" targetNamespace="http://www.polytech.unice.fr/servicePrendreRendezvous" version="1.0">
 
+  <xs:element name="getListeMagasin" type="tns:getListeMagasin"/>
+
+  <xs:element name="getListeMagasinResponse" type="tns:getListeMagasinResponse"/>
+
   <xs:element name="getListeRendezvous" type="tns:getListeRendezvous"/>
 
   <xs:element name="getListeRendezvousResponse" type="tns:getListeRendezvousResponse"/>
@@ -22,7 +26,7 @@
 
   <xs:complexType name="rendezvous">
     <xs:sequence>
-      <xs:element minOccurs="0" name="date" type="xs:dateTime"/>
+      <xs:element minOccurs="0" name="date" type="xs:string"/>
       <xs:element minOccurs="0" name="m" type="tns:magasin"/>
     </xs:sequence>
   </xs:complexType>
@@ -59,7 +63,7 @@
   <xs:complexType name="prendreRendezvous">
     <xs:sequence>
       <xs:element minOccurs="0" name="name" type="tns:magasin"/>
-      <xs:element minOccurs="0" name="date" type="xs:dateTime"/>
+      <xs:element minOccurs="0" name="date" type="xs:string"/>
     </xs:sequence>
   </xs:complexType>
 
@@ -69,8 +73,22 @@
     </xs:sequence>
   </xs:complexType>
 
+  <xs:complexType name="getListeMagasin">
+    <xs:sequence/>
+  </xs:complexType>
+
+  <xs:complexType name="getListeMagasinResponse">
+    <xs:sequence>
+      <xs:element maxOccurs="unbounded" minOccurs="0" name="regarderListeMagasin" type="tns:magasin"/>
+    </xs:sequence>
+  </xs:complexType>
+
 </xs:schema>
   </wsdl:types>
+  <wsdl:message name="getListeMagasinResponse">
+    <wsdl:part element="tns:getListeMagasinResponse" name="parameters">
+    </wsdl:part>
+  </wsdl:message>
   <wsdl:message name="getListeRendezvous">
     <wsdl:part element="tns:getListeRendezvous" name="parameters">
     </wsdl:part>
@@ -81,6 +99,10 @@
   </wsdl:message>
   <wsdl:message name="getListeRendezvousResponse">
     <wsdl:part element="tns:getListeRendezvousResponse" name="parameters">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="getListeMagasin">
+    <wsdl:part element="tns:getListeMagasin" name="parameters">
     </wsdl:part>
   </wsdl:message>
   <wsdl:message name="prendreRendezvous">
@@ -100,6 +122,12 @@
       <wsdl:output message="tns:prendreRendezvousResponse" name="prendreRendezvousResponse">
     </wsdl:output>
     </wsdl:operation>
+    <wsdl:operation name="getListeMagasin">
+      <wsdl:input message="tns:getListeMagasin" name="getListeMagasin">
+    </wsdl:input>
+      <wsdl:output message="tns:getListeMagasinResponse" name="getListeMagasinResponse">
+    </wsdl:output>
+    </wsdl:operation>
   </wsdl:portType>
   <wsdl:binding name="ServicePrendreRendezvousBeanServiceSoapBinding" type="tns:ServicePrendreRendezvous">
     <soap:binding style="document" transport="http://schemas.xmlsoap.org/soap/http"/>
@@ -109,6 +137,15 @@
         <soap:body use="literal"/>
       </wsdl:input>
       <wsdl:output name="getListeRendezvousResponse">
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getListeMagasin">
+      <soap:operation soapAction="" style="document"/>
+      <wsdl:input name="getListeMagasin">
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="getListeMagasinResponse">
         <soap:body use="literal"/>
       </wsdl:output>
     </wsdl:operation>

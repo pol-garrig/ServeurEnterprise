@@ -1,15 +1,12 @@
 
 package stub2;
 
-import sun.util.resources.CalendarData;
-
 import java.util.List;
 import javax.jws.WebMethod;
 import javax.jws.WebParam;
 import javax.jws.WebResult;
 import javax.jws.WebService;
 import javax.xml.bind.annotation.XmlSeeAlso;
-import javax.xml.datatype.XMLGregorianCalendar;
 import javax.xml.ws.RequestWrapper;
 import javax.xml.ws.ResponseWrapper;
 
@@ -40,6 +37,17 @@ public interface ServicePrendreRendezvous {
 
     /**
      * 
+     * @return
+     *     returns java.util.List<stub2.Magasin>
+     */
+    @WebMethod
+    @WebResult(name = "regarderListeMagasin", targetNamespace = "")
+    @RequestWrapper(localName = "getListeMagasin", targetNamespace = "http://www.polytech.unice.fr/servicePrendreRendezvous", className = "stub2.GetListeMagasin")
+    @ResponseWrapper(localName = "getListeMagasinResponse", targetNamespace = "http://www.polytech.unice.fr/servicePrendreRendezvous", className = "stub2.GetListeMagasinResponse")
+    public List<Magasin> getListeMagasin();
+
+    /**
+     * 
      * @param name
      * @param date
      * @return
@@ -53,6 +61,6 @@ public interface ServicePrendreRendezvous {
         @WebParam(name = "name", targetNamespace = "")
         Magasin name,
         @WebParam(name = "date", targetNamespace = "")
-        CalendarData date);
+        String date);
 
 }
