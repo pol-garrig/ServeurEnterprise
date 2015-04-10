@@ -11,7 +11,7 @@ import java.util.List;
 @Stateless
 public interface RendezvousFinder {
 
-    public Rendezvous findByName(Long id);
+    public boolean findById(Long id);
 
     public List<Rendezvous> findAll();
 

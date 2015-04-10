@@ -18,17 +18,18 @@ public class RendezvouFinderBean implements  RendezvousFinder{
     EntityManager entityManager;
 
     @Override
-    public Rendezvous findByName(Long id){
+    public boolean findById(Long id){
         CriteriaBuilder builder = entityManager.getCriteriaBuilder();
         CriteriaQuery<Rendezvous> criteria = builder.createQuery(Rendezvous.class);
         Root<Rendezvous> from = criteria.from(Rendezvous.class);
         criteria.select(from);
-        criteria.where(builder.equal(from.get("id"), id));
+        criteria.where(builder.equal(from.get("Id"), id));
         TypedQuery<Rendezvous> query = entityManager.createQuery(criteria);
         try {
-            return query.getSingleResult();
+            query.getSingleResult();
+            return true;
         } catch (Exception e) {
-            return null;
+            return false;
         }
     }
     @Override
