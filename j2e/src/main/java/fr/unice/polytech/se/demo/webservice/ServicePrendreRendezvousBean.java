@@ -24,26 +24,28 @@ public class ServicePrendreRendezvousBean implements ServicePrendreRendezvous{
     private PrendreRendezvous prv;
 
     @EJB
-    private MagasinManager mg;
+    private ManageFranchise mg;
 
     @WebMethod
     @Override
     public boolean prendreRendezvous(Magasin m, String date) {
 
-        if (prv.prendreRendezvous(m,date)) {
+        //if (prv.prendreRendezvous(m,date)) {
+            prv.prendreRendezvous(m,date);
             return true;
-        } else {
-            return false;
-        }
+        //} else {
+         //   return false;
+       // }
     }
     @WebMethod
     @Override
     public List<Rendezvous> getListeRendezvous() {
         return prv.getRendezvous();
     }
+
     @WebMethod
     @Override
     public List<Magasin> getListeMagasin(){
-        return mg.getContents();
+        return mg.getMagasin();
     }
 }

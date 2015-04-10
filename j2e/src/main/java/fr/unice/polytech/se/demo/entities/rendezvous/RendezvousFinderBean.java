@@ -11,7 +11,7 @@ import java.util.List;
 /**
  * Created by Garrigos Fernando on 10/04/15.
  */
-public class RendezvouFinderBean implements  RendezvousFinder{
+public class RendezvousFinderBean implements  RendezvousFinder{
 
 
     @PersistenceContext

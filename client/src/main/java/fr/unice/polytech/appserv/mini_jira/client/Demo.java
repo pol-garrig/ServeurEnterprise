@@ -25,7 +25,7 @@ public class Demo {
 
 	public static void main(String[] args) {
 
-       /* //encontrar el url agragar ?wsdl
+       //encontrar el url agragar ?wsdl
         //y despues crear el stub desde inteligi
         // Dynamically building the targeted web service location (default to localhost if not provided)
         String host = "localhost";
@@ -67,7 +67,7 @@ public class Demo {
         System.out.println("\n#####################################\n");
         System.out.println("Fin de Conection");
         System.out.println("\n#####################################\n");
-        */
+
        /* String address2 = "http://localhost:8080//webservices/ServicePrendreRendezvous";
         URL wsdlLocation2 = null;
         try {
@@ -76,25 +76,29 @@ public class Demo {
             System.exit(0);
         } */// UGLY ><
         // Instantiating the client stub code
-        String host = "localhost";
-        String address = "http://localhost:8080//webservices/ServicePrendreRendezvous";
-        URL wsdlLocation = null;
+        String address2 = "http://localhost:8080//webservices/ServicePrendreRendezvous";
+        URL wsdlLocation2 = null;
         try {
-            wsdlLocation = new URL(address + "?wsdl");
+            wsdlLocation = new URL(address2 + "?wsdl");
         } catch (Exception e) {
             System.exit(0);
         } // UGLY ><
 
        // http://localhost:8080//webservices/ServicePrendreRendezvous
 
-       ServicePrendreRendezvousBeanService srv2 = new ServicePrendreRendezvousBeanService(wsdlLocation); // dynamic WSDL location
-       ServicePrendreRendezvous port2 = srv2.getServicePrendreRendezvousBeanPort();
+      ServicePrendreRendezvousBeanService srv2 = new ServicePrendreRendezvousBeanService(wsdlLocation2); // dynamic WSDL location
+      ServicePrendreRendezvous port2 = srv2.getServicePrendreRendezvousBeanPort();
 
         String date = "11/11/2015";
         port2.getListeMagasin();
-        //port2.prendreRendezvous(m,date);
+        stub2.Magasin m = port2.getListeMagasin().get(0);
+        System.out.println(m);
+        port2.prendreRendezvous(port2.getListeMagasin().get(0),date);
+        //System.out.println( port2.prendreRendezvous(port2.getListeMagasin().get(0),date));
 
-       System.out.println(port2.getListeMagasin());
+       //System.out.println(port2.getListeMagasin().get(0).getName());
+        //System.out.println( port2.prendreRendezvous(m,date));
+
         System.out.println("\n#####################################\n");
         System.out.println("Fin de Conection");
         System.out.println("\n#####################################\n");

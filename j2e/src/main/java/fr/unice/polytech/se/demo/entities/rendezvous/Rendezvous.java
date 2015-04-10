@@ -1,18 +1,19 @@
 package fr.unice.polytech.se.demo.entities.rendezvous;
 
 import fr.unice.polytech.se.demo.entities.magasin.Magasin;
-import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
-import javax.persistence.GenerationType;
-import javax.persistence.Id;
+
+import javax.persistence.*;
+import java.io.Serializable;
 
 /**
  * Created by Garrigos Fernando on 10/04/15.
  */
 @Entity
-public class Rendezvous {
+public class Rendezvous implements Serializable {
 
-    private Magasin m ;
+    private static final long serialVersionUID = 1L;
+
+    private String magasin ;
 
     private String date;
 
@@ -21,17 +22,16 @@ public class Rendezvous {
     Rendezvous(){
         this(null,null);
     }
-    Rendezvous(Magasin m,String date){
-        this.m = m;
+    Rendezvous(String magasin,String date){
+        this.magasin = magasin;
         this.date = date;
     }
-
-    public Magasin getM() {
-        return m;
+    public String getMagasin() {
+        return magasin;
     }
 
-    public void setM(Magasin m) {
-        this.m = m;
+    public void setMagasin(String magasin) {
+        this.magasin = magasin;
     }
 
     public String getDate() {
@@ -49,7 +49,7 @@ public class Rendezvous {
 
     @Override
     public String toString() {
-        return "[" + this.getId()+ "]# " + "Magasin = "+this.getM()+" "+ this.getDate();
+        return "[" + this.getId()+ "]# " + "Magasin = "+this.getMagasin()+" "+ this.getDate();
     }
     @Override
     public boolean equals(Object o) {

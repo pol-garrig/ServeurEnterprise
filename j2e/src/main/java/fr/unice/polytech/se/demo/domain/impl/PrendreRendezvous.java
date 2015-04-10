@@ -13,7 +13,7 @@ import java.util.List;
 @Remote
 public interface PrendreRendezvous {
 
-   public boolean prendreRendezvous(Magasin m,String date);
+   public boolean prendreRendezvous(String magasin,String date);
 
    public List<Rendezvous> getRendezvous();
 
