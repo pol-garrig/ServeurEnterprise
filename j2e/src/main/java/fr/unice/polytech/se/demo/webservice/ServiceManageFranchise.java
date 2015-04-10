@@ -24,6 +24,5 @@ public interface ServiceManageFranchise {
         @WebMethod
         @WebResult(name = "regarderListeMagasin")
         public List<Magasin> getListeMagasin();
-
-
+    
 }
