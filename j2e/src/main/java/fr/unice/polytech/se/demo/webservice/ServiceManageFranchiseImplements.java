@@ -39,6 +39,4 @@ public class ServiceManageFranchiseImplements implements ServiceManageFranchise 
         return manageFranchise.getMagasin();
     }
 
-
-
 }

@@ -23,6 +23,7 @@
         <class>fr.unice.polytech.se.demo.entities.cookie.Cookie</class>
         <class>fr.unice.polytech.se.demo.entities.magasin.Magasin</class>
         <class>fr.unice.polytech.se.demo.entities.commande.Commande</class>
+        <class>fr.unice.polytech.se.demo.entities.rendezvous.Rendezvous</class>
         <properties>
             <property name="openjpa.jdbc.SynchronizeMappings" value="buildSchema(ForeignKeys=true)"/>
             <property name="javax.persistence.jdbc.driver" value="org.hsqldb.jdbcDriver"/>
