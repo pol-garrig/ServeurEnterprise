@@ -27,7 +27,30 @@
   <xs:complexType name="rendezvous">
     <xs:sequence>
       <xs:element minOccurs="0" name="date" type="xs:string"/>
-      <xs:element minOccurs="0" name="m" type="tns:magasin"/>
+      <xs:element minOccurs="0" name="magasin" type="xs:string"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="prendreRendezvous">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="magasin" type="xs:string"/>
+      <xs:element minOccurs="0" name="date" type="xs:string"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="prendreRendezvousResponse">
+    <xs:sequence>
+      <xs:element name="creerBoutique" type="xs:boolean"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="getListeMagasin">
+    <xs:sequence/>
+  </xs:complexType>
+
+  <xs:complexType name="getListeMagasinResponse">
+    <xs:sequence>
+      <xs:element maxOccurs="unbounded" minOccurs="0" name="regarderListeMagasin" type="tns:magasin"/>
     </xs:sequence>
   </xs:complexType>
 
@@ -57,29 +80,6 @@
       <xs:element minOccurs="0" name="name" type="xs:string"/>
       <xs:element minOccurs="0" name="prixHT" type="xs:double"/>
       <xs:element minOccurs="0" name="quantite" type="xs:int"/>
-    </xs:sequence>
-  </xs:complexType>
-
-  <xs:complexType name="prendreRendezvous">
-    <xs:sequence>
-      <xs:element minOccurs="0" name="name" type="tns:magasin"/>
-      <xs:element minOccurs="0" name="date" type="xs:string"/>
-    </xs:sequence>
-  </xs:complexType>
-
-  <xs:complexType name="prendreRendezvousResponse">
-    <xs:sequence>
-      <xs:element name="creerBoutique" type="xs:boolean"/>
-    </xs:sequence>
-  </xs:complexType>
-
-  <xs:complexType name="getListeMagasin">
-    <xs:sequence/>
-  </xs:complexType>
-
-  <xs:complexType name="getListeMagasinResponse">
-    <xs:sequence>
-      <xs:element maxOccurs="unbounded" minOccurs="0" name="regarderListeMagasin" type="tns:magasin"/>
     </xs:sequence>
   </xs:complexType>
 

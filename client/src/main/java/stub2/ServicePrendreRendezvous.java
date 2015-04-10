@@ -48,7 +48,7 @@ public interface ServicePrendreRendezvous {
 
     /**
      * 
-     * @param name
+     * @param magasin
      * @param date
      * @return
      *     returns boolean
@@ -58,8 +58,8 @@ public interface ServicePrendreRendezvous {
     @RequestWrapper(localName = "prendreRendezvous", targetNamespace = "http://www.polytech.unice.fr/servicePrendreRendezvous", className = "stub2.PrendreRendezvous")
     @ResponseWrapper(localName = "prendreRendezvousResponse", targetNamespace = "http://www.polytech.unice.fr/servicePrendreRendezvous", className = "stub2.PrendreRendezvousResponse")
     public boolean prendreRendezvous(
-        @WebParam(name = "name", targetNamespace = "")
-        Magasin name,
+        @WebParam(name = "magasin", targetNamespace = "")
+        String magasin,
         @WebParam(name = "date", targetNamespace = "")
         String date);
 

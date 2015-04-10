@@ -65,8 +65,11 @@ public class Demo {
         System.out.println("\n#####################################\n");
 
         System.out.println("\n#####################################\n");
-        System.out.println("Fin de Conection");
+        System.out.println("Fin premiere WEB SERVICE");
         System.out.println("\n#####################################\n");
+        System.out.println("Debut deuxieme WEB SERVICE : Prendre Rendezvous");
+        System.out.println("\n#####################################\n");
+
 
        /* String address2 = "http://localhost:8080//webservices/ServicePrendreRendezvous";
         URL wsdlLocation2 = null;
@@ -86,15 +89,15 @@ public class Demo {
 
        // http://localhost:8080//webservices/ServicePrendreRendezvous
 
-      ServicePrendreRendezvousBeanService srv2 = new ServicePrendreRendezvousBeanService(wsdlLocation2); // dynamic WSDL location
-      ServicePrendreRendezvous port2 = srv2.getServicePrendreRendezvousBeanPort();
+       ServicePrendreRendezvousBeanService srv2 = new ServicePrendreRendezvousBeanService(wsdlLocation2); // dynamic WSDL location
+       ServicePrendreRendezvous port2 = srv2.getServicePrendreRendezvousBeanPort();
 
         String date = "11/11/2015";
         port2.getListeMagasin();
         stub2.Magasin m = port2.getListeMagasin().get(0);
-        System.out.println(m);
-        port2.prendreRendezvous(port2.getListeMagasin().get(0),date);
-        //System.out.println( port2.prendreRendezvous(port2.getListeMagasin().get(0),date));
+        System.out.print("Rendezvous : ");
+        port2.prendreRendezvous(port2.getListeMagasin().get(0).getName(),date);
+        System.out.println( port2.getListeRendezvous().get(0).getMagasin()+" "+port2.getListeRendezvous().get(0).getDate());
 
        //System.out.println(port2.getListeMagasin().get(0).getName());
         //System.out.println( port2.prendreRendezvous(m,date));

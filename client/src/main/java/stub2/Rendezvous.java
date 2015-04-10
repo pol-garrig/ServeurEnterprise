@@ -17,7 +17,7 @@ import javax.xml.bind.annotation.XmlType;
  *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
  *       &lt;sequence>
  *         &lt;element name="date" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
- *         &lt;element name="m" type="{http://www.polytech.unice.fr/servicePrendreRendezvous}magasin" minOccurs="0"/>
+ *         &lt;element name="magasin" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
  *       &lt;/sequence>
  *     &lt;/restriction>
  *   &lt;/complexContent>
@@ -29,12 +29,12 @@ import javax.xml.bind.annotation.XmlType;
 @XmlAccessorType(XmlAccessType.FIELD)
 @XmlType(name = "rendezvous", propOrder = {
     "date",
-    "m"
+    "magasin"
 })
 public class Rendezvous {
 
     protected String date;
-    protected Magasin m;
+    protected String magasin;
 
     /**
      * Gets the value of the date property.
@@ -61,27 +61,27 @@ public class Rendezvous {
     }
 
     /**
-     * Gets the value of the m property.
+     * Gets the value of the magasin property.
      * 
      * @return
      *     possible object is
-     *     {@link Magasin }
+     *     {@link String }
      *     
      */
-    public Magasin getM() {
-        return m;
+    public String getMagasin() {
+        return magasin;
     }
 
     /**
-     * Sets the value of the m property.
+     * Sets the value of the magasin property.
      * 
      * @param value
      *     allowed object is
-     *     {@link Magasin }
+     *     {@link String }
      *     
      */
-    public void setM(Magasin value) {
-        this.m = value;
+    public void setMagasin(String value) {
+        this.magasin = value;
     }
 
 }
