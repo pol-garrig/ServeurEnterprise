@@ -27,8 +27,8 @@ public class HelloWorldClient {
           System.exit(0);
       } // UGLY ><
       // Instantiating the client stub code
-    ServiceManageFranchiseImplementsService srv = new ServiceManageFranchiseImplementsService(wsdlLocation); // dynamic WSDL location
-    ServiceManageFranchise port = srv.getServiceManageFranchiseImplementsPort();
+      ServiceManageFranchiseImplementsService srv = new ServiceManageFranchiseImplementsService(wsdlLocation); // dynamic WSDL location
+      ServiceManageFranchise port = srv.getServiceManageFranchiseImplementsPort();
 
         //   Dynamically setting the address where the web service is really deployed
         //  ((BindingProvider) port).getRequestContext().put(BindingProvider.ENDPOINT_ADDRESS_PROPERTY, address);
@@ -40,17 +40,11 @@ public class HelloWorldClient {
       //Cookie cookie = new Cookie();
 
      // List<Commande> listcookies = null;
-      Double tax = 0.0;
+     Double tax = 0.0;
 
-          //    port.creerBoutique2(name,null,null,tax);
+    port.creerBoutique2(name,null,null,tax);
 
-
-    //  List<stub1.Magasin> tasks = port.;
-
-
-    //
-    //
-   String m = port.creerBoutique2(name,null,null,tax);
+    System.out.println(port.getListeMagasin());
 
 
       // retrieving the tasks
