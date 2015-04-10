@@ -15,4 +15,6 @@ public interface ManageFranchise {
 
     public boolean ajouterUnMagasin(String n, Cookie c, List<Commande> l, Double tax);
 
+    public List<Magasin> getMagasin();
+
 }

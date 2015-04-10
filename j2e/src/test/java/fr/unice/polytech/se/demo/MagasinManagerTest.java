@@ -66,9 +66,9 @@ public class MagasinManagerTest {
         @Test
         public void testCreerMagasin4(){
         Magasin m = new Magasin("Chocolat",null,null,21.00);
-            System.out.println(m);
+           // System.out.println(m);
             Magasin m1 = magasinManager.creerUnMagasin("Chocolat",null,null,21.00);
-            System.out.println(m1);
+           // System.out.println(m1);
             assertEquals(m,m1);
     }
 }

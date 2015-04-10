@@ -2,21 +2,9 @@
   <wsdl:types>
 <xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:tns="http://www.polytech.unice.fr/serviceManageFranchise" elementFormDefault="unqualified" targetNamespace="http://www.polytech.unice.fr/serviceManageFranchise" version="1.0">
 
-  <xs:element name="coucou" type="tns:coucou"/>
-
-  <xs:element name="coucouResponse" type="tns:coucouResponse"/>
-
   <xs:element name="creerBoutique2" type="tns:creerBoutique2"/>
 
   <xs:element name="creerBoutique2Response" type="tns:creerBoutique2Response"/>
-
-  <xs:complexType name="coucou">
-    <xs:sequence/>
-  </xs:complexType>
-
-  <xs:complexType name="coucouResponse">
-    <xs:sequence/>
-  </xs:complexType>
 
   <xs:complexType name="creerBoutique2">
     <xs:sequence>
@@ -58,7 +46,7 @@
 
   <xs:complexType name="creerBoutique2Response">
     <xs:sequence>
-      <xs:element name="creerBoutique" type="xs:boolean"/>
+      <xs:element minOccurs="0" name="creerBoutique" type="xs:string"/>
     </xs:sequence>
   </xs:complexType>
 
@@ -68,25 +56,11 @@
     <wsdl:part element="tns:creerBoutique2Response" name="parameters">
     </wsdl:part>
   </wsdl:message>
-  <wsdl:message name="coucou">
-    <wsdl:part element="tns:coucou" name="parameters">
-    </wsdl:part>
-  </wsdl:message>
   <wsdl:message name="creerBoutique2">
     <wsdl:part element="tns:creerBoutique2" name="parameters">
     </wsdl:part>
   </wsdl:message>
-  <wsdl:message name="coucouResponse">
-    <wsdl:part element="tns:coucouResponse" name="parameters">
-    </wsdl:part>
-  </wsdl:message>
   <wsdl:portType name="ServiceManageFranchise">
-    <wsdl:operation name="coucou">
-      <wsdl:input message="tns:coucou" name="coucou">
-    </wsdl:input>
-      <wsdl:output message="tns:coucouResponse" name="coucouResponse">
-    </wsdl:output>
-    </wsdl:operation>
     <wsdl:operation name="creerBoutique2">
       <wsdl:input message="tns:creerBoutique2" name="creerBoutique2">
     </wsdl:input>
@@ -96,15 +70,6 @@
   </wsdl:portType>
   <wsdl:binding name="ServiceManageFranchiseImplementsServiceSoapBinding" type="tns:ServiceManageFranchise">
     <soap:binding style="document" transport="http://schemas.xmlsoap.org/soap/http"/>
-    <wsdl:operation name="coucou">
-      <soap:operation soapAction="" style="document"/>
-      <wsdl:input name="coucou">
-        <soap:body use="literal"/>
-      </wsdl:input>
-      <wsdl:output name="coucouResponse">
-        <soap:body use="literal"/>
-      </wsdl:output>
-    </wsdl:operation>
     <wsdl:operation name="creerBoutique2">
       <soap:operation soapAction="" style="document"/>
       <wsdl:input name="creerBoutique2">

@@ -16,7 +16,7 @@ import javax.xml.bind.annotation.XmlType;
  *   &lt;complexContent>
  *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
  *       &lt;sequence>
- *         &lt;element name="creerBoutique" type="{http://www.w3.org/2001/XMLSchema}boolean"/>
+ *         &lt;element name="creerBoutique" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
  *       &lt;/sequence>
  *     &lt;/restriction>
  *   &lt;/complexContent>
@@ -31,21 +31,29 @@ import javax.xml.bind.annotation.XmlType;
 })
 public class CreerBoutique2Response {
 
-    protected boolean creerBoutique;
+    protected String creerBoutique;
 
     /**
      * Gets the value of the creerBoutique property.
      * 
+     * @return
+     *     possible object is
+     *     {@link String }
+     *     
      */
-    public boolean isCreerBoutique() {
+    public String getCreerBoutique() {
         return creerBoutique;
     }
 
     /**
      * Sets the value of the creerBoutique property.
      * 
+     * @param value
+     *     allowed object is
+     *     {@link String }
+     *     
      */
-    public void setCreerBoutique(boolean value) {
+    public void setCreerBoutique(String value) {
         this.creerBoutique = value;
     }
 

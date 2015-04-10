@@ -3,12 +3,15 @@ package fr.unice.polytech.se.demo.webservice;
 import fr.unice.polytech.se.demo.domain.impl.ManageFranchise;
 import fr.unice.polytech.se.demo.entities.commande.Commande;
 import fr.unice.polytech.se.demo.entities.cookie.Cookie;
+import fr.unice.polytech.se.demo.entities.magasin.Magasin;
+
 
 import javax.ejb.EJB;
 import javax.ejb.Stateless;
 import javax.jws.WebMethod;
+import javax.jws.WebResult;
 import javax.jws.WebService;
-import java.util.List;
+import java.util.*;
 
 /**
  * Created by Garrigos Fernando on 08/04/15.
@@ -23,18 +26,19 @@ public class ServiceManageFranchiseImplements implements ServiceManageFranchise 
     @WebMethod
     @Override
     public boolean creerBoutique2(String n, Cookie c, List<Commande> l, Double t) {
+    
         if (manageFranchise.ajouterUnMagasin(n, c, l, t)) {
             return true;
         } else {
             return false;
         }
     }
-
     @WebMethod
     @Override
-    public void coucou() {
-        System.out.println("coucou");
+    public List<Magasin> getListeMagasin(){
+        return manageFranchise.getMagasin();
     }
+
 
 
 }

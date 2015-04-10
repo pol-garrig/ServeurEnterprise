@@ -26,26 +26,18 @@ public interface ServiceManageFranchise {
 
     /**
      * 
-     */
-    @WebMethod
-    @RequestWrapper(localName = "coucou", targetNamespace = "http://www.polytech.unice.fr/serviceManageFranchise", className = "stub1.Coucou")
-    @ResponseWrapper(localName = "coucouResponse", targetNamespace = "http://www.polytech.unice.fr/serviceManageFranchise", className = "stub1.CoucouResponse")
-    public void coucou();
-
-    /**
-     * 
      * @param cookie
      * @param tax
      * @param name
      * @param listcookies
      * @return
-     *     returns boolean
+     *     returns java.lang.String
      */
     @WebMethod
     @WebResult(name = "creerBoutique", targetNamespace = "")
     @RequestWrapper(localName = "creerBoutique2", targetNamespace = "http://www.polytech.unice.fr/serviceManageFranchise", className = "stub1.CreerBoutique2")
     @ResponseWrapper(localName = "creerBoutique2Response", targetNamespace = "http://www.polytech.unice.fr/serviceManageFranchise", className = "stub1.CreerBoutique2Response")
-    public boolean creerBoutique2(
+    public String creerBoutique2(
         @WebParam(name = "name", targetNamespace = "")
         String name,
         @WebParam(name = "cookie", targetNamespace = "")

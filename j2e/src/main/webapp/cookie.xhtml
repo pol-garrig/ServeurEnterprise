@@ -14,12 +14,12 @@
 				<h:outputText value="#{creationBoutiqueJsfBean.errorMessage}"
 					render="#{creationBoutiqueJsfBean.errorMessage != null}" style="color:red" />
 			</div>
-			<h:commandButton action="#{CreationBoutiqueJsfBean.add}"
+			<h:commandButton action="#{creationBoutiqueJsfBean.add}"
 				styleClass="btn btn-primary" value="Creer Un Magasin" />
 		</h:form>
 		<br />
 		<div>
-			<a href="?start=#{CreationBoutiqueJsfBean.previousPaginationIndex}">Previous</a> - <a href="?start=#{CreationBoutiqueJsfBean.nextPaginationIndex}">Next</a>
+			<a href="?start=#{creationBoutiqueJsfBean.previousPaginationIndex}">Previous</a> - <a href="?start=#{creationBoutiqueJsfBean.nextPaginationIndex}">Next</a>
 		</div>
 	</ui:define>
 </ui:composition>
