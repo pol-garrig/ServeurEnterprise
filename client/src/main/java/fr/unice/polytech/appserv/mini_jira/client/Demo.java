@@ -2,12 +2,17 @@ package fr.unice.polytech.appserv.mini_jira.client;
 
 
 import stub1.Cookie;
+import stub1.Magasin;
 import stub1.ServiceManageFranchise;
 import stub1.ServiceManageFranchiseImplementsService;
+import stub2.ServicePrendreRendezvous;
+import stub2.ServicePrendreRendezvousBeanService;
+import sun.util.resources.CalendarData;
 
 import javax.xml.ws.BindingProvider;
 import java.net.URL;
 import java.util.ArrayList;
+import java.util.Date;
 import java.util.List;
 
 /**
@@ -60,8 +65,28 @@ public class Demo {
             System.out.println(port.getListeMagasin().get(i).getName());
         }
         System.out.println("\n#####################################\n");
+
+        System.out.println("\n#####################################\n");
         System.out.println("Fin de Conection");
         System.out.println("\n#####################################\n");
+
+        String address2 = "http://" + host + ":8080//webservices/ServicePrendreRendezvous";
+        URL wsdlLocation2 = null;
+        try {
+            wsdlLocation2 = new URL(address + "?wsdl");
+        } catch (Exception e) {
+            System.exit(0);
+        } // UGLY ><
+        // Instantiating the client stub code
+        ServicePrendreRendezvousBeanService srv2 = new ServicePrendreRendezvousBeanService(wsdlLocation); // dynamic WSDL location
+        ServicePrendreRendezvous port2 = srv2.getServicePrendreRendezvousBeanPort();
+
+        Date date = new Date();
+        CalendarData d = new CalendarData();
+       // Magasin m = new Magasin("fer");
+       // port2.prendreRendezvous(m,d);
+
+
 	}
 
 }

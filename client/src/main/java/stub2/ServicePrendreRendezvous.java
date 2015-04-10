@@ -1,6 +1,8 @@
 
 package stub2;
 
+import sun.util.resources.CalendarData;
+
 import java.util.List;
 import javax.jws.WebMethod;
 import javax.jws.WebParam;
@@ -51,6 +53,6 @@ public interface ServicePrendreRendezvous {
         @WebParam(name = "name", targetNamespace = "")
         Magasin name,
         @WebParam(name = "date", targetNamespace = "")
-        XMLGregorianCalendar date);
+        CalendarData date);
 
 }

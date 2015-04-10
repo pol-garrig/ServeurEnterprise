@@ -12,7 +12,7 @@ import java.util.List;
 @Remote
 public interface RendezvousManager {
 
-    public Rendezvous prendreRendezvous(Magasin m,Date date );
+    public Rendezvous prendreRendezvous(Magasin m,String date );
 
     public List<Rendezvous> getContents();
 }

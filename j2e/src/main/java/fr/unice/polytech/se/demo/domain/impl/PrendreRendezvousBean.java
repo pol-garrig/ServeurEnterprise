@@ -10,7 +10,6 @@ import fr.unice.polytech.se.demo.entities.rendezvous.RendezvousManager;
 import javax.ejb.EJB;
 import javax.ejb.Stateless;
 import java.util.ArrayList;
-import java.util.Date;
 import java.util.List;
 
 /**
@@ -28,7 +27,7 @@ public class PrendreRendezvousBean implements PrendreRendezvous {
     RendezvousFinder finder;
 
     @Override
-    public boolean prendreRendezvous(Magasin m, Date date) {
+    public boolean prendreRendezvous(Magasin m, String date) {
 
         Rendezvous rv = mg.prendreRendezvous(m,date);
 

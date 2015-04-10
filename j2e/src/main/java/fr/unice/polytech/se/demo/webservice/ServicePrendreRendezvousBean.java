@@ -3,6 +3,7 @@ package fr.unice.polytech.se.demo.webservice;
 import fr.unice.polytech.se.demo.domain.impl.ManageFranchise;
 import fr.unice.polytech.se.demo.domain.impl.PrendreRendezvous;
 import fr.unice.polytech.se.demo.entities.magasin.Magasin;
+import fr.unice.polytech.se.demo.entities.magasin.MagasinManager;
 import fr.unice.polytech.se.demo.entities.rendezvous.Rendezvous;
 
 import javax.ejb.EJB;
@@ -22,10 +23,12 @@ public class ServicePrendreRendezvousBean implements ServicePrendreRendezvous{
     @EJB
     private PrendreRendezvous prv;
 
+    @EJB
+    private MagasinManager mg;
 
     @WebMethod
     @Override
-    public boolean prendreRendezvous(Magasin m, Date date) {
+    public boolean prendreRendezvous(Magasin m, String date) {
 
         if (prv.prendreRendezvous(m,date)) {
             return true;
@@ -37,5 +40,10 @@ public class ServicePrendreRendezvousBean implements ServicePrendreRendezvous{
     @Override
     public List<Rendezvous> getListeRendezvous() {
         return prv.getRendezvous();
+    }
+    @WebMethod
+    @Override
+    public List<Magasin> getListeMagasin(){
+        return mg.getContents();
     }
 }

@@ -28,7 +28,7 @@ public class RendezvousManagerBean implements RendezvousManager{
         return _contents;
     }
     @Override
-    public Rendezvous prendreRendezvous(Magasin m, Date date) {
+    public Rendezvous prendreRendezvous(Magasin m, String date) {
 
         Rendezvous  rv = new Rendezvous(m,date);
         _contents.add(rv);

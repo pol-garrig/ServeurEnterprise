@@ -1,12 +1,10 @@
 package fr.unice.polytech.se.demo.entities.rendezvous;
 
 import fr.unice.polytech.se.demo.entities.magasin.Magasin;
-
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
-import java.util.Date;
 
 /**
  * Created by Garrigos Fernando on 10/04/15.
@@ -16,14 +14,14 @@ public class Rendezvous {
 
     private Magasin m ;
 
-    private Date date;
+    private String date;
 
     private Long id;
 
     Rendezvous(){
         this(null,null);
     }
-    Rendezvous(Magasin m,Date date){
+    Rendezvous(Magasin m,String date){
         this.m = m;
         this.date = date;
     }
@@ -36,11 +34,11 @@ public class Rendezvous {
         this.m = m;
     }
 
-    public Date getDate() {
+    public String getDate() {
         return date;
     }
 
-    public void setDate(Date date) {
+    public void setDate(String date) {
         this.date = date;
     }
     @Id
