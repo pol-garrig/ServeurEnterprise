@@ -48,9 +48,18 @@ public class Rendezvous {
     public Long getId() {
         return id;
     }
+
     @Override
     public String toString() {
-        return "[" + this.id+ "]#" + "Magasin = "+this.getM()+" "+ this.getDate();
+        return "[" + this.getId()+ "]# " + "Magasin = "+this.getM()+" "+ this.getDate();
+    }
+    @Override
+    public boolean equals(Object o) {
+        if (o instanceof Magasin) {
+            Rendezvous that = (Rendezvous) o;
+            return that.getId().equals(this.getId());
+        }
+        return false;
     }
 
 }
