@@ -18,7 +18,7 @@ public interface ServicePrendreRendezvous {
 
         @WebMethod
         @WebResult(name = "creerBoutique")
-        public boolean prendreRendezvous(@WebParam(name = "name")Magasin m,@WebParam(name = "date")String date);
+        public boolean prendreRendezvous(@WebParam(name = "magasin")String magasin,@WebParam(name = "date")String date);
 
         @WebMethod
         @WebResult(name = "regarderListeRendezvous")
