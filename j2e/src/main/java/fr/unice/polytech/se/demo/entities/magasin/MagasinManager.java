@@ -13,7 +13,7 @@ import java.util.List;
 @Remote
 public interface MagasinManager {
 
-    public Magasin creerUnMagasin(String n, Cookie c, List<Commande> l, Double tax);
+    public Magasin creerUnMagasin(String n );
 
     public Magasin creerUnMagasin(Magasin m);
 

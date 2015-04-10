@@ -28,20 +28,17 @@ public class Magasin implements Serializable {
         private String name;
 
         public Magasin(){
-            this("",null,null,0.0);
+            this("");
         }
 
-        public Magasin(String n, Cookie c, List<Commande> l, Double tax) {
+        public Magasin(String n) {
             super();
             this.name = n;
-            this.tax = tax;
-            this.todaySpecial = c;
-            this.listCommande = l;            ;
         }
 
         @Override
         public String toString() {
-            return "[" + this.getId() + "]#" + this.getName() + this.getTax() + this.getTodaySpecial() + this.getListCommande();
+            return "[" + this.getId() + "]#" + "Magasin = "+this.getName() ;
         }
 
         @Id

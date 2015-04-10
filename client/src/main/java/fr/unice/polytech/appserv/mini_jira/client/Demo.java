@@ -37,46 +37,30 @@ public class Demo {
         ServiceManageFranchiseImplementsService srv = new ServiceManageFranchiseImplementsService(wsdlLocation); // dynamic WSDL location
         ServiceManageFranchise port = srv.getServiceManageFranchiseImplementsPort();
 
-        //   Dynamically setting the address where the web service is really deployed
-        //  ((BindingProvider) port).getRequestContext().put(BindingProvider.ENDPOINT_ADDRESS_PROPERTY, address);
-
-        // Running the demonstration scenario from the client point of view
-
-
-        //Cookie cookie = new Cookie();
-
-        // List<Commande> listcookies = null;
-        Double tax = 0.0;
-
-        port.creerBoutique2(name, null, null, tax);
-
         System.out.println("\n#####################################\n");
         System.out.println("Creation d'un Magasin\n");
+        Double tax = 0.0;
         String name = "Magasin1";
-        Cookie c = new Cookie();
-        port.creerBoutique2(name, c, null, tax);
+        //Cookie c = new Cookie();
+        port.creerBoutique2(name, null, null, tax);
         System.out.println("\n#####################################\n");
         System.out.println("\n#####################################\n");
         System.out.println("Creation d'un Magasin\n");
         String name2 = "Magasin2";
-        Cookie c2 = new Cookie();
-        port.creerBoutique2(name2, c2, null, tax);
+        //Cookie c2 = new Cookie();
+        port.creerBoutique2(name2, null, null, tax);
         System.out.println("\n#####################################\n");
-        System.out.println("Liste de Magasins\n");
-        System.out.println(port.getListeMagasin().get(0).getName());
         System.out.println("\n#####################################\n");
-
-
-        // retrieving the tasks
-     /* System.out.println("## 3. Retrieving the added tasks");
-
-      System.out.println("  - " + t.getProjectId() + " / " + t.getDeveloperId());
-
-      List<stub.Task> tasks = port.listTasks("proj#1");
-      for(stub.Task t: tasks)
-          System.out.println("  - " + t.getProjectId() + " / " + t.getDeveloperId());
-
-    */
+        System.out.println("Creation d'un Magasin\n");
+        String name3 = "Magasin3";
+        //Cookie c2 = new Cookie();
+        port.creerBoutique2(name3, null, null, tax);
+        System.out.println("\n#####################################\n");
+        System.out.println("Liste de Magasins :\n");
+        for (int i = 0; i < port.getListeMagasin().size(); i++) {
+            System.out.println(port.getListeMagasin().get(i).getName());
+        }
+        System.out.println("\n#####################################\n");
         System.out.println("Fin de Conection");
         System.out.println("\n#####################################\n");
 	}

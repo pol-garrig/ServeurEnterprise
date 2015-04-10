@@ -27,11 +27,11 @@ public class MagasinManagerBean implements MagasinManager {
     MagasinFinder finder;
 
     @Override
-    public Magasin creerUnMagasin(String name, Cookie c, List<Commande> l, Double tax) {
+    public Magasin creerUnMagasin(String name) {
 
         Magasin mg= finder.findByName(name);
         if (mg == null) {
-            mg = new Magasin(name,c,l,tax);
+            mg = new Magasin(name);
             _contents.add(mg);
             entityManager.persist(mg);
         }
