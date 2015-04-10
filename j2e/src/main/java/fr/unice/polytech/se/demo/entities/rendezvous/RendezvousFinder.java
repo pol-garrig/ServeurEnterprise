@@ -8,7 +8,6 @@ import java.util.List;
 /**
  * Created by Garrigos Fernando on 10/04/15.
  */
-@Stateless
 public interface RendezvousFinder {
 
     public boolean findById(Long id);
