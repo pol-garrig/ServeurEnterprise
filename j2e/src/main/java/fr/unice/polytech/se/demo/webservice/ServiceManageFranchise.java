@@ -19,10 +19,7 @@ public interface ServiceManageFranchise {
 
         @WebMethod
         @WebResult(name = "creerBoutique")
-        public boolean creerBoutique2(@WebParam(name = "name")String n,
-        							@WebParam(name = "cookie")Cookie c,
-        							@WebParam(name = "listcookies") List<Commande> l,
-        							@WebParam(name = "tax") Double tax);
+        public boolean creerBoutique2(@WebParam(name = "name")String n);
 
         @WebMethod
         @WebResult(name = "regarderListeMagasin")

@@ -25,9 +25,9 @@ public class ServiceManageFranchiseImplements implements ServiceManageFranchise 
 
     @WebMethod
     @Override
-    public boolean creerBoutique2(String n, Cookie c, List<Commande> l, Double t) {
+    public boolean creerBoutique2(String n) {
     
-        if (manageFranchise.ajouterUnMagasin(n, c, l, t)) {
+        if (manageFranchise.ajouterUnMagasin(n)) {
             return true;
         } else {
             return false;

@@ -88,26 +88,5 @@ public class CommandeManagerTest {
             assertNotEquals(commande, commande1);
         }
 
-       /* @Test
-        public void testCreerCommande4(){
-
-            Cookie c = new Cookie("Chocolat",1.2,21);
-           // Cookie c = cookieManager.creerUnCookie("C",1.2,21);
-
-            Set<Cookie> cookies = new HashSet<Cookie>();
-
-            cookies.add(c);
-
-            Magasin m = new Magasin("MagCho",c,null,21);
-
-            //Magasin m = magasinManager.creerUnMagasin("Mag",c,null,21);
-
-            Commande commande = new Commande(12.21, m, cookies);
-
-            Commande c1 = commandeManager.creerUneCommande(12.21, m, cookies);
-            assertEquals(commande, c1);
-        }*/
-
-
 
 }
