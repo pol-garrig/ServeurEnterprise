@@ -26,10 +26,10 @@ public class ManageFranchiseBean implements ManageFranchise {
     MagasinFinder finder;
 
     @Override
-    public boolean ajouterUnMagasin(String n, Cookie c, List<Commande> l, Double t) {
+    public boolean ajouterUnMagasin(String n) {
 
        if(finder.findByName(n) == null) {
-           Magasin m = mg.creerUnMagasin(n, c, l, t);
+           Magasin m = mg.creerUnMagasin(n);
             _contents.add(m);
            return true;
        }

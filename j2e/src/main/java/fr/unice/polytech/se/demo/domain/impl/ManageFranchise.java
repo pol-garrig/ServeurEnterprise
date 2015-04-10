@@ -13,7 +13,7 @@ import java.util.List;
 @Remote
 public interface ManageFranchise {
 
-    public boolean ajouterUnMagasin(String n, Cookie c, List<Commande> l, Double tax);
+    public boolean ajouterUnMagasin(String n);
 
     public List<Magasin> getMagasin();
 
