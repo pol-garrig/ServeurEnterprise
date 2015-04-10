@@ -50,8 +50,8 @@ public class HelloWorldClient {
 
     //
     //
-    String m = port.creerBoutique2(name,null,null,tax);
-    System.out.println(m.g);
+   String m = port.creerBoutique2(name,null,null,tax);
+
 
       // retrieving the tasks
      /* System.out.println("## 3. Retrieving the added tasks");

@@ -25,13 +25,11 @@ public class ManageFranchiseBean implements ManageFranchise {
     @EJB
     MagasinFinder finder;
 
-    Magasin m;
-
     @Override
     public boolean ajouterUnMagasin(String n, Cookie c, List<Commande> l, Double t) {
 
        if(finder.findByName(n) == null) {
-            m = mg.creerUnMagasin(n, c, l, t);
+           Magasin m = mg.creerUnMagasin(n, c, l, t);
             _contents.add(m);
            return true;
        }
@@ -42,4 +40,5 @@ public class ManageFranchiseBean implements ManageFranchise {
     public List<Magasin> getMagasin(){
         return _contents;
     }
+
 }
