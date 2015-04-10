@@ -19,7 +19,7 @@ public class MagasinFinderBean implements MagasinFinder {
     EntityManager entityManager;
 
     @Override
-    public Magasin findByName(Long n){
+    public Magasin findByName(String n){
         CriteriaBuilder builder = entityManager.getCriteriaBuilder();
         CriteriaQuery<Magasin> criteria = builder.createQuery(Magasin.class);
         Root<Magasin> from = criteria.from(Magasin.class);
