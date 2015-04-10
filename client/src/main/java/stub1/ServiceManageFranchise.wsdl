@@ -52,9 +52,6 @@
   <xs:complexType name="creerBoutique2">
     <xs:sequence>
       <xs:element minOccurs="0" name="name" type="xs:string"/>
-      <xs:element minOccurs="0" name="cookie" type="tns:cookie"/>
-      <xs:element maxOccurs="unbounded" minOccurs="0" name="listcookies" type="tns:commande"/>
-      <xs:element minOccurs="0" name="tax" type="xs:double"/>
     </xs:sequence>
   </xs:complexType>
 

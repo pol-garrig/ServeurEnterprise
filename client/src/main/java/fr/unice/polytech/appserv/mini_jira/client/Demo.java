@@ -39,22 +39,21 @@ public class Demo {
 
         System.out.println("\n#####################################\n");
         System.out.println("Creation d'un Magasin\n");
-        Double tax = 0.0;
         String name = "Magasin1";
         //Cookie c = new Cookie();
-        port.creerBoutique2(name, null, null, tax);
+        port.creerBoutique2(name);
         System.out.println("\n#####################################\n");
         System.out.println("\n#####################################\n");
         System.out.println("Creation d'un Magasin\n");
         String name2 = "Magasin2";
         //Cookie c2 = new Cookie();
-        port.creerBoutique2(name2, null, null, tax);
+        port.creerBoutique2(name2);
         System.out.println("\n#####################################\n");
         System.out.println("\n#####################################\n");
         System.out.println("Creation d'un Magasin\n");
         String name3 = "Magasin3";
         //Cookie c2 = new Cookie();
-        port.creerBoutique2(name3, null, null, tax);
+        port.creerBoutique2(name3);
         System.out.println("\n#####################################\n");
         System.out.println("Liste de Magasins :\n");
         for (int i = 0; i < port.getListeMagasin().size(); i++) {

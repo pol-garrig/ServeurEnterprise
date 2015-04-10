@@ -1,0 +1,130 @@
+<?xml version='1.0' encoding='UTF-8'?><wsdl:definitions xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/" xmlns:tns="http://www.polytech.unice.fr/servicePrendreRendezvous" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:ns1="http://schemas.xmlsoap.org/soap/http" name="ServicePrendreRendezvousBeanService" targetNamespace="http://www.polytech.unice.fr/servicePrendreRendezvous">
+  <wsdl:types>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:tns="http://www.polytech.unice.fr/servicePrendreRendezvous" elementFormDefault="unqualified" targetNamespace="http://www.polytech.unice.fr/servicePrendreRendezvous" version="1.0">
+
+  <xs:element name="getListeRendezvous" type="tns:getListeRendezvous"/>
+
+  <xs:element name="getListeRendezvousResponse" type="tns:getListeRendezvousResponse"/>
+
+  <xs:element name="prendreRendezvous" type="tns:prendreRendezvous"/>
+
+  <xs:element name="prendreRendezvousResponse" type="tns:prendreRendezvousResponse"/>
+
+  <xs:complexType name="getListeRendezvous">
+    <xs:sequence/>
+  </xs:complexType>
+
+  <xs:complexType name="getListeRendezvousResponse">
+    <xs:sequence>
+      <xs:element maxOccurs="unbounded" minOccurs="0" name="regarderListeRendezvous" type="tns:rendezvous"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="rendezvous">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="date" type="xs:dateTime"/>
+      <xs:element minOccurs="0" name="m" type="tns:magasin"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="magasin">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="id" type="xs:long"/>
+      <xs:element maxOccurs="unbounded" minOccurs="0" name="listCommande" nillable="true" type="tns:commande"/>
+      <xs:element minOccurs="0" name="name" type="xs:string"/>
+      <xs:element minOccurs="0" name="tax" type="xs:double"/>
+      <xs:element minOccurs="0" name="todaySpecial" type="tns:cookie"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="commande">
+    <xs:sequence>
+      <xs:element maxOccurs="unbounded" minOccurs="0" name="cookies" nillable="true" type="tns:cookie"/>
+      <xs:element minOccurs="0" name="date" type="xs:dateTime"/>
+      <xs:element minOccurs="0" name="id" type="xs:long"/>
+      <xs:element minOccurs="0" name="lieuRetrait" type="tns:magasin"/>
+      <xs:element minOccurs="0" name="prixHT" type="xs:double"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="cookie">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="id" type="xs:long"/>
+      <xs:element minOccurs="0" name="name" type="xs:string"/>
+      <xs:element minOccurs="0" name="prixHT" type="xs:double"/>
+      <xs:element minOccurs="0" name="quantite" type="xs:int"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="prendreRendezvous">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="name" type="tns:magasin"/>
+      <xs:element minOccurs="0" name="date" type="xs:dateTime"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="prendreRendezvousResponse">
+    <xs:sequence>
+      <xs:element name="creerBoutique" type="xs:boolean"/>
+    </xs:sequence>
+  </xs:complexType>
+
+</xs:schema>
+  </wsdl:types>
+  <wsdl:message name="getListeRendezvous">
+    <wsdl:part element="tns:getListeRendezvous" name="parameters">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="prendreRendezvousResponse">
+    <wsdl:part element="tns:prendreRendezvousResponse" name="parameters">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="getListeRendezvousResponse">
+    <wsdl:part element="tns:getListeRendezvousResponse" name="parameters">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="prendreRendezvous">
+    <wsdl:part element="tns:prendreRendezvous" name="parameters">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:portType name="ServicePrendreRendezvous">
+    <wsdl:operation name="getListeRendezvous">
+      <wsdl:input message="tns:getListeRendezvous" name="getListeRendezvous">
+    </wsdl:input>
+      <wsdl:output message="tns:getListeRendezvousResponse" name="getListeRendezvousResponse">
+    </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="prendreRendezvous">
+      <wsdl:input message="tns:prendreRendezvous" name="prendreRendezvous">
+    </wsdl:input>
+      <wsdl:output message="tns:prendreRendezvousResponse" name="prendreRendezvousResponse">
+    </wsdl:output>
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="ServicePrendreRendezvousBeanServiceSoapBinding" type="tns:ServicePrendreRendezvous">
+    <soap:binding style="document" transport="http://schemas.xmlsoap.org/soap/http"/>
+    <wsdl:operation name="getListeRendezvous">
+      <soap:operation soapAction="" style="document"/>
+      <wsdl:input name="getListeRendezvous">
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="getListeRendezvousResponse">
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="prendreRendezvous">
+      <soap:operation soapAction="" style="document"/>
+      <wsdl:input name="prendreRendezvous">
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="prendreRendezvousResponse">
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="ServicePrendreRendezvousBeanService">
+    <wsdl:port binding="tns:ServicePrendreRendezvousBeanServiceSoapBinding" name="ServicePrendreRendezvousBeanPort">
+      <soap:address location="http://localhost:8080//webservices/ServicePrendreRendezvous"/>
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

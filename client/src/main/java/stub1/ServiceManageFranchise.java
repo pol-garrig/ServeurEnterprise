@@ -37,10 +37,7 @@ public interface ServiceManageFranchise {
 
     /**
      * 
-     * @param cookie
-     * @param tax
      * @param name
-     * @param listcookies
      * @return
      *     returns boolean
      */
@@ -50,12 +47,6 @@ public interface ServiceManageFranchise {
     @ResponseWrapper(localName = "creerBoutique2Response", targetNamespace = "http://www.polytech.unice.fr/serviceManageFranchise", className = "stub1.CreerBoutique2Response")
     public boolean creerBoutique2(
         @WebParam(name = "name", targetNamespace = "")
-        String name,
-        @WebParam(name = "cookie", targetNamespace = "")
-        Cookie cookie,
-        @WebParam(name = "listcookies", targetNamespace = "")
-        List<Commande> listcookies,
-        @WebParam(name = "tax", targetNamespace = "")
-        Double tax);
+        String name);
 
 }
