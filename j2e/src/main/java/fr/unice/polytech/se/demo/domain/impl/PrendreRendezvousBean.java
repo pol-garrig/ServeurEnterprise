@@ -29,14 +29,9 @@ public class PrendreRendezvousBean implements PrendreRendezvous {
     @Override
     public boolean prendreRendezvous(String magasin, String date) {
 
-        Rendezvous rv = mg.prendreRendezvous(magasin,date);
-
-       // if(!finder.findById(rv.getId())) {
-            _contents.add(rv);
-            return true;
-        //}else{
-          //  return false;
-        //}
+        Rendezvous rv = mg.prendreRendezvous(magasin, date);
+        _contents.add(rv);
+        return true;
     }
 
     @Override

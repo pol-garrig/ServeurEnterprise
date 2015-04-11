@@ -1,11 +1,8 @@
 package fr.unice.polytech.se.demo.webservice;
 
-import fr.unice.polytech.se.demo.domain.impl.ManageFranchise;
-import fr.unice.polytech.se.demo.entities.commande.Commande;
-import fr.unice.polytech.se.demo.entities.magasin.Magasin;
 
-import javax.ejb.EJB;
-import javax.ejb.Stateless;
+import fr.unice.polytech.se.demo.entities.commande.Commande;
+
 import javax.jws.WebMethod;
 import javax.jws.WebParam;
 import javax.jws.WebResult;

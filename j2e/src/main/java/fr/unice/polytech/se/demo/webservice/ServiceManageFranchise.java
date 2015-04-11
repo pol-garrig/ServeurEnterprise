@@ -17,7 +17,6 @@ import java.util.*;
 @WebService(targetNamespace = "http://www.polytech.unice.fr/serviceManageFranchise")
 public interface ServiceManageFranchise {
 
-
         @WebMethod
         @WebResult(name = "creerBoutique")
         public boolean creerBoutique2(@WebParam(name = "name")String n);

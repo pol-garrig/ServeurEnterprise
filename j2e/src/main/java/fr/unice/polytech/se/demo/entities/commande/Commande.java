@@ -1,12 +1,7 @@
 package fr.unice.polytech.se.demo.entities.commande;
 
-import fr.unice.polytech.se.demo.entities.cookie.Cookie;
-import fr.unice.polytech.se.demo.entities.magasin.Magasin;
-
 import javax.persistence.*;
 import java.io.Serializable;
-import java.util.Date;
-import java.util.Set;
 
 /**
  * Created by Garrigos Fernando on 31/03/15.

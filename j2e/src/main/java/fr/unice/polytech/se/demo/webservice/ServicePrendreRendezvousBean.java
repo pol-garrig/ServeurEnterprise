@@ -3,7 +3,6 @@ package fr.unice.polytech.se.demo.webservice;
 import fr.unice.polytech.se.demo.domain.impl.ManageFranchise;
 import fr.unice.polytech.se.demo.domain.impl.PrendreRendezvous;
 import fr.unice.polytech.se.demo.entities.magasin.Magasin;
-import fr.unice.polytech.se.demo.entities.magasin.MagasinManager;
 import fr.unice.polytech.se.demo.entities.rendezvous.Rendezvous;
 
 import javax.ejb.EJB;

@@ -2,6 +2,7 @@ package fr.unice.polytech.se.demo.domain.impl;
 
 import fr.unice.polytech.se.demo.entities.commande.Commande;
 import fr.unice.polytech.se.demo.entities.cookie.Cookie;
+import fr.unice.polytech.se.demo.entities.cookie.CookieManager;
 import fr.unice.polytech.se.demo.entities.magasin.Magasin;
 import fr.unice.polytech.se.demo.entities.magasin.MagasinFinder;
 import fr.unice.polytech.se.demo.entities.magasin.MagasinManager;
@@ -23,6 +24,9 @@ public class ManageFranchiseBean implements ManageFranchise {
     MagasinManager mg;
 
     @EJB
+    CookieManager mgc;
+
+    @EJB
     MagasinFinder finder;
 
     @Override
@@ -39,6 +43,13 @@ public class ManageFranchiseBean implements ManageFranchise {
     @Override
     public List<Magasin> getMagasin(){
         return _contents;
+    }
+
+    @Override
+    public String creerUnCookie(String name,Double prix,Integer quantite){
+        Cookie c = mgc.creerUnCookie(name,prix,quantite);
+        String temp = c.getName()+" "+c.getPrixHT()+" "+c.getQuantite();
+        return temp;
     }
 
 }
