@@ -1,4 +1,4 @@
-package fr.unice.polytech.appserv.mini_jira.client;
+package fr.unice.polytech.appserv.client;
 
 
 import stub1.Cookie;
