@@ -18,13 +18,17 @@ import java.util.List;
 public interface ServicePasseUneCommande {
 
     @WebMethod
-    @WebResult(name = "creerBoutique")
-    public boolean creerBoutique2(@WebParam(name = "name")String n);
+    @WebResult(name = "passerUneCommande")
+    public boolean passerUneCommande(@WebParam(name = "prixHT")Double prixHT,
+                                     @WebParam(name = "rendevous")String Rendezvous,
+                                     @WebParam(name = "cookies")String cookies);
 
     @WebMethod
-    @WebResult(name = "regarderListeMagasin")
-    public List<Magasin> getListeMagasin();
+    @WebResult(name = "regarderListeCommande")
+    public List<Magasin> getListeCommande();
 
-    }
+    @WebMethod
+    @WebResult(name = "choisirCookies")
+    public List<String> choisirCookies();
 
 }
