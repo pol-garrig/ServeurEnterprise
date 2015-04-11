@@ -1,6 +1,7 @@
 package fr.unice.polytech.se.demo.webservice;
 
 import fr.unice.polytech.se.demo.domain.impl.ManageFranchise;
+import fr.unice.polytech.se.demo.entities.commande.Commande;
 import fr.unice.polytech.se.demo.entities.magasin.Magasin;
 
 import javax.ejb.EJB;
@@ -19,13 +20,13 @@ public interface ServicePasseUneCommande {
 
     @WebMethod
     @WebResult(name = "passerUneCommande")
-    public boolean passerUneCommande(@WebParam(name = "prixHT")Double prixHT,
+    public Commande passerUneCommande(@WebParam(name = "prixHT")Double prixHT,
                                      @WebParam(name = "rendevous")String Rendezvous,
                                      @WebParam(name = "cookies")String cookies);
 
     @WebMethod
     @WebResult(name = "regarderListeCommande")
-    public List<Magasin> getListeCommande();
+    public List<Commande> getListeCommande();
 
     @WebMethod
     @WebResult(name = "choisirCookies")

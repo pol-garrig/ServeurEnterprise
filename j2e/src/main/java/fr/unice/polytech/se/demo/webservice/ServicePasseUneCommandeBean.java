@@ -2,6 +2,7 @@ package fr.unice.polytech.se.demo.webservice;
 
 import fr.unice.polytech.se.demo.domain.impl.ManageFranchise;
 import fr.unice.polytech.se.demo.domain.impl.PasseUneCommande;
+import fr.unice.polytech.se.demo.entities.commande.Commande;
 import fr.unice.polytech.se.demo.entities.magasin.Magasin;
 
 import javax.ejb.EJB;
@@ -23,28 +24,19 @@ public class ServicePasseUneCommandeBean  implements ServicePasseUneCommande {
 
     @WebMethod
     @Override
-    public boolean passerUneCommande(Double prixHT, String rendezvous, String cookies) {
-
-        if (pc.passeUneCommande(prixHT,rendezvous,cookies)) {
-            return true;
-        } else {
-            return false;
-        }
+    public Commande passerUneCommande(Double prixHT, String rendezvous, String cookies) {
+       return pc.passeUneCommande(prixHT, rendezvous, cookies);
     }
-
-        return false;
-    }
-
 
     @WebMethod
     @Override
-    public List<Magasin> getListeCommande() {
-        return null;
+    public List<Commande> getListeCommande() {
+        return pc.getCommandes();
     }
 
     @WebMethod
     @Override
     public List<String> choisirCookies() {
-        return null;
+        return pc.choisirCookies();
     }
 }
