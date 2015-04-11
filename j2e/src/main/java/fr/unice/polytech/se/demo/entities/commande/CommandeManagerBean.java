@@ -37,8 +37,8 @@ public class CommandeManagerBean implements CommandeManager{
     }
 
     @Override
-    public Commande creerUneCommande(Double prixHT, Magasin lieuRetrait, Set<Cookie> cookies) {
-       Commande commande = new Commande(prixHT,lieuRetrait,cookies);
+    public Commande creerUneCommande(Double prixHT, String rendezvous, String cookies) {
+       Commande commande = new Commande(prixHT,rendezvous,cookies);
        _contents.add(commande);
        entityManager.persist(commande);
        return commande;

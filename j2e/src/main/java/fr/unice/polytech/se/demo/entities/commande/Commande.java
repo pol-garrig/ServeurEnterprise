@@ -21,21 +21,16 @@ public class Commande implements Serializable {
 
     private Double prixHT;
 
-    private Magasin lieuRetrait;
+    private String Rendezvous;
 
-    private Set<Cookie> cookies;
-
-    private Date date;
+    private String cookies;
 
     public  Commande(){
         this(0.0,null,null);
     }
 
-    public Commande(Double prixHT,Magasin lieuRetrait,Set<Cookie> cookies){
+    public Commande(Double prixHT,String Rendezvous,String cookies){
         super();
-        this.cookies = cookies;
-        date = new Date();
-        this.lieuRetrait = lieuRetrait;
         this.prixHT = prixHT;
     }
 
@@ -52,29 +47,22 @@ public class Commande implements Serializable {
         this.prixHT = prixHT;
     }
 
-    public Magasin getLieuRetrait() {
-        return lieuRetrait;
+    public String getLieuRetrait() {
+        return Rendezvous;
     }
 
-    public void setLieuRetrait(Magasin lieuRetrait) {
-        this.lieuRetrait = lieuRetrait;
+    public void setLieuRetrait(String Rendezvous) {
+        this.Rendezvous = Rendezvous;
     }
 
-    public  Set<Cookie> getCookies() {
+    public  String getCookies() {
         return cookies;
     }
 
-    public void setCookies( Set<Cookie> cookies) {
+    public void setCookies( String cookies) {
         this.cookies = cookies;
     }
 
-    public Date getDate() {
-        return date;
-    }
-
-    public void setDate(Date date) {
-        this.date = date;
-    }
 
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)

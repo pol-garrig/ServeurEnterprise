@@ -11,7 +11,7 @@ import java.util.Set;
  */
 public interface CommandeManager {
 
-    public Commande creerUneCommande(Double prixHT,Magasin lieuRetrait,Set<Cookie> cookies);
+    public Commande creerUneCommande(Double prixHT,String rendezvous,String cookies);
 
     public Commande creerUneCommande(Commande c);
 

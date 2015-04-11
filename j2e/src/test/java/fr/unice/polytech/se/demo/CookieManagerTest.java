@@ -65,6 +65,7 @@ public class CookieManagerTest {
     public void testCreerCookie4(){
         Cookie cookie = new Cookie("Chocolat",1.2,21);
         Cookie c1 = cookieManager.creerUnCookie("Chocolat",1.2,21);
+        System.out.print(c1);
         assertEquals(cookie,c1);
     }
 }
