@@ -1,6 +1,6 @@
 package fr.unice.polytech.se.demo.domain.impl;
 
-import fr.unice.polytech.se.demo.entities.magasin.Magasin;
+import fr.unice.polytech.se.demo.entities.commande.Commande;
 
 import javax.ejb.Remote;
 import java.util.List;
@@ -16,7 +16,7 @@ public interface PasseUneCommande {
 
         public String choisirCookies();
 
-        public List<Magasin> getMagasin();
+        public List<Commande> getCommandes();
 
-    }
+
 }
