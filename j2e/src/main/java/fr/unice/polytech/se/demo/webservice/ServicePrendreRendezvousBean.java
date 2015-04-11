@@ -30,12 +30,8 @@ public class ServicePrendreRendezvousBean implements ServicePrendreRendezvous{
     @Override
     public boolean prendreRendezvous(String magasin, String date) {
 
-        //if (prv.prendreRendezvous(m,date)) {
             prv.prendreRendezvous(magasin,date);
-            return true;
-        //} else {
-         //   return false;
-       // }
+            return true
     }
     @WebMethod
     @Override

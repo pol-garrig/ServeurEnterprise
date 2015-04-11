@@ -41,7 +41,7 @@ public class PasseUneCommandeBean implements PasseUneCommande {
         List<String> cookies = new ArrayList<String>();
         String temp = "";
         for (int i = 0; i <mgCookie.getContents().size() ; i++) {
-            temp = mgCookie.getContents().get(i).getName();
+            temp = mgCookie.getContents().get(i).getName()+" "+mgCookie.getContents().get(i).getPrixHT();
             cookies.add(temp);
         }
         return cookies;
