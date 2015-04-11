@@ -39,4 +39,9 @@ public class ServiceManageFranchiseImplements implements ServiceManageFranchise 
         return manageFranchise.getMagasin();
     }
 
+    @Override
+    public String creerUnCookie(String name,Double prix,Integer quantite) {
+        return manageFranchise.creerUnCookie(name, prix, quantite);
+    }
+
 }

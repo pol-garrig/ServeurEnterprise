@@ -25,4 +25,8 @@ public interface ServiceManageFranchise {
         @WebResult(name = "regarderListeMagasin")
         public List<Magasin> getListeMagasin();
 
+        @WebMethod
+        @WebResult(name = "creerUnCookie")
+        public String creerUnCookie(String name,Double prix,Integer quantite);
+
 }
