@@ -25,6 +25,8 @@ import javax.xml.namespace.QName;
 public class ObjectFactory {
 
     private final static QName _CreerBoutique2Response_QNAME = new QName("http://www.polytech.unice.fr/serviceManageFranchise", "creerBoutique2Response");
+    private final static QName _CreerUnCookieResponse_QNAME = new QName("http://www.polytech.unice.fr/serviceManageFranchise", "creerUnCookieResponse");
+    private final static QName _CreerUnCookie_QNAME = new QName("http://www.polytech.unice.fr/serviceManageFranchise", "creerUnCookie");
     private final static QName _CreerBoutique2_QNAME = new QName("http://www.polytech.unice.fr/serviceManageFranchise", "creerBoutique2");
     private final static QName _GetListeMagasin_QNAME = new QName("http://www.polytech.unice.fr/serviceManageFranchise", "getListeMagasin");
     private final static QName _GetListeMagasinResponse_QNAME = new QName("http://www.polytech.unice.fr/serviceManageFranchise", "getListeMagasinResponse");
@@ -50,6 +52,22 @@ public class ObjectFactory {
      */
     public CreerBoutique2 createCreerBoutique2() {
         return new CreerBoutique2();
+    }
+
+    /**
+     * Create an instance of {@link CreerUnCookie }
+     * 
+     */
+    public CreerUnCookie createCreerUnCookie() {
+        return new CreerUnCookie();
+    }
+
+    /**
+     * Create an instance of {@link CreerUnCookieResponse }
+     * 
+     */
+    public CreerUnCookieResponse createCreerUnCookieResponse() {
+        return new CreerUnCookieResponse();
     }
 
     /**
@@ -99,6 +117,24 @@ public class ObjectFactory {
     @XmlElementDecl(namespace = "http://www.polytech.unice.fr/serviceManageFranchise", name = "creerBoutique2Response")
     public JAXBElement<CreerBoutique2Response> createCreerBoutique2Response(CreerBoutique2Response value) {
         return new JAXBElement<CreerBoutique2Response>(_CreerBoutique2Response_QNAME, CreerBoutique2Response.class, null, value);
+    }
+
+    /**
+     * Create an instance of {@link JAXBElement }{@code <}{@link CreerUnCookieResponse }{@code >}}
+     * 
+     */
+    @XmlElementDecl(namespace = "http://www.polytech.unice.fr/serviceManageFranchise", name = "creerUnCookieResponse")
+    public JAXBElement<CreerUnCookieResponse> createCreerUnCookieResponse(CreerUnCookieResponse value) {
+        return new JAXBElement<CreerUnCookieResponse>(_CreerUnCookieResponse_QNAME, CreerUnCookieResponse.class, null, value);
+    }
+
+    /**
+     * Create an instance of {@link JAXBElement }{@code <}{@link CreerUnCookie }{@code >}}
+     * 
+     */
+    @XmlElementDecl(namespace = "http://www.polytech.unice.fr/serviceManageFranchise", name = "creerUnCookie")
+    public JAXBElement<CreerUnCookie> createCreerUnCookie(CreerUnCookie value) {
+        return new JAXBElement<CreerUnCookie>(_CreerUnCookie_QNAME, CreerUnCookie.class, null, value);
     }
 
     /**

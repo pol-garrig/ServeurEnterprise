@@ -6,6 +6,10 @@
 
   <xs:element name="creerBoutique2Response" type="tns:creerBoutique2Response"/>
 
+  <xs:element name="creerUnCookie" type="tns:creerUnCookie"/>
+
+  <xs:element name="creerUnCookieResponse" type="tns:creerUnCookieResponse"/>
+
   <xs:element name="getListeMagasin" type="tns:getListeMagasin"/>
 
   <xs:element name="getListeMagasinResponse" type="tns:getListeMagasinResponse"/>
@@ -32,10 +36,9 @@
 
   <xs:complexType name="commande">
     <xs:sequence>
-      <xs:element maxOccurs="unbounded" minOccurs="0" name="cookies" nillable="true" type="tns:cookie"/>
-      <xs:element minOccurs="0" name="date" type="xs:dateTime"/>
+      <xs:element minOccurs="0" name="cookies" type="xs:string"/>
       <xs:element minOccurs="0" name="id" type="xs:long"/>
-      <xs:element minOccurs="0" name="lieuRetrait" type="tns:magasin"/>
+      <xs:element minOccurs="0" name="lieuRetrait" type="xs:string"/>
       <xs:element minOccurs="0" name="prixHT" type="xs:double"/>
     </xs:sequence>
   </xs:complexType>
@@ -46,6 +49,20 @@
       <xs:element minOccurs="0" name="name" type="xs:string"/>
       <xs:element minOccurs="0" name="prixHT" type="xs:double"/>
       <xs:element minOccurs="0" name="quantite" type="xs:int"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="creerUnCookie">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="arg0" type="xs:string"/>
+      <xs:element minOccurs="0" name="arg1" type="xs:double"/>
+      <xs:element minOccurs="0" name="arg2" type="xs:int"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="creerUnCookieResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="creerUnCookie" type="xs:string"/>
     </xs:sequence>
   </xs:complexType>
 
@@ -67,6 +84,14 @@
     <wsdl:part element="tns:creerBoutique2Response" name="parameters">
     </wsdl:part>
   </wsdl:message>
+  <wsdl:message name="creerUnCookieResponse">
+    <wsdl:part element="tns:creerUnCookieResponse" name="parameters">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="creerUnCookie">
+    <wsdl:part element="tns:creerUnCookie" name="parameters">
+    </wsdl:part>
+  </wsdl:message>
   <wsdl:message name="creerBoutique2">
     <wsdl:part element="tns:creerBoutique2" name="parameters">
     </wsdl:part>
@@ -84,6 +109,12 @@
       <wsdl:input message="tns:getListeMagasin" name="getListeMagasin">
     </wsdl:input>
       <wsdl:output message="tns:getListeMagasinResponse" name="getListeMagasinResponse">
+    </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="creerUnCookie">
+      <wsdl:input message="tns:creerUnCookie" name="creerUnCookie">
+    </wsdl:input>
+      <wsdl:output message="tns:creerUnCookieResponse" name="creerUnCookieResponse">
     </wsdl:output>
     </wsdl:operation>
     <wsdl:operation name="creerBoutique2">
@@ -110,6 +141,15 @@
         <soap:body use="literal"/>
       </wsdl:input>
       <wsdl:output name="creerBoutique2Response">
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="creerUnCookie">
+      <soap:operation soapAction="" style="document"/>
+      <wsdl:input name="creerUnCookie">
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="creerUnCookieResponse">
         <soap:body use="literal"/>
       </wsdl:output>
     </wsdl:operation>

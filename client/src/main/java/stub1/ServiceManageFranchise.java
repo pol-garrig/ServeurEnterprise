@@ -49,4 +49,24 @@ public interface ServiceManageFranchise {
         @WebParam(name = "name", targetNamespace = "")
         String name);
 
+    /**
+     * 
+     * @param arg2
+     * @param arg1
+     * @param arg0
+     * @return
+     *     returns java.lang.String
+     */
+    @WebMethod
+    @WebResult(name = "creerUnCookie", targetNamespace = "")
+    @RequestWrapper(localName = "creerUnCookie", targetNamespace = "http://www.polytech.unice.fr/serviceManageFranchise", className = "stub1.CreerUnCookie")
+    @ResponseWrapper(localName = "creerUnCookieResponse", targetNamespace = "http://www.polytech.unice.fr/serviceManageFranchise", className = "stub1.CreerUnCookieResponse")
+    public String creerUnCookie(
+        @WebParam(name = "arg0", targetNamespace = "")
+        String arg0,
+        @WebParam(name = "arg1", targetNamespace = "")
+        Double arg1,
+        @WebParam(name = "arg2", targetNamespace = "")
+        Integer arg2);
+
 }

@@ -1,5 +1,5 @@
 
-package stub1;
+package stub3;
 
 import javax.xml.bind.annotation.XmlAccessType;
 import javax.xml.bind.annotation.XmlAccessorType;
