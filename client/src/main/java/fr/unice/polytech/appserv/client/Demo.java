@@ -7,6 +7,8 @@ import stub1.ServiceManageFranchise;
 import stub1.ServiceManageFranchiseImplementsService;
 import stub2.ServicePrendreRendezvous;
 import stub2.ServicePrendreRendezvousBeanService;
+import stub3.ServicePasseUneCommande;
+import stub3.ServicePasseUneCommandeBeanService;
 
 import javax.xml.ws.BindingProvider;
 import java.net.URL;
@@ -25,7 +27,7 @@ public class Demo {
 
 	public static void main(String[] args) {
 
-       //encontrar el url agragar ?wsdl
+        //encontrar el url agragar ?wsdl
         //y despues crear el stub desde inteligi
         // Dynamically building the targeted web service location (default to localhost if not provided)
         String host = "localhost";
@@ -105,6 +107,21 @@ public class Demo {
         System.out.println("\n#####################################\n");
         System.out.println("Fin de Conection");
         System.out.println("\n#####################################\n");
+
+        String address3 = "http://localhost:8080//webservices/ServicePasseUneCommande";
+        URL wsdlLocation3 = null;
+        try {
+            wsdlLocation3 = new URL(address3 + "?wsdl");
+        } catch (Exception e) {
+            System.exit(0);
+        }
+
+        ServicePasseUneCommandeBeanService svpc = new ServicePasseUneCommandeBeanService(wsdlLocation3);
+        ServicePasseUneCommande port3 = svpc.getServicePasseUneCommandeBeanPort();
+
+
+        System.out.println("oui");
+
 
 	}
 
