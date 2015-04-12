@@ -12,7 +12,7 @@ import java.util.List;
 
 public interface PasseUneCommande {
 
-        public Commande passeUneCommande(Double prixHT,String Rendezvous,String cookies);
+        public Commande passeUneCommande(Double prixHT,String rendezvous,String cookies);
 
         public List<String> choisirCookies();
 

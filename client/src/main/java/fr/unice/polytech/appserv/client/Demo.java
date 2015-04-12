@@ -1,10 +1,7 @@
 package fr.unice.polytech.appserv.client;
 
 
-import stub1.Cookie;
-import stub1.Magasin;
-import stub1.ServiceManageFranchise;
-import stub1.ServiceManageFranchiseImplementsService;
+import stub1.*;
 import stub2.ServicePrendreRendezvous;
 import stub2.ServicePrendreRendezvousBeanService;
 import stub3.ServicePasseUneCommande;
@@ -118,10 +115,23 @@ public class Demo {
         ServicePasseUneCommandeBeanService svpc = new ServicePasseUneCommandeBeanService(wsdlLocation3);
         ServicePasseUneCommande port3 = svpc.getServicePasseUneCommandeBeanPort();
 
+        stub1.Cookie coo = port.creerUnCookie("Chocalat",1.1,12);
+        System.out.println("cooooooooo"+coo.getName());
 
+        System.out.println(port.creerUnCookie("Chocalat",1.1,12).getName());
         //port3.choisirCookies();
         //port.creerUnCookie("Cholalal",1.1,12);
-        //System.out.println(port3.choisirCookies());
+        System.out.println(port2.getListeRendezvous().get(0).getMagasin()+" "+port2.getListeRendezvous().get(0).getDate());
+        System.out.println(port.creerUnCookie("Chocalat",1.1,12).getName());
+
+        stub3.Commande c = port3.passerUneCommande(port.creerUnCookie("Chocalat",1.1,12).getPrixHT(),port2.getListeRendezvous().get(0).getMagasin()+" "+port2.getListeRendezvous().get(0).getDate(),port.creerUnCookie("Chocalat",1.1,12).getName());
+
+        System.out.println(port3.passerUneCommande(port.creerUnCookie("Chocalat",1.1,12).getPrixHT(),port2.getListeRendezvous().get(0).getMagasin()+" "+port2.getListeRendezvous().get(0).getDate(),port.creerUnCookie("Chocalat",1.1,12).getName()).getCookies());
+
+        stub3.Commande c2 = port3.passerUneCommande(12.11,"salut","salut2");
+        System.out.println(c2.getCookies());
+
+        System.out.println("Commande : "+c.getCookies()+" "+c.getPrixHT()+" "+c.getLieuRetrait()+" ");
 
 
         System.out.println("oui");
