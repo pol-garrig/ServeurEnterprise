@@ -29,7 +29,7 @@ public class CommandeManagerBean implements CommandeManager{
     public Commande creerUneCommande(Commande c) {
         Commande commande = finder.findByid(c.getId());
         if (commande == null) {
-            commande = new Commande(c.getPrixHT(), c.getLieuRetrait(), c.getCookies());
+            commande = new Commande(c.getPrixHT(), c.getRendezvous(), c.getCookies());
             _contents.add(commande);
             entityManager.persist(commande);
         }

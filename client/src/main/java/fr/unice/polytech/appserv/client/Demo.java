@@ -1,11 +1,9 @@
 package fr.unice.polytech.appserv.client;
 
 
-import stub1.*;
-import stub2.ServicePrendreRendezvous;
-import stub2.ServicePrendreRendezvousBeanService;
-import stub3.ServicePasseUneCommande;
-import stub3.ServicePasseUneCommandeBeanService;
+//import stub1.*;
+//import stub2.*;
+//import stub3.*;
 
 import javax.xml.ws.BindingProvider;
 import java.net.URL;
@@ -24,7 +22,7 @@ public class Demo {
 
 	public static void main(String[] args) {
 
-
+/*
         String host = "localhost";
         String address = "http://" + host + ":8080//webservices/ServiceManageFranchise";
         URL wsdlLocation = null;
@@ -68,24 +66,13 @@ public class Demo {
         System.out.println("Debut deuxieme WEB SERVICE : Prendre Rendezvous");
         System.out.println("\n#####################################\n");
 
-
-       /* String address2 = "http://localhost:8080//webservices/ServicePrendreRendezvous";
-        URL wsdlLocation2 = null;
-        try {
-            wsdlLocation2 = new URL(address2 + "?wsdl");
-        } catch (Exception e) {
-            System.exit(0);
-        } */// UGLY ><
-        // Instantiating the client stub code
         String address2 = "http://localhost:8080//webservices/ServicePrendreRendezvous";
         URL wsdlLocation2 = null;
         try {
         //    wsdlLocation = new URL(address2 + "?wsdl");
         } catch (Exception e) {
             System.exit(0);
-        } // UGLY ><
-
-       // http://localhost:8080//webservices/ServicePrendreRendezvous
+        }
 
        ServicePrendreRendezvousBeanService srv2 = new ServicePrendreRendezvousBeanService(wsdlLocation2); // dynamic WSDL location
        ServicePrendreRendezvous port2 = srv2.getServicePrendreRendezvousBeanPort();
@@ -97,8 +84,7 @@ public class Demo {
         port2.prendreRendezvous(port2.getListeMagasin().get(0).getName(),date);
         System.out.println( port2.getListeRendezvous().get(0).getMagasin()+" "+port2.getListeRendezvous().get(0).getDate());
 
-       //System.out.println(port2.getListeMagasin().get(0).getName());
-        //System.out.println( port2.prendreRendezvous(m,date));
+       /
 
         System.out.println("\n#####################################\n");
         System.out.println("Fin de Conection");
@@ -134,7 +120,7 @@ public class Demo {
         System.out.println("Commande : "+c.getCookies()+" "+c.getPrixHT()+" "+c.getLieuRetrait()+" ");
 
 
-        System.out.println("oui");
+        System.out.println("oui");*/
 
 
 	}

@@ -33,7 +33,7 @@ public class Commande implements Serializable {
 
     @Override
     public String toString() {
-        return "[" + this.getId() + "]#" + this.getLieuRetrait() + this.getCookies() ;
+        return "[" + this.getId() + "]#" + this.getRendezvous() + this.getCookies() ;
     }
 
     public Double getPrixHT() {
