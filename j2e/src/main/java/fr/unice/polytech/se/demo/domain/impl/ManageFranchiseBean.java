@@ -48,7 +48,6 @@ public class ManageFranchiseBean implements ManageFranchise {
     @Override
     public Cookie creerUnCookie(String name,Double prix,Integer quantite){
         Cookie c = mgc.creerUnCookie(name,prix,quantite);
-       // String temp = c.getName()+" "+c.getPrixHT()+" "+c.getQuantite();
         return c;
     }
 
