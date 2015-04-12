@@ -140,10 +140,13 @@ public class Demo {
         stub1.Cookie c3 = port.creerUnCookie("Ammandes",1.1,4);
 
         //On print la liste de Cookies
-        System.out.print("\nListe de Rendezvous : \n\n");
-        for (int i = 0; i < port2.getListeRendezvous().size(); i++) {
-            System.out.println("Rendezvous : " + port2.getListeRendezvous().get(i).getMagasin()
-                    + " " + port2.getListeRendezvous().get(i).getDate());
+        System.out.print("\nListe de Cookies : \n\n");
+       // System.out.println("Cookie : " + port.);
+        System.out.println("Cookie : " + port3.choisirCookies());
+        for (int i = 0; i < port3.choisirCookies().size(); i++) {
+
+
+            System.out.println("Cookie : " + port3.choisirCookies().get(i));
         }
 
 
