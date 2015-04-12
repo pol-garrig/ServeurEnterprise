@@ -33,7 +33,7 @@ public class Demo {
         URL wsdlLocation3 = null;
         try {
             wsdlLocation = new URL(address + "?wsdl");
-            wsdlLocation3 = new URL(address2 + "?wsdl");
+            wsdlLocation2 = new URL(address2 + "?wsdl");
             wsdlLocation3 = new URL(address3 + "?wsdl");
 
         } catch (Exception e) {
