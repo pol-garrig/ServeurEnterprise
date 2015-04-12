@@ -27,9 +27,7 @@ public class Demo {
 
 	public static void main(String[] args) {
 
-        //encontrar el url agragar ?wsdl
-        //y despues crear el stub desde inteligi
-        // Dynamically building the targeted web service location (default to localhost if not provided)
+
         String host = "localhost";
         String address = "http://" + host + ":8080//webservices/ServiceManageFranchise";
         URL wsdlLocation = null;
@@ -58,12 +56,13 @@ public class Demo {
         System.out.println("Creation d'un Magasin\n");
         String name3 = "Magasin3";
         //Cookie c2 = new Cookie();
-        port.creerBoutique2(name3);
+      //  port.creerBoutique2(name3);
         System.out.println("\n#####################################\n");
         System.out.println("Liste de Magasins :\n");
         for (int i = 0; i < port.getListeMagasin().size(); i++) {
             System.out.println(port.getListeMagasin().get(i).getName());
         }
+
         System.out.println("\n#####################################\n");
 
         System.out.println("\n#####################################\n");
@@ -84,7 +83,7 @@ public class Demo {
         String address2 = "http://localhost:8080//webservices/ServicePrendreRendezvous";
         URL wsdlLocation2 = null;
         try {
-            wsdlLocation = new URL(address2 + "?wsdl");
+        //    wsdlLocation = new URL(address2 + "?wsdl");
         } catch (Exception e) {
             System.exit(0);
         } // UGLY ><
@@ -118,6 +117,11 @@ public class Demo {
 
         ServicePasseUneCommandeBeanService svpc = new ServicePasseUneCommandeBeanService(wsdlLocation3);
         ServicePasseUneCommande port3 = svpc.getServicePasseUneCommandeBeanPort();
+
+
+        //port3.choisirCookies();
+        //port.creerUnCookie("Cholalal",1.1,12);
+        //System.out.println(port3.choisirCookies());
 
 
         System.out.println("oui");

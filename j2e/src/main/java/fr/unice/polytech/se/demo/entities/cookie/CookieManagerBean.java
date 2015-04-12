@@ -24,12 +24,18 @@ public class CookieManagerBean implements CookieManager{
     @Override
     public Cookie creerUnCookie(String name, Double prixHT, Integer quantite) {
 
-            Cookie cookie = finder.findByName(name);
-            if (cookie == null) {
-                cookie = new Cookie(name,prixHT,quantite);
+        //Cookie c = new Cookie(name,prixHT,quantite);
+        //String temp = c.getName()+" "+c.getPrixHT()+" "+c.getQuantite();
+        //entityManager.persist(c);
+
+        //return temp;
+
+           // Cookie cookie = finder.findByName(name);
+           // if (cookie == null) {
+             Cookie  cookie = new Cookie(name,prixHT,quantite);
                 _contents.add(cookie);
                 entityManager.persist(cookie);
-            }
+            //}
             return cookie;
         }
 

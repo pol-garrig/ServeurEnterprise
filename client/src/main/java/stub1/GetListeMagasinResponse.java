@@ -18,7 +18,7 @@ import javax.xml.bind.annotation.XmlType;
  *   &lt;complexContent>
  *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
  *       &lt;sequence>
- *         &lt;element name="regarderListeMagasin" type="{http://www.polytech.unice.fr/serviceManageFranchise}magasin" maxOccurs="unbounded" minOccurs="0"/>
+ *         &lt;element name="listedeMagasin" type="{http://www.polytech.unice.fr/serviceManageFranchise}magasin" maxOccurs="unbounded" minOccurs="0"/>
  *       &lt;/sequence>
  *     &lt;/restriction>
  *   &lt;/complexContent>
@@ -29,25 +29,25 @@ import javax.xml.bind.annotation.XmlType;
  */
 @XmlAccessorType(XmlAccessType.FIELD)
 @XmlType(name = "getListeMagasinResponse", propOrder = {
-    "regarderListeMagasin"
+    "listedeMagasin"
 })
 public class GetListeMagasinResponse {
 
-    protected List<Magasin> regarderListeMagasin;
+    protected List<Magasin> listedeMagasin;
 
     /**
-     * Gets the value of the regarderListeMagasin property.
+     * Gets the value of the listedeMagasin property.
      * 
      * <p>
      * This accessor method returns a reference to the live list,
      * not a snapshot. Therefore any modification you make to the
      * returned list will be present inside the JAXB object.
-     * This is why there is not a <CODE>set</CODE> method for the regarderListeMagasin property.
+     * This is why there is not a <CODE>set</CODE> method for the listedeMagasin property.
      * 
      * <p>
      * For example, to add a new item, do as follows:
      * <pre>
-     *    getRegarderListeMagasin().add(newItem);
+     *    getListedeMagasin().add(newItem);
      * </pre>
      * 
      * 
@@ -57,11 +57,11 @@ public class GetListeMagasinResponse {
      * 
      * 
      */
-    public List<Magasin> getRegarderListeMagasin() {
-        if (regarderListeMagasin == null) {
-            regarderListeMagasin = new ArrayList<Magasin>();
+    public List<Magasin> getListedeMagasin() {
+        if (listedeMagasin == null) {
+            listedeMagasin = new ArrayList<Magasin>();
         }
-        return this.regarderListeMagasin;
+        return this.listedeMagasin;
     }
 
 }

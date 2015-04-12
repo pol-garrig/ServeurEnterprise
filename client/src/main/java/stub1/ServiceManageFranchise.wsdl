@@ -20,7 +20,7 @@
 
   <xs:complexType name="getListeMagasinResponse">
     <xs:sequence>
-      <xs:element maxOccurs="unbounded" minOccurs="0" name="regarderListeMagasin" type="tns:magasin"/>
+      <xs:element maxOccurs="unbounded" minOccurs="0" name="listedeMagasin" type="tns:magasin"/>
     </xs:sequence>
   </xs:complexType>
 
@@ -54,15 +54,15 @@
 
   <xs:complexType name="creerUnCookie">
     <xs:sequence>
-      <xs:element minOccurs="0" name="arg0" type="xs:string"/>
-      <xs:element minOccurs="0" name="arg1" type="xs:double"/>
-      <xs:element minOccurs="0" name="arg2" type="xs:int"/>
+      <xs:element minOccurs="0" name="name" type="xs:string"/>
+      <xs:element minOccurs="0" name="prix" type="xs:double"/>
+      <xs:element minOccurs="0" name="quantite" type="xs:int"/>
     </xs:sequence>
   </xs:complexType>
 
   <xs:complexType name="creerUnCookieResponse">
     <xs:sequence>
-      <xs:element minOccurs="0" name="creerUnCookie" type="xs:string"/>
+      <xs:element minOccurs="0" name="creerCookie" type="tns:cookie"/>
     </xs:sequence>
   </xs:complexType>
 

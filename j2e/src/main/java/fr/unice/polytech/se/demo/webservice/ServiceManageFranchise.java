@@ -20,13 +20,15 @@ public interface ServiceManageFranchise {
         @WebMethod
         @WebResult(name = "creerBoutique")
         public boolean creerBoutique2(@WebParam(name = "name")String n);
+		
 
-        @WebMethod
-        @WebResult(name = "regarderListeMagasin")
-        public List<Magasin> getListeMagasin();
+		@WebMethod
+		@WebResult(name = "creerCookie")
+    	public Cookie creerUnCookie(@WebParam(name = "name")String name,
+    							@WebParam(name = "prix")Double prix,
+    							@WebParam(name = "quantite")Integer quantite);
 
-        @WebMethod
-        @WebResult(name = "creerUnCookie")
-        public String creerUnCookie(String name,Double prix,Integer quantite);
-
+    	@WebMethod
+    	@WebResult(name = "listedeMagasin")
+    	public List<Magasin> getListeMagasin();
 }

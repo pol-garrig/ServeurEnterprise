@@ -30,7 +30,7 @@ public interface ServiceManageFranchise {
      *     returns java.util.List<stub1.Magasin>
      */
     @WebMethod
-    @WebResult(name = "regarderListeMagasin", targetNamespace = "")
+    @WebResult(name = "listedeMagasin", targetNamespace = "")
     @RequestWrapper(localName = "getListeMagasin", targetNamespace = "http://www.polytech.unice.fr/serviceManageFranchise", className = "stub1.GetListeMagasin")
     @ResponseWrapper(localName = "getListeMagasinResponse", targetNamespace = "http://www.polytech.unice.fr/serviceManageFranchise", className = "stub1.GetListeMagasinResponse")
     public List<Magasin> getListeMagasin();
@@ -51,22 +51,22 @@ public interface ServiceManageFranchise {
 
     /**
      * 
-     * @param arg2
-     * @param arg1
-     * @param arg0
+     * @param prix
+     * @param name
+     * @param quantite
      * @return
-     *     returns java.lang.String
+     *     returns stub1.Cookie
      */
     @WebMethod
-    @WebResult(name = "creerUnCookie", targetNamespace = "")
+    @WebResult(name = "creerCookie", targetNamespace = "")
     @RequestWrapper(localName = "creerUnCookie", targetNamespace = "http://www.polytech.unice.fr/serviceManageFranchise", className = "stub1.CreerUnCookie")
     @ResponseWrapper(localName = "creerUnCookieResponse", targetNamespace = "http://www.polytech.unice.fr/serviceManageFranchise", className = "stub1.CreerUnCookieResponse")
-    public String creerUnCookie(
-        @WebParam(name = "arg0", targetNamespace = "")
-        String arg0,
-        @WebParam(name = "arg1", targetNamespace = "")
-        Double arg1,
-        @WebParam(name = "arg2", targetNamespace = "")
-        Integer arg2);
+    public Cookie creerUnCookie(
+        @WebParam(name = "name", targetNamespace = "")
+        String name,
+        @WebParam(name = "prix", targetNamespace = "")
+        Double prix,
+        @WebParam(name = "quantite", targetNamespace = "")
+        Integer quantite);
 
 }
