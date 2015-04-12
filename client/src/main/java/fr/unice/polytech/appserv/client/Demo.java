@@ -56,46 +56,38 @@ public class Demo {
 
         // Running the demonstration scenario from the client point of view
         System.out.println("\n#####################################\n");
-        System.out.println("Scenario pour la Creation d'un Boutique pour le directeur de la franchise\n");
+        System.out.println("Scenario pour la Creation d'une Boutique ");
         System.out.println("\n#####################################\n");
 
         //On print la liste de Magasin vide
         System.out.println("\nListe de Magasin : " +port.getListeMagasin()+"\n");
 
-        String name = "Magasin1";
-        port.creerBoutique2(name);
+        System.out.println("Creation d'un Magasin : CookiesFer\n");
 
+        //On cree un Magasin avec le nom CookiesFer
+        port.creerBoutique2("CookiesFer");
+
+        System.out.println("Creation d'un Magasin : SuperCookies\n");
+
+        //On cree un Magasin avec le nom SuperCookies
+        port.creerBoutique2("SuperCookies");
+
+        System.out.println("Creation d'un Magasin : YepCookies\n");
+
+        //On cree un Magasin avec le nom YepCookies
+        port.creerBoutique2("YepCookies");
+
+        //On print la liste de Magasin avec Les nouveaux magasin
+        System.out.println("Liste de Magasin : \n");
+        for (int i = 0; i < port.getListeMagasin().size(); i++) {
+            System.out.println("Magasin : "+ port.getListeMagasin().get(i).getName());
+        }
+        System.out.println("\n#####################################\n");
+        System.out.println("Fin Scenario pour la Creation d'une Boutique ");
+        System.out.println("\n#####################################\n");
 
 
         /*
-
-        System.out.println("\n#####################################\n");
-        System.out.println("\n#####################################\n");
-        System.out.println("Creation d'un Magasin\n");
-        String name2 = "Magasin2";
-        //Cookie c2 = new Cookie();
-        port.creerBoutique2(name2);
-        System.out.println("\n#####################################\n");
-        System.out.println("\n#####################################\n");
-        System.out.println("Creation d'un Magasin\n");
-        String name3 = "Magasin3";
-        //Cookie c2 = new Cookie();
-      //  port.creerBoutique2(name3);
-        System.out.println("\n#####################################\n");
-        System.out.println("Liste de Magasins :\n");
-        for (int i = 0; i < port.getListeMagasin().size(); i++) {
-            System.out.println(port.getListeMagasin().get(i).getName());
-        }
-
-        System.out.println("\n#####################################\n");
-
-        System.out.println("\n#####################################\n");
-        System.out.println("Fin premiere WEB SERVICE");
-        System.out.println("\n#####################################\n");
-        System.out.println("Debut deuxieme WEB SERVICE : Prendre Rendezvous");
-        System.out.println("\n#####################################\n");
-
-
 
         String date = "11/11/2015";
         port2.getListeMagasin();
