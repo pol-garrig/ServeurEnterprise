@@ -31,4 +31,8 @@ public interface ServiceManageFranchise {
     	@WebMethod
     	@WebResult(name = "listedeMagasin")
     	public List<Magasin> getListeMagasin();
+
+        @WebMethod
+        @WebResult(name = "listedeCookies")
+        public List<Cookie> getListeCookies();
 }

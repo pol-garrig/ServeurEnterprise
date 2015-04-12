@@ -45,4 +45,11 @@ public class ServiceManageFranchiseImplements implements ServiceManageFranchise 
         return manageFranchise.creerUnCookie(name, prix, quantite);
     }
 
+    @WebMethod
+    @Override
+    public List<Cookie> getListeCookies(){
+        return manageFranchise.getCookies();
+    }
+
+
 }
