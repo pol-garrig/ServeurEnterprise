@@ -38,7 +38,7 @@ public class Magasin implements Serializable {
 
         @Override
         public String toString() {
-            return "[" + this.getId() + "]#" + "Magasin = "+this.getName() ;
+            return "[" + this.getId() + "]#" + this.getName() + this.getTax() + this.getTodaySpecial() + this.getListCommande();
         }
 
         @Id
@@ -48,7 +48,7 @@ public class Magasin implements Serializable {
         }
 
         @Column(name = "MAGASIN_NAME")
-        @NotNull
+       // @NotNull
         public String getName() {
             return name;
         }
@@ -57,12 +57,12 @@ public class Magasin implements Serializable {
             return tax;
         }
 
-        @OneToOne
+       // @OneToOne
         public Cookie getTodaySpecial(){
             return todaySpecial;
         }
 
-        @OneToMany
+       // @OneToMany
         public List<Commande> getListCommande(){
             return listCommande;
         }
