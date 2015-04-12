@@ -49,7 +49,7 @@ public class Commande implements Serializable {
     }
 
     public void setRendezvous(String rendezvous) {
-        this.rendezvous = Rendezvous;
+        this.rendezvous = rendezvous;
     }
 
     public  String getCookies() {
