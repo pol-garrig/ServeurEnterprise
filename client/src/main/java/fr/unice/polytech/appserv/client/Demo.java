@@ -85,7 +85,7 @@ public class Demo {
         System.out.println("\n#####################################\n");
 
         System.out.println("\n#####################################\n");
-        System.out.println("Scenario Choisir d'une Boutique ");
+        System.out.println("Scenario Choisir une Boutique ");
         System.out.println("\n#####################################\n");
 
         //On print la liste de Magasin avec Les nouveaux magasin
@@ -119,27 +119,44 @@ public class Demo {
         port2.prendreRendezvous(magasin3,"12/12/2015");
 
         //On print la liste de Rendezvous
-        System.out.print("Liste de Rendezvous : \n");
+        System.out.print("\nListe de Rendezvous : \n\n");
         for (int i = 0; i < port2.getListeRendezvous().size(); i++) {
-            System.out.println(port2.getListeRendezvous().get(i).getMagasin()
+            System.out.println("Rendezvous : " + port2.getListeRendezvous().get(i).getMagasin()
                     + " " + port2.getListeRendezvous().get(i).getDate());
         }
 
         System.out.println("\n#####################################\n");
-        System.out.println("Fin Scenario Choisir d'une Boutique ");
+        System.out.println("Fin Scenario Choisir une Boutique ");
         System.out.println("\n#####################################\n");
-        /*
-
-        String date = "11/11/2015";
-        port2.getListeMagasin();
-        stub2.Magasin m = port2.getListeMagasin().get(0);
-        System.out.print("Rendezvous : ");
-        port2.prendreRendezvous(port2.getListeMagasin().get(0).getName(),date);
-        System.out.println( port2.getListeRendezvous().get(0).getMagasin()+" "+port2.getListeRendezvous().get(0).getDate());
 
 
+        System.out.println("\n#####################################\n");
+        System.out.println("Scenario Passer une commande ");
+        System.out.println("\n#####################################\n");
 
-        stub1.Cookie coo = port.creerUnCookie("Chocalat",1.1,12);
+        //On creer des cookies pour choisir
+        stub1.Cookie c1 = port.creerUnCookie("Chocalat",1.1,12);
+        stub1.Cookie c2 = port.creerUnCookie("Classic",1.1,2);
+        stub1.Cookie c3 = port.creerUnCookie("Ammandes",1.1,4);
+
+        //On print la liste de Cookies
+        System.out.print("\nListe de Rendezvous : \n\n");
+        for (int i = 0; i < port2.getListeRendezvous().size(); i++) {
+            System.out.println("Rendezvous : " + port2.getListeRendezvous().get(i).getMagasin()
+                    + " " + port2.getListeRendezvous().get(i).getDate());
+        }
+
+
+
+
+
+        System.out.println("\n#####################################\n");
+        System.out.println("Fin Scenario Passer une commande ");
+        System.out.println("\n#####################################\n");
+
+
+
+       /*  stub1.Cookie coo = port.creerUnCookie("Chocalat",1.1,12);
         System.out.println("cooooooooo"+coo.getName());
 
         System.out.println(port.creerUnCookie("Chocalat",1.1,12).getName());
