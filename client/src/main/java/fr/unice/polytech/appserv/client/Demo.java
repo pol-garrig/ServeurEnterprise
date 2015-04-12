@@ -11,10 +11,8 @@ import java.util.ArrayList;
 import java.util.List;
 
 /**
- * To create the stub classes, using IntelliJ:
- *   - right click on the module, select WebServices, Generate Java Code from WSDL
- *   - Fill in the form
- *   - click on Generate
+ * Une classe pour Tester les Web service
+ *@author  Garrigos Fernando
  */
 public class Demo {
 
@@ -86,7 +84,31 @@ public class Demo {
         System.out.println("Fin Scenario pour la Creation d'une Boutique ");
         System.out.println("\n#####################################\n");
 
+        System.out.println("\n#####################################\n");
+        System.out.println("Scenario Choisir d'une Boutique ");
+        System.out.println("\n#####################################\n");
 
+        //On print la liste de Magasin avec Les nouveaux magasin
+        System.out.println("Liste de Magasin : \n");
+        for (int i = 0; i < port.getListeMagasin().size(); i++) {
+            System.out.println("Magasin : "+ port.getListeMagasin().get(i).getName());
+        }
+        System.out.println("\nOn veut prendre RENDEZVOUS à la date 13/13/2015 et avec le MAGASIN : CookiesFer");
+
+        //On recupere le magasin
+        String magasin = port2.getListeMagasin().get(0).getName();
+
+        //On prendre RENDEZVOUS à la date 13/13/2015 et avec le MAGASIN : CookiesFer
+        port2.prendreRendezvous(magasin,"13/13/2015");
+
+        System.out.print("Rendezvous : ");
+        System.out.println( port2.getListeRendezvous().get(0).getMagasin()
+                +" "+port2.getListeRendezvous().get(0).getDate());
+
+
+        System.out.println("\n#####################################\n");
+        System.out.println("Fin Scenario Choisir d'une Boutique ");
+        System.out.println("\n#####################################\n");
         /*
 
         String date = "11/11/2015";
@@ -95,10 +117,6 @@ public class Demo {
         System.out.print("Rendezvous : ");
         port2.prendreRendezvous(port2.getListeMagasin().get(0).getName(),date);
         System.out.println( port2.getListeRendezvous().get(0).getMagasin()+" "+port2.getListeRendezvous().get(0).getDate());
-
-        System.out.println("\n#####################################\n");
-        System.out.println("Fin de Conection");
-        System.out.println("\n#####################################\n");
 
 
 
