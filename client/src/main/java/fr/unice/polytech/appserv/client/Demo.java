@@ -93,18 +93,37 @@ public class Demo {
         for (int i = 0; i < port.getListeMagasin().size(); i++) {
             System.out.println("Magasin : "+ port.getListeMagasin().get(i).getName());
         }
-        System.out.println("\nOn veut prendre RENDEZVOUS à la date 13/13/2015 et avec le MAGASIN : CookiesFer");
+
+        System.out.println("\nOn prendre RENDEZVOUS : date 13/7/2015 et MAGASIN : CookiesFer");
 
         //On recupere le magasin
         String magasin = port2.getListeMagasin().get(0).getName();
 
         //On prendre RENDEZVOUS à la date 13/13/2015 et avec le MAGASIN : CookiesFer
-        port2.prendreRendezvous(magasin,"13/13/2015");
+        port2.prendreRendezvous(magasin,"13/7/2015");
 
-        System.out.print("Rendezvous : ");
-        System.out.println( port2.getListeRendezvous().get(0).getMagasin()
-                +" "+port2.getListeRendezvous().get(0).getDate());
+        System.out.println("\nOn prendre RENDEZVOUS : date 3/3/2015 et MAGASIN : SuperCookies");
 
+        //On recupere le magasin
+        String magasin2 = port2.getListeMagasin().get(1).getName();
+
+        //On prendre RENDEZVOUS à la date 3/3/2015 et avec le MAGASIN : SuperCookies
+        port2.prendreRendezvous(magasin2,"3/3/2015 ");
+
+        System.out.println("\nOn prendre RENDEZVOUS : date 12/12/2015 et MAGASIN : YepCookies");
+
+        //On recupere le magasin
+        String magasin3 = port2.getListeMagasin().get(2).getName();
+
+        //On prendre RENDEZVOUS à la date 12/12/2015 et avec le MAGASIN : YepCookies
+        port2.prendreRendezvous(magasin3,"12/12/2015");
+
+        //On print la liste de Rendezvous
+        System.out.print("Liste de Rendezvous : \n");
+        for (int i = 0; i < port2.getListeRendezvous().size(); i++) {
+            System.out.println(port2.getListeRendezvous().get(i).getMagasin()
+                    + " " + port2.getListeRendezvous().get(i).getDate());
+        }
 
         System.out.println("\n#####################################\n");
         System.out.println("Fin Scenario Choisir d'une Boutique ");
