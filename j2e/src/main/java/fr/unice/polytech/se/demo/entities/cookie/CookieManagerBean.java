@@ -24,7 +24,7 @@ public class CookieManagerBean implements CookieManager{
     @Override
     public Cookie creerUnCookie(String name, Double prixHT, Integer quantite) {
 
-        Cookie  cookie = new Cookie(name,prixHT,quantite);
+        Cookie cookie = new Cookie(name,prixHT,quantite);
         _contents.add(cookie);
         entityManager.persist(cookie);
         return cookie;

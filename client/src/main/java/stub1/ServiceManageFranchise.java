@@ -69,4 +69,15 @@ public interface ServiceManageFranchise {
         @WebParam(name = "quantite", targetNamespace = "")
         Integer quantite);
 
+    /**
+     * 
+     * @return
+     *     returns java.util.List<stub1.Cookie>
+     */
+    @WebMethod
+    @WebResult(name = "listedeCookies", targetNamespace = "")
+    @RequestWrapper(localName = "getListeCookies", targetNamespace = "http://www.polytech.unice.fr/serviceManageFranchise", className = "stub1.GetListeCookies")
+    @ResponseWrapper(localName = "getListeCookiesResponse", targetNamespace = "http://www.polytech.unice.fr/serviceManageFranchise", className = "stub1.GetListeCookiesResponse")
+    public List<Cookie> getListeCookies();
+
 }

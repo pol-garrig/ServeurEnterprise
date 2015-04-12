@@ -100,7 +100,7 @@ public class Demo {
         String magasin = port2.getListeMagasin().get(0).getName();
 
         //On prendre RENDEZVOUS à la date 13/13/2015 et avec le MAGASIN : CookiesFer
-        port2.prendreRendezvous(magasin,"13/7/2015");
+        port2.prendreRendezvous(magasin, "13/7/2015");
 
         System.out.println("\nOn prendre RENDEZVOUS : date 3/3/2015 et MAGASIN : SuperCookies");
 
@@ -135,22 +135,45 @@ public class Demo {
         System.out.println("\n#####################################\n");
 
         //On creer des cookies pour choisir
-        stub1.Cookie c1 = port.creerUnCookie("Chocalat",1.1,12);
+        stub1.Cookie c1 = port.creerUnCookie("Chocalat",1.1,1);
         stub1.Cookie c2 = port.creerUnCookie("Classic",1.1,2);
         stub1.Cookie c3 = port.creerUnCookie("Ammandes",1.1,4);
 
         //On print la liste de Cookies
         System.out.print("\nListe de Cookies : \n\n");
-       // System.out.println("Cookie : " + port.);
-        System.out.println("Cookie : " + port3.choisirCookies());
-        for (int i = 0; i < port3.choisirCookies().size(); i++) {
-
-
-            System.out.println("Cookie : " + port3.choisirCookies().get(i));
+        for (int i = 0; i < port.getListeCookies().size() ; i++) {
+            System.out.println("Cookie : " + port.getListeCookies().get(i).getName());
         }
 
+        System.out.println("\nOn Commande avec : \nRENDEZVOUS : date 12/12/2015 et MAGASIN : CookiesFer \nCookies : Chocalat \nQuantite : 1 \n");
 
+        //on recupere le rendezvous
+        String rv1 = port2.getListeRendezvous().get(0).getMagasin()
+                + " " + port2.getListeRendezvous().get(0).getDate();
+        //On creer la commande
+        stub3.Commande commande = port3.passerUneCommande(c1.getPrixHT(),rv1,c1.getName() +" " +c1.getQuantite() );
 
+        System.out.println("\nOn Commande avec : \nRENDEZVOUS : date 3/3/2015 et MAGASIN : SuperCookies \nCookies : Classic \nQuantite : 2 \n");
+
+        //on recupere le rendezvous
+        String rv2 = port2.getListeRendezvous().get(1).getMagasin()
+                + " " + port2.getListeRendezvous().get(1).getDate();
+        //On creer la commande
+        stub3.Commande commande2 = port3.passerUneCommande(c2.getPrixHT()*c2.getQuantite(),rv2,c2.getName());
+
+        System.out.println("\nOn Commande avec : \nRENDEZVOUS : date 12/12/2015 et MAGASIN : YepCookies \nCookies : Ammandes \nQuantite : 4 \n");
+
+        //on recupere le rendezvous
+        String rv3 = port2.getListeRendezvous().get(1).getMagasin()
+                + " " + port2.getListeRendezvous().get(1).getDate();
+        //On creer la commande
+        stub3.Commande commande3 = port3.passerUneCommande(c3.getPrixHT()*c3.getQuantite(),rv3,c3.getName());
+
+        //On print la liste de Cookies
+        System.out.print("\nListe de Cookies : \n\n");
+        for (int i = 0; i < port.getListeCookies().size() ; i++) {
+            System.out.println("Cookie : " + port.getListeCookies().get(i).getName());
+        }
 
 
         System.out.println("\n#####################################\n");

@@ -27,7 +27,9 @@ public class ObjectFactory {
     private final static QName _CreerBoutique2Response_QNAME = new QName("http://www.polytech.unice.fr/serviceManageFranchise", "creerBoutique2Response");
     private final static QName _CreerUnCookieResponse_QNAME = new QName("http://www.polytech.unice.fr/serviceManageFranchise", "creerUnCookieResponse");
     private final static QName _CreerUnCookie_QNAME = new QName("http://www.polytech.unice.fr/serviceManageFranchise", "creerUnCookie");
+    private final static QName _GetListeCookiesResponse_QNAME = new QName("http://www.polytech.unice.fr/serviceManageFranchise", "getListeCookiesResponse");
     private final static QName _CreerBoutique2_QNAME = new QName("http://www.polytech.unice.fr/serviceManageFranchise", "creerBoutique2");
+    private final static QName _GetListeCookies_QNAME = new QName("http://www.polytech.unice.fr/serviceManageFranchise", "getListeCookies");
     private final static QName _GetListeMagasin_QNAME = new QName("http://www.polytech.unice.fr/serviceManageFranchise", "getListeMagasin");
     private final static QName _GetListeMagasinResponse_QNAME = new QName("http://www.polytech.unice.fr/serviceManageFranchise", "getListeMagasinResponse");
 
@@ -47,11 +49,27 @@ public class ObjectFactory {
     }
 
     /**
+     * Create an instance of {@link GetListeCookies }
+     * 
+     */
+    public GetListeCookies createGetListeCookies() {
+        return new GetListeCookies();
+    }
+
+    /**
      * Create an instance of {@link CreerBoutique2 }
      * 
      */
     public CreerBoutique2 createCreerBoutique2() {
         return new CreerBoutique2();
+    }
+
+    /**
+     * Create an instance of {@link GetListeCookiesResponse }
+     * 
+     */
+    public GetListeCookiesResponse createGetListeCookiesResponse() {
+        return new GetListeCookiesResponse();
     }
 
     /**
@@ -138,12 +156,30 @@ public class ObjectFactory {
     }
 
     /**
+     * Create an instance of {@link JAXBElement }{@code <}{@link GetListeCookiesResponse }{@code >}}
+     * 
+     */
+    @XmlElementDecl(namespace = "http://www.polytech.unice.fr/serviceManageFranchise", name = "getListeCookiesResponse")
+    public JAXBElement<GetListeCookiesResponse> createGetListeCookiesResponse(GetListeCookiesResponse value) {
+        return new JAXBElement<GetListeCookiesResponse>(_GetListeCookiesResponse_QNAME, GetListeCookiesResponse.class, null, value);
+    }
+
+    /**
      * Create an instance of {@link JAXBElement }{@code <}{@link CreerBoutique2 }{@code >}}
      * 
      */
     @XmlElementDecl(namespace = "http://www.polytech.unice.fr/serviceManageFranchise", name = "creerBoutique2")
     public JAXBElement<CreerBoutique2> createCreerBoutique2(CreerBoutique2 value) {
         return new JAXBElement<CreerBoutique2>(_CreerBoutique2_QNAME, CreerBoutique2 .class, null, value);
+    }
+
+    /**
+     * Create an instance of {@link JAXBElement }{@code <}{@link GetListeCookies }{@code >}}
+     * 
+     */
+    @XmlElementDecl(namespace = "http://www.polytech.unice.fr/serviceManageFranchise", name = "getListeCookies")
+    public JAXBElement<GetListeCookies> createGetListeCookies(GetListeCookies value) {
+        return new JAXBElement<GetListeCookies>(_GetListeCookies_QNAME, GetListeCookies.class, null, value);
     }
 
     /**
