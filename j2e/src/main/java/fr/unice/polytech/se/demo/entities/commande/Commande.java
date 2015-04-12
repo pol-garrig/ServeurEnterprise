@@ -16,7 +16,7 @@ public class Commande implements Serializable {
 
     private Double prixHT;
 
-    private String Rendezvous;
+    private String rendezvous;
 
     private String cookies;
 
@@ -24,9 +24,11 @@ public class Commande implements Serializable {
         this(0.0,null,null);
     }
 
-    public Commande(Double prixHT,String Rendezvous,String cookies){
+    public Commande(Double prixHT,String rendezvous,String cookies){
         super();
         this.prixHT = prixHT;
+        this.rendezvous = rendezvous;
+        this.cookies = cookies;
     }
 
     @Override
@@ -42,12 +44,12 @@ public class Commande implements Serializable {
         this.prixHT = prixHT;
     }
 
-    public String getLieuRetrait() {
-        return Rendezvous;
+    public String getRendezvous() {
+        return rendezvous;
     }
 
-    public void setLieuRetrait(String Rendezvous) {
-        this.Rendezvous = Rendezvous;
+    public void setRendezvous(String rendezvous) {
+        this.rendezvous = Rendezvous;
     }
 
     public  String getCookies() {
