@@ -151,7 +151,7 @@ public class Demo {
         String rv1 = port2.getListeRendezvous().get(0).getMagasin()
                 + " " + port2.getListeRendezvous().get(0).getDate();
         //On creer la commande
-        stub3.Commande commande = port3.passerUneCommande(c1.getPrixHT(),rv1,c1.getName() +" " +c1.getQuantite() );
+        stub3.Commande commande = port3.passerUneCommande(c1.getPrixHT(),rv1,c1.getName() +"\nQuantite :" +c1.getQuantite() );
 
         System.out.println("\nOn Commande avec : \nRENDEZVOUS : date 3/3/2015 et MAGASIN : SuperCookies \nCookies : Classic \nQuantite : 2 \n");
 
@@ -159,51 +159,30 @@ public class Demo {
         String rv2 = port2.getListeRendezvous().get(1).getMagasin()
                 + " " + port2.getListeRendezvous().get(1).getDate();
         //On creer la commande
-        stub3.Commande commande2 = port3.passerUneCommande(c2.getPrixHT()*c2.getQuantite(),rv2,c2.getName());
+        stub3.Commande commande2 = port3.passerUneCommande(c2.getPrixHT()*c2.getQuantite(),rv2,c2.getName() +"\nQuantite :" +c2.getQuantite() );
 
         System.out.println("\nOn Commande avec : \nRENDEZVOUS : date 12/12/2015 et MAGASIN : YepCookies \nCookies : Ammandes \nQuantite : 4 \n");
 
         //on recupere le rendezvous
-        String rv3 = port2.getListeRendezvous().get(1).getMagasin()
-                + " " + port2.getListeRendezvous().get(1).getDate();
+        String rv3 = port2.getListeRendezvous().get(2).getMagasin()
+                + " " + port2.getListeRendezvous().get(2).getDate();
         //On creer la commande
-        stub3.Commande commande3 = port3.passerUneCommande(c3.getPrixHT()*c3.getQuantite(),rv3,c3.getName());
+        stub3.Commande commande3 = port3.passerUneCommande(c3.getPrixHT()*c3.getQuantite(),rv3,c3.getName() +"\nQuantite : " +c3.getQuantite() );
 
-        //On print la liste de Cookies
-        System.out.print("\nListe de Cookies : \n\n");
-        for (int i = 0; i < port.getListeCookies().size() ; i++) {
-            System.out.println("Cookie : " + port.getListeCookies().get(i).getName());
+        //On print la liste de Commandes
+        System.out.print("\nListe de Commandes : \n\n");
+        for (int i = 0; i < port3.getListeCommande().size() ; i++) {
+            System.out.println("Commande : " +
+                    "\nRENDEZVOUS : " + port3.getListeCommande().get(i).getRendezvous()+
+                    "\nCookies : " +  port3.getListeCommande().get(i).getCookies() +
+                    "\nPrix : " + port3.getListeCommande().get(i).getPrixHT()
+            );
         }
-
 
         System.out.println("\n#####################################\n");
         System.out.println("Fin Scenario Passer une commande ");
         System.out.println("\n#####################################\n");
 
-
-
-       /*  stub1.Cookie coo = port.creerUnCookie("Chocalat",1.1,12);
-        System.out.println("cooooooooo"+coo.getName());
-
-        System.out.println(port.creerUnCookie("Chocalat",1.1,12).getName());
-        //port3.choisirCookies();
-        //port.creerUnCookie("Cholalal",1.1,12);
-        System.out.println(port2.getListeRendezvous().get(0).getMagasin()+" "+port2.getListeRendezvous().get(0).getDate());
-        System.out.println(port.creerUnCookie("Chocalat",1.1,12).getName());
-
-        stub3.Commande c = port3.passerUneCommande(port.creerUnCookie("Chocalat",1.1,12).getPrixHT(),port2.getListeRendezvous().get(0).getMagasin()+" "+port2.getListeRendezvous().get(0).getDate(),port.creerUnCookie("Chocalat",1.1,12).getName());
-
-        System.out.println(port3.passerUneCommande(port.creerUnCookie("Chocalat",1.1,12).getPrixHT(),port2.getListeRendezvous().get(0).getMagasin()+" "+port2.getListeRendezvous().get(0).getDate(),port.creerUnCookie("Chocalat",1.1,12).getName()).getCookies());
-
-        stub3.Commande c2 = port3.passerUneCommande(12.11,"salut","salut2");
-        System.out.println(c2.getCookies());
-
-        System.out.println("Commande : "+c.getCookies()+" "+c.getPrixHT()+" "+c.getRendezvous()+" ");
-
-
-        System.out.println("oui");
-
-        */
 	}
 
 }
