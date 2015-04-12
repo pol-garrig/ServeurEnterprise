@@ -42,22 +42,33 @@ public class Demo {
             System.exit(0);
         }
 
-
-        ServiceManageFranchiseImplementsService srv = new ServiceManageFranchiseImplementsService(wsdlLocation); // dynamic WSDL location
+        // Instantiating the client stub1 code
+        ServiceManageFranchiseImplementsService srv = new ServiceManageFranchiseImplementsService(wsdlLocation);
         ServiceManageFranchise port = srv.getServiceManageFranchiseImplementsPort();
 
-        ServicePrendreRendezvousBeanService srv2 = new ServicePrendreRendezvousBeanService(wsdlLocation2); // dynamic WSDL location
+        // Instantiating the client stub2 code
+        ServicePrendreRendezvousBeanService srv2 = new ServicePrendreRendezvousBeanService(wsdlLocation2);
         ServicePrendreRendezvous port2 = srv2.getServicePrendreRendezvousBeanPort();
 
+        // Instantiating the client stub3 code
         ServicePasseUneCommandeBeanService svpc = new ServicePasseUneCommandeBeanService(wsdlLocation3);
         ServicePasseUneCommande port3 = svpc.getServicePasseUneCommandeBeanPort();
 
-
+        // Running the demonstration scenario from the client point of view
         System.out.println("\n#####################################\n");
-        System.out.println("Creation d'un Magasin\n");
+        System.out.println("Scenario pour la Creation d'un Boutique pour le directeur de la franchise\n");
+        System.out.println("\n#####################################\n");
+
+        //On print la liste de Magasin vide
+        System.out.println("\nListe de Magasin : " +port.getListeMagasin()+"\n");
+
         String name = "Magasin1";
-        //Cookie c = new Cookie();
         port.creerBoutique2(name);
+
+
+
+        /*
+
         System.out.println("\n#####################################\n");
         System.out.println("\n#####################################\n");
         System.out.println("Creation d'un Magasin\n");
@@ -120,7 +131,7 @@ public class Demo {
 
         System.out.println("oui");
 
-
+        */
 	}
 
 }
