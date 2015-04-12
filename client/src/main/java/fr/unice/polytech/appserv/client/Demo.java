@@ -22,18 +22,36 @@ public class Demo {
 
 	public static void main(String[] args) {
 
+        // Dynamically building the targeted web service location (default to localhost if not provided)
+        String host = ( args.length == 0 ? "localhost" : args[0]);
 
-        String host = "localhost";
         String address = "http://" + host + ":8080//webservices/ServiceManageFranchise";
+        String address2 = "http://" + host + ":8080//webservices/ServicePrendreRendezvous";
+        String address3 = "http://"+ host +":8080//webservices/ServicePasseUneCommande";
+
+
         URL wsdlLocation = null;
+        URL wsdlLocation2 = null;
+        URL wsdlLocation3 = null;
         try {
             wsdlLocation = new URL(address + "?wsdl");
+            wsdlLocation3 = new URL(address2 + "?wsdl");
+            wsdlLocation3 = new URL(address3 + "?wsdl");
+
         } catch (Exception e) {
             System.exit(0);
-        } // UGLY ><
-        // Instantiating the client stub code
+        }
+
+
         ServiceManageFranchiseImplementsService srv = new ServiceManageFranchiseImplementsService(wsdlLocation); // dynamic WSDL location
         ServiceManageFranchise port = srv.getServiceManageFranchiseImplementsPort();
+
+        ServicePrendreRendezvousBeanService srv2 = new ServicePrendreRendezvousBeanService(wsdlLocation2); // dynamic WSDL location
+        ServicePrendreRendezvous port2 = srv2.getServicePrendreRendezvousBeanPort();
+
+        ServicePasseUneCommandeBeanService svpc = new ServicePasseUneCommandeBeanService(wsdlLocation3);
+        ServicePasseUneCommande port3 = svpc.getServicePasseUneCommandeBeanPort();
+
 
         System.out.println("\n#####################################\n");
         System.out.println("Creation d'un Magasin\n");
@@ -66,16 +84,7 @@ public class Demo {
         System.out.println("Debut deuxieme WEB SERVICE : Prendre Rendezvous");
         System.out.println("\n#####################################\n");
 
-        String address2 = "http://localhost:8080//webservices/ServicePrendreRendezvous";
-        URL wsdlLocation2 = null;
-        try {
-        //    wsdlLocation = new URL(address2 + "?wsdl");
-        } catch (Exception e) {
-            System.exit(0);
-        }
 
-       ServicePrendreRendezvousBeanService srv2 = new ServicePrendreRendezvousBeanService(wsdlLocation2); // dynamic WSDL location
-       ServicePrendreRendezvous port2 = srv2.getServicePrendreRendezvousBeanPort();
 
         String date = "11/11/2015";
         port2.getListeMagasin();
@@ -88,16 +97,7 @@ public class Demo {
         System.out.println("Fin de Conection");
         System.out.println("\n#####################################\n");
 
-        String address3 = "http://localhost:8080//webservices/ServicePasseUneCommande";
-        URL wsdlLocation3 = null;
-        try {
-            wsdlLocation3 = new URL(address3 + "?wsdl");
-        } catch (Exception e) {
-            System.exit(0);
-        }
 
-        ServicePasseUneCommandeBeanService svpc = new ServicePasseUneCommandeBeanService(wsdlLocation3);
-        ServicePasseUneCommande port3 = svpc.getServicePasseUneCommandeBeanPort();
 
         stub1.Cookie coo = port.creerUnCookie("Chocalat",1.1,12);
         System.out.println("cooooooooo"+coo.getName());
