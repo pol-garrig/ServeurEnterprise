@@ -20,6 +20,8 @@ public class ManageFranchiseBean implements ManageFranchise {
 
     private ArrayList<Magasin> _contents = new ArrayList<Magasin>();
 
+    private ArrayList<Cookie> _contents2 = new ArrayList<Cookie>();
+
     @EJB
     MagasinManager mg;
 
@@ -43,6 +45,11 @@ public class ManageFranchiseBean implements ManageFranchise {
     @Override
     public List<Magasin> getMagasin(){
         return _contents;
+    }
+
+    @Override
+    public List<Cookie> getCookies(){
+        return _contents2;
     }
 
     @Override

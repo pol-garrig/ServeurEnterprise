@@ -17,6 +17,8 @@ public interface ManageFranchise {
 
     public List<Magasin> getMagasin();
 
+    public List<Cookie> getCookies();
+
     public Cookie creerUnCookie(String name,Double prix,Integer quantite);
 
 }
