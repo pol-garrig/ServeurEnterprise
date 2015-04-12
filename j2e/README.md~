@@ -1,5 +1,5 @@
-se-demo Projet Cookie
-=====================
+se-demo
+=======
 
 Demonstration code for the "Serveur d'Entreprise" course [2014]
 
@@ -7,12 +7,8 @@ Please use the following command to run the server:
 ```
 mvn clean package tomee:run 
 ```
-there is the option -DskipTests fot the distant machine
+there is the option -DskipTests fot the distant machine "host"
 ```
 mvn clean package tomee:run -DskipTests "host"
 
 Then, open http://localhost:8080/
-
-
-
-

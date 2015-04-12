@@ -46,7 +46,7 @@ public class CookieManagerTest {
         assertEquals(cookieManager.getContents().size(), 1);
     }
 
-    /*@Test
+    @Test
     public void testCreerCookie2(){
         Cookie c = new Cookie();
         cookieManager.creerUnCookie(c);
@@ -66,5 +66,5 @@ public class CookieManagerTest {
         Cookie c1 = cookieManager.creerUnCookie("Chocolat",1.2,21);
         System.out.print(c1);
         assertEquals(cookie,c1);
-    }*/
+    }
 }
