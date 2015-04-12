@@ -35,7 +35,6 @@ public class Demo {
             wsdlLocation = new URL(address + "?wsdl");
             wsdlLocation2 = new URL(address2 + "?wsdl");
             wsdlLocation3 = new URL(address3 + "?wsdl");
-
         } catch (Exception e) {
             System.exit(0);
         }
