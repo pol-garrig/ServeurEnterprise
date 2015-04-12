@@ -1,9 +1,9 @@
 package fr.unice.polytech.appserv.client;
 
 
-//import stub1.*;
-//import stub2.*;
-//import stub3.*;
+import stub1.*;
+import stub2.*;
+import stub3.*;
 
 import javax.xml.ws.BindingProvider;
 import java.net.URL;
@@ -22,7 +22,7 @@ public class Demo {
 
 	public static void main(String[] args) {
 
-/*
+
         String host = "localhost";
         String address = "http://" + host + ":8080//webservices/ServiceManageFranchise";
         URL wsdlLocation = null;
@@ -84,8 +84,6 @@ public class Demo {
         port2.prendreRendezvous(port2.getListeMagasin().get(0).getName(),date);
         System.out.println( port2.getListeRendezvous().get(0).getMagasin()+" "+port2.getListeRendezvous().get(0).getDate());
 
-       /
-
         System.out.println("\n#####################################\n");
         System.out.println("Fin de Conection");
         System.out.println("\n#####################################\n");
@@ -117,10 +115,10 @@ public class Demo {
         stub3.Commande c2 = port3.passerUneCommande(12.11,"salut","salut2");
         System.out.println(c2.getCookies());
 
-        System.out.println("Commande : "+c.getCookies()+" "+c.getPrixHT()+" "+c.getLieuRetrait()+" ");
+        System.out.println("Commande : "+c.getCookies()+" "+c.getPrixHT()+" "+c.getRendezvous()+" ");
 
 
-        System.out.println("oui");*/
+        System.out.println("oui");
 
 
 	}

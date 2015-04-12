@@ -1,0 +1,141 @@
+<?xml version='1.0' encoding='UTF-8'?><wsdl:definitions xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/" xmlns:tns="http://www.polytech.unice.fr/ServicePasseUneCommande" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:ns1="http://schemas.xmlsoap.org/soap/http" name="ServicePasseUneCommandeBeanService" targetNamespace="http://www.polytech.unice.fr/ServicePasseUneCommande">
+  <wsdl:types>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:tns="http://www.polytech.unice.fr/ServicePasseUneCommande" elementFormDefault="unqualified" targetNamespace="http://www.polytech.unice.fr/ServicePasseUneCommande" version="1.0">
+
+  <xs:element name="choisirCookies" type="tns:choisirCookies"/>
+
+  <xs:element name="choisirCookiesResponse" type="tns:choisirCookiesResponse"/>
+
+  <xs:element name="getListeCommande" type="tns:getListeCommande"/>
+
+  <xs:element name="getListeCommandeResponse" type="tns:getListeCommandeResponse"/>
+
+  <xs:element name="passerUneCommande" type="tns:passerUneCommande"/>
+
+  <xs:element name="passerUneCommandeResponse" type="tns:passerUneCommandeResponse"/>
+
+  <xs:complexType name="choisirCookies">
+    <xs:sequence/>
+  </xs:complexType>
+
+  <xs:complexType name="choisirCookiesResponse">
+    <xs:sequence>
+      <xs:element maxOccurs="unbounded" minOccurs="0" name="choisirCookies" type="xs:string"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="passerUneCommande">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="prixHT" type="xs:double"/>
+      <xs:element minOccurs="0" name="rendevous" type="xs:string"/>
+      <xs:element minOccurs="0" name="cookies" type="xs:string"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="passerUneCommandeResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="passerUneCommande" type="tns:commande"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="commande">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="cookies" type="xs:string"/>
+      <xs:element minOccurs="0" name="id" type="xs:long"/>
+      <xs:element minOccurs="0" name="prixHT" type="xs:double"/>
+      <xs:element minOccurs="0" name="rendezvous" type="xs:string"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="getListeCommande">
+    <xs:sequence/>
+  </xs:complexType>
+
+  <xs:complexType name="getListeCommandeResponse">
+    <xs:sequence>
+      <xs:element maxOccurs="unbounded" minOccurs="0" name="regarderListeCommande" type="tns:commande"/>
+    </xs:sequence>
+  </xs:complexType>
+
+</xs:schema>
+  </wsdl:types>
+  <wsdl:message name="passerUneCommandeResponse">
+    <wsdl:part element="tns:passerUneCommandeResponse" name="parameters">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="choisirCookiesResponse">
+    <wsdl:part element="tns:choisirCookiesResponse" name="parameters">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="choisirCookies">
+    <wsdl:part element="tns:choisirCookies" name="parameters">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="getListeCommandeResponse">
+    <wsdl:part element="tns:getListeCommandeResponse" name="parameters">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="passerUneCommande">
+    <wsdl:part element="tns:passerUneCommande" name="parameters">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="getListeCommande">
+    <wsdl:part element="tns:getListeCommande" name="parameters">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:portType name="ServicePasseUneCommande">
+    <wsdl:operation name="choisirCookies">
+      <wsdl:input message="tns:choisirCookies" name="choisirCookies">
+    </wsdl:input>
+      <wsdl:output message="tns:choisirCookiesResponse" name="choisirCookiesResponse">
+    </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="passerUneCommande">
+      <wsdl:input message="tns:passerUneCommande" name="passerUneCommande">
+    </wsdl:input>
+      <wsdl:output message="tns:passerUneCommandeResponse" name="passerUneCommandeResponse">
+    </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getListeCommande">
+      <wsdl:input message="tns:getListeCommande" name="getListeCommande">
+    </wsdl:input>
+      <wsdl:output message="tns:getListeCommandeResponse" name="getListeCommandeResponse">
+    </wsdl:output>
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="ServicePasseUneCommandeBeanServiceSoapBinding" type="tns:ServicePasseUneCommande">
+    <soap:binding style="document" transport="http://schemas.xmlsoap.org/soap/http"/>
+    <wsdl:operation name="choisirCookies">
+      <soap:operation soapAction="" style="document"/>
+      <wsdl:input name="choisirCookies">
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="choisirCookiesResponse">
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="passerUneCommande">
+      <soap:operation soapAction="" style="document"/>
+      <wsdl:input name="passerUneCommande">
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="passerUneCommandeResponse">
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getListeCommande">
+      <soap:operation soapAction="" style="document"/>
+      <wsdl:input name="getListeCommande">
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="getListeCommandeResponse">
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="ServicePasseUneCommandeBeanService">
+    <wsdl:port binding="tns:ServicePasseUneCommandeBeanServiceSoapBinding" name="ServicePasseUneCommandeBeanPort">
+      <soap:address location="http://localhost:8080//webservices/ServicePasseUneCommande"/>
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>
