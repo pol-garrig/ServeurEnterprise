@@ -7,11 +7,9 @@ Please use the following command to run the server:
 
 mvn clean package tomee:run 
 
-To launch the distant server, please use the option -DskipTests 
+To launch the distant server without running tests, please use the option -DskipTests 
 
-mvn clean package tomee:run -DskipTests "host"
-
-Then, open http://localhost:8080/
+mvn clean package tomee:run -DskipTests 
 
 
 ####The program follows the following structure :  
